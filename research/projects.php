@@ -18,56 +18,8 @@
     
   </head>
   <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="navbar-collapse collapse" id="navbar-main">
-				<ul class="nav navbar-nav">
-				<li><a href="index.html"> <img src="../img/pinfo7_color.png" width=100></a></li>
-				<!--li><a href="assign/presentation.pdf">Home</a></li>
-				<li><a href="https://research.tamhsc.edu/pinformatics/about-us/">Social Genome</a></li-->
-				<li class="dropdown">
-					<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Research<span class="caret"></span></a>
-					<ul class="dropdown-menu" aria-labelledby="download">
-						<li><a href="https://research.tamhsc.edu/pinformatics/research/projects/">Projects</a></li>
-						<li><a href="https://research.tamhsc.edu/pinformatics/research/publications/">Publications</a></li>
-					</ul>
-				</li>	
+            <?php include("../includes/header-sub-menu.html"); ?>
 
-				<li class="dropdown">
-					<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Teaching<span class="caret"></span></a>
-					<ul class="dropdown-menu" aria-labelledby="download">
-						<li><a href="https://pinformatics.tamhsc.edu/phpm672/">PHPM627/677 Data Science</a></li>
-						<li><a href="https://pinformatics.tamhsc.edu/phpm631/">PHPM631 HIMS</a></li>
-					</ul>
-				</li>	
-
-				<li><a href="https://research.tamhsc.edu/pinformatics/data-science">Data Science</a></li>	
-
-				<li class="dropdown">
-					<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Resources<span class="caret"></span></a>
-					<ul class="dropdown-menu" aria-labelledby="download">
-						<li><a href="https://pinformatics.org/public-use-data-library.html">Public Use Data Library</a></li>
-						<li><a href="https://research.tamhsc.edu/pinformatics/resources/unix/">UNIX</a></li>
-						<li><a href="https://research.tamhsc.edu/pinformatics/resources/sas/">SAS</a></li>
-						<li><a href="https://research.tamhsc.edu/pinformatics/resources/stata/">STATA</a></li>
-					</ul>
-				</li>
-				<li><a href="https://research.tamhsc.edu/pinformatics/join-us/">Join Us</a></li>	
-				<li><a href="https://research.tamhsc.edu/pinformatics/about-us/">About Us</a></li>	
-				<!--ul class="nav navbar-nav navbar-right">
-				<li><a href="http://research.tamhsc.edu/pinformatics/" target="_blank">Population Informatics Research Group</a></li>
-				</ul-->
-
-			</div>
-		</div>
-    </div>
 
     <div class="container">
         <div class="row">
