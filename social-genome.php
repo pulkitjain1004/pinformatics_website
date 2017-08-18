@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Social Genome - Population Informatics Research Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="css/tamu.css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/ga.js" async="" type="text/javascript"></script>
+    
+  </head>
+  <body>
+        <?php include("includes/header.html"); ?>
+
+
+    <div class="container">
+        <div class="row">
+			<div class="col-lg-12">
+				<h1>Population Informatics Research Group</h1>	
+				<p class="lead"></p>
+				<h2>Our Social Genome : A Federated Data System of Digital Data about People</h2>
+				<p>New scientific opportunities are emerging as a result of increasingly effective data organization, access, and usage. Many fields of study have been transformed to a new level by new tools and data infrastructure. For example, the analysis of DNA sequence data has transformed medical research. We need to push the frontier of social sciences by doing the same with digital data available about our society; this will enable us to gain fundamental insights into the many facets of our society. A key source of information about all aspects of our society resides in government administrative data and various private operational data. From the day we are born until our death, most all of our activities leave footprints in various digital data systems. Birth, marriage, and death certificates are filed with the government, education records remain with departments of public instruction, and traces of employment can be found in the ESC UI (Employment Security Commission Unemployment Insurance) wage data. Without a doubt, a well-integrated data system that can encompass much of the data systems will hold the footprints of our society, our social genome. The two main hurdles to building such a system to transform the social sciences are (1) privacy concerns and the laws in place to protect individual confidentiality, and (2) the physiology of administrative data, which is fragmented, short-lived, and sometimes has questionable reliability.</p>
+				<p>Our group’s research focuses on resolving these two barriers to building a federated data system of digital data about people for research. Once resolved, we can build the social genome data infrastructure that could finally allow us to move toward understanding how current policies play out in our society and how to make informed policies using information and knowledge gathered from these digital traces.</p>
+				<h2> Read our Vision Paper in the IEEE Computer Special Outlook Issue.</h2>
+				<li><a href="http://pinformatics.web.unc.edu/files/2013/12/IEEEkum_56-631.pdf">Kum, H.C., Krishnamurthy A., Machanavajjhala A., and Ahalt S. <b>Social Genome: Putting Big Data to Work for Population Informatics.</b> IEEE Computer Special Outlook Issue. Jan 2014 </a></li>
+				<h2>Want to know more?</h2>
+				<p><strong><span>1. What is the main idea?</span></strong></p>
+				<p>By scope and intent of the Social Genome Project is a data-rich knowledge base for researchers, professionals, business leaders, and government officials  to capture interesting entities and relationships, as detailed below:</p>
+				<ul>
+					<li>Human activities leave digital traces in various government data systems, which can collectively capture <strong><em>our social genome, the footprints of our society</em></strong>.</li>
+					<li><em>Data become most powerful when integrated</em><span>.</span><em> </em>Fragmented efforts to make government data available to the public are neither effective nor efficient. Furthermore, current privacy protection mechanisms are ineffective while making data less useful.</li>
+					<li>This project will help make government data publicly available for socially beneficial research such as ‘What is the impact of education in low-resource schools on rates of subsequent arrest/incarceration?’</li>
+					<li> Like the human genome, the social genome data has much buried in the massive almost chaotic data</li>
+					<li>If properly analyzed and interpreted, this social genome could offer crucial insights into many of the most challenging problems facing our society (i.e. affordable and accessible quality healthcare, economics, education, employment, and welfare)</li>
+				</ul>
+				<p><span> <strong>2. Why will it work? </strong></span></p>
+				<p>Companies already monitor our activities to maximize profit. It’s time to use datamining technology for the worthy goal of understanding and solving the problems of society. A <strong>transparent data system</strong> can provide a rich source of information for population informatics.</p>
+				<p>The Social Genome Project will facilitate use of such data by building an infrastructure of tools and techniques required for such research while designing privacy protection into the infrastructure itself. This project envisions a totally transparent glass building with all the data and tools required to use the data where all <strong>activities can be monitored by the public at all times</strong>.</p>
+				<p><strong><span>3. What are the main challenges?</span></strong></p>
+				<p>The main building blocks of a Social Genome Data Center are</p>
+				<ol>
+					<li>A data infrastructure (i.e. computer system) that can provide secure and appropriate access to data</li>
+					<li>Tools (i.e. software, data, documentation) to facilitate accurate and ethical use of data</li>
+					<li>Oversight mechanisms (i.e. IRB) ensuring that the data are only used for societal benefits</li>
+				</ol>
+				<p><strong><span>4. How would you fund/sustain the project?</span></strong></p>
+				<p>Government agencies are under increasing pressure to be more transparent and to use data in everyday decision making, but they have sparse expertise to do so.</p>
+				<p>By building a common data library accessible to approved people, agencies can more readily collaborate with experts and researchers to turn data into policy and action. Those who become experts of such data through these government projects can then use the social genome data to pursue larger grants (i.e. NSF/NIH) to answer fundamental questions about our society. The project will be supported by contracts with government agencies for direct policy and evaluation and grant funding for investigating fundamental questions about the most challenging problems facing our society—healthcare, education, employment, welfare, economics, and the environment.</p>
+				<p><strong><span>5. What is it used for ?</span></strong><br>
+				The social genome data is critical for the burgeoning field of population informatics, public health informatics, and health informatics.<br>
+				<a href="http://pinformatics.web.unc.edu/files/2012/12/informatics1.png"><img src="img/informatics1.png" alt="" title="informatics" height="250"></a><br>
+				<strong><span>6. Are there technical papers on the topic ?</span></strong></p>
+				<ul>
+					<li><a href="http://www.cs.unc.edu/techreports/12-003.pdf"> Kum, H.C., Pathak D., Sanka, G., and Ahalt, S.  (2012). Privacy beyond anonymity : Decoupling data through encryption. Technical Report UNC-CH.  Accepted for poster presentation at 2013 AMIA Joint Submit on Translational Science </a>
+						<ul>
+							<li><a href="http://pinformatics.web.unc.edu/files/2013/04/poster_v7.pdf">Poster: Hye-Chung Kum, PhD, Darshana Pathak, Gautam Sanka, Stanley Ahalt, PhD (2013). Privacy Beyond Anonymity: Decoupling Data through Encryption for Record Linkage </a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="http://pinformatics.web.unc.edu/files/2013/04/amia2013_access_submit.pdf"> Kum, H.C., and Ahalt, S.  (2013). Privacy by Design: Understanding Data Access Models for Secondary Data, <em>American Medical Informatics Association (AMIA) joint summits on translation science: clinical research informatics </em></a>
+					</li>
+					<li>Kum, H.C., Ahalt, S, and Pathak, D.  (2012) Privacy Preserving Data Integration Using Decoupled Data, In Security and Privacy in Social Network, by Y. Elovici, Y. Altshuler, A. Cremers, N. Aharony, A. Pentland (Eds), Springer.  </li>
+					<li>Kum, H.C., and Ahalt, S.  (2011). “Decoupled Data for Privacy Preserving Record Linkage with Error Management”, IEEE Int’l conference on privacy, security, risk and trust (PASSAT)  Workshop on Security and Privacy in Social Networks, MIT Boston.   pp. 1294-1301. </li>
+				</ul>
+					
+
+				
+			</div>
+
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-unstyled">
+							<li class="pull-right"><a href="#top">Back to top</a></li>
+						</ul>
+						<p>&copy; Hye-Chung Kum 
+						(<a href="http://research.tamhsc.edu/pinformatics/">Population Informatics Research Group</a>) 2016</p>
+						<p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+						<p>Based on <a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+    <script src="js/jquery-1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootswatch.js"></script>
+
+</body></html>
+

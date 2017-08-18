@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Data Science - Population Informatics Research Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="css/tamu.css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/ga.js" async="" type="text/javascript"></script>
+    
+  </head>
+  <body>
+        <?php include("includes/header.html"); ?>
+
+
+    <div class="container">
+        <div class="row">
+			<div class="col-lg-12">
+				<h1>Population Informatics Research Group</h1>	
+				<p class="lead"></p>
+				<h2>Data Science</h2>
+				<p>Overarching research question: How can we use the abundance of existing digital data, aka big data, (e.g. government administrative data, electronic health records) to support accurate evidence based decisions for policy, management, legislation, evaluation, and research while protecting the confidentiality of individual subjects of the data? This question focuses on the data science of using massive secondary datasets, a step before the traditional statistical methods can be applied to the data to address specific questions to improve population health (public health).</p>
+				<p>Preferred approaches: Data Science – To build efficient and effective human computer hybrid processes and systems to clean, integrate, and extract valuable information from raw chaotic data and deliver the information in a timely manner to decision makers (e.g. researchers, policy makers, clinicians) to improve public health.</p>
+				<h2>What is Data Science</h2>
+				<ul>Some quotes I like<p></p>
+					<li>Telling your story with data using the scientific method (Hye-Chung Kum)</li>
+					<li>Data Science is a mash-up of several different disciplines (Data Engineering, Scientific Methods, Math, Statistics, Advanced Computing, Visualization, Hacker Mindset, Domain Expertise). We also noted that an individual data scientist is most likely an expert in one or two of these disciplines and proficient in another two or three. There is probably no living person who is expert in all these disciplines, and an extremely rare person would be proficient in 5 or 6 of these disciplines. This means that data science must be practiced as a team where, across the membership of the team, there is expertise and proficiency across all the disciplines (<a href="http://en.wikibooks.org/wiki/Data_Science:_An_Introduction/A_Mash-up_of_Disciplines">Wikibooks: Data Science Intro</a>).</li>
+					<li>Knowledge of R , Python or other tools is secondary to knowing how to approach the data, how to ask right questions, and good intuition about what works and what not (Gregory Piatetsky-Shapiro, Analytics/Data Mining Expert, KDnuggets President).</li>
+					<li>as one long-time “data scientist” I love the new term for what I do. I think it aptly describes what I do, what I’ve always done, with data (Daniel Dean Gutierrez, Data Scientist at AMULET Analytics).</li>
+					<li>And, of course, a natural curiosity on how things work and the ability to hire and manage other folks who also have a passion for information. (Jim Lola, Entrepreneur, Sr. Manager, Technologist, Architect, &amp; Author )</li>
+				</ul>
+				<ul>Some useful Links<p></p>
+					<li><a href="http://en.wikibooks.org/wiki/Data_Science:_An_Introduction/A_Mash-up_of_Disciplines">What is Data Science</a></li>
+					<li><a href="http://www.kdnuggets.com/2014/06/masters-degree-become-data-scientist.html">How to become a data scientist</a></li>
+					<li><a href="http://www.kdnuggets.com/2014/06/impact-cycle-actionable-insights.html">Actionable information from data: Always ground yourself in the real world problem</a></li>
+					<li><a href="http://www.mastersindatascience.org/industry/health-care/">Data science in the health care industry</a></li>
+					<li><a href="https://plus.google.com/communities/109572103057302114737">Google Group: Data science and Public Health</a></li>
+				</ul>
+				<ul>Required Skill Set: Many have written on the essential skill set for Data Science. The following are common across most and those that I agree with in the order of importance.<p></p>
+					<li>Curiosity: a desire to go beneath the surface and discover and distill a problem down into a very clear set of hypotheses that can be tested with data</li>
+					<li>Communication: The ability to communicate and translate between data, models, and real world problems</li>
+					<li>Critical Thinking: The ability to reason and think through a real problem, understand the data at hand with little documentation, the limitations, and get the best answer possible for the given problem and data. The ability to know how much accuracy is required in the given problem and an intuition about the accuracy of the data at hand.</li>
+					<li>Cleverness: The ability to look at a problem in different, creative ways</li>
+					<li>Programming (software engineering): The ability to use the tools (programs like R, SAS, Phython, Excel etc) to manipulate data easily into any shape, and develop efficient processes of converting data into information that can be iteratively updated and adjusted easily. Developing tractable and agile processes with sufficient but minimal documentation is key.</li>
+					<li>Statistics/Math: The ability to understand how to take data points and build models</li>
+					<li>Domain Knowledge: The ability to either know the domain knowledge (i.e., healthcare, employment, education, welfare, etc.) or learn it quickly or work (communicate well) with a domain expert</li>
+				</ul>
+				<p>Interested to become a Data Scientist? You can try some data science courses at <a href="https://www.coursera.org/specializations/jhudatascience">Coursera</a>.</p>
+				<p>Depending on your mix of expertise, there are three types of data scientists<br>
+				<a href="http://research.tamhsc.edu/pinformatics/wp-content/uploads/sites/2/2014/07/data_science_hierarchy.png"><img src="img/data_science_hierarchy-300x189.png" alt="data_science_hierarchy" width="600"></a></p>
+				<p>I think a well defined field called KDD (Knowledge Discovery and Datamining) describes the data science process the best.<br>
+				<a href="http://research.tamhsc.edu/pinformatics/wp-content/uploads/sites/2/2014/01/ds_kdd.png"><img src="img/ds_kdd-300x225.png" alt="ds_kdd" width="600"></a></p>
+				<h2>Data Science Videos</h2>
+				<ul>
+					<li><a href="http://ed.ted.com/lessons/hans-rosling-shows-the-best-stats-you-ve-ever-seen#review">Hans Rosling’s TED Talk</a></li>
+					<li><a href="http://www.youtube.com/watch?v=N2zK3sAtr-4">Data Sharing and Management Snafu in 3 Short Acts</a></li>
+					<li><a href="http://www.youtube.com/watch?v=QPKKQnijnsM">Wealth Inequality in America</a>
+						<ul>
+							<li>income disparity</li>
+							<li>wealth disparity</li>
+							<li>total net worth</li>
+							<li>total financial net worth (total net worth minus housing</li>
+						</ul>
+					</li>
+					<li><a href="http://www.youtube.com/watch?v=UbueX92CKPk">Income Mobility (cross sectional vs longitudinal)</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=VrSUe_m19FY">Learning…(not a data video)</a></li>
+					<li><a href="https://youtu.be/8dPqQt0yXJA?list=PLqySf471DfSL-FkTZGCtJd5Fl8VJoDoAU">Texas State of Mind – “Perceptions. Reality. Stigma.” The Mental Health Landscape</a></li>
+				</ul>
+					
+
+				
+			</div>
+
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-unstyled">
+							<li class="pull-right"><a href="#top">Back to top</a></li>
+						</ul>
+						<p>&copy; Hye-Chung Kum 
+						(<a href="http://research.tamhsc.edu/pinformatics/">Population Informatics Research Group</a>) 2016</p>
+						<p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+						<p>Based on <a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+    <script src="js/jquery-1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootswatch.js"></script>
+
+</body></html>
+
