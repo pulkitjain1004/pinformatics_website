@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #submitComments {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    body{
+        color:#000;
+    }
+    #container{
+        /*Styling for any element with the id="container" */
+        width:1000px; /* The width is fixed by pixels */
+        height:800px; /* The height is fixed by pixels*/
+        color:black;
+    }
+</style>
+<body>
+<div id="container">
+    <div id="instruction" style="text-align:center;">
+        <h1 id="title">The End</h1>
+        <div id="notation" style="text-align:left;"></div><br>
+        <div id="end" style="text-align:left;"></div>
+        <br> <br>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    //d3.select("#notation").text("Page "+experimentr.data()['mat'].length.toString()+"/"+experimentr.data()['mat'].length.toString());
+    d3.select("#end").text('You are done! Thank you for participating in this study!');
+    delete experimentr.data()['mat'];
+    experimentr.save();
+</script>

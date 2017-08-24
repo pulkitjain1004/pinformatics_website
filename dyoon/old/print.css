@@ -1,0 +1,26 @@
+header{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+div#wrapper{
+  margin-top:1em;
+}
+
+body{
+
+}
+
+div#top{
+display: none;
+
+}
+
+article{
+  margin: .5em;
+  padding: 1em;
+}
+
+#side {
+  display: none;
+}

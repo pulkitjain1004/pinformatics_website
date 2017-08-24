@@ -1,0 +1,4898 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta name="Generator" content="SAS Software Version 9.3, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #E0E0E0;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #D3D3D3;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #E0E0E0;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #E0E0E0;
+  border-spacing: 0px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #B0B0B0;
+  border-spacing: 0px;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #E0E0E0;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #E0E0E0;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.contentprocname
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.contents
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.continued
+{
+  background-color: #E0E0E0;
+  border-spacing: 0px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+.data
+{
+  background-color: #D3D3D3;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #D3D3D3;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #D3D3D3;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #D3D3D3;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #D3D3D3;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #D3D3D3;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #D3D3D3;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0066AA
+}
+a:visited {
+color:#004488
+}
+a:active {
+color:#004488
+}
+.errorbanner
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #E0E0E0;
+  border: 1pt solid #000000;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #E0E0E0;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.indextitle
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.list
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+  text-align: left;
+}
+.list10
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+  text-align: left;
+}
+.list2
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+  text-align: left;
+}
+.list3
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+  text-align: left;
+}
+.list4
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+  text-align: left;
+}
+.list5
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+  text-align: left;
+}
+.list6
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+  text-align: left;
+}
+.list7
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+  text-align: left;
+}
+.list8
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+  text-align: left;
+}
+.list9
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+  text-align: left;
+}
+.listitem
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem10
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem2
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem3
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem4
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem5
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem6
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem7
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem8
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.listitem9
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.note
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #F0F0F0;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #E0E0E0;
+  border-spacing: 0px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.pagesprocname
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+}
+.pagestitle
+{
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.paragraph
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: italic;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #B0B0B0;
+  color: #0033AA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter10
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter2
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter3
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter4
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter5
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter6
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter7
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter8
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter9
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #E0E0E0;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  background-color: #F0F0F0;
+  border: 1px solid #000000;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #E0E0E0;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: italic;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.warnbanner
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #E0E0E0;
+  color: #002288;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.FLU10" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.FLU9" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX2"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.APPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.FLU10" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX4"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.FLU10" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX5"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.FLU9D" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+<td class="r data">        1589</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+<td class="r data">        1657</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+<td class="r data">        1857</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">         962</td>
+<td class="r data">        2542</td>
+<td class="r data">        2041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">         971</td>
+<td class="r data">        2141</td>
+<td class="r data">        2024</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX6"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.APPEND2" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+<th class="l header" scope="col">month</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="l data">Oct</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="l data">Oct</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="l data">Oct</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="l data">Oct</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">        1589</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+<td class="l data">Sep</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">        1657</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+<td class="l data">Sep</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">        1857</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+<td class="l data">Sep</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">        2041</td>
+<td class="r data">         962</td>
+<td class="r data">        2542</td>
+<td class="l data">Sep</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">        2024</td>
+<td class="r data">         971</td>
+<td class="r data">        2141</td>
+<td class="l data">Sep</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX7"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.FLU10" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX8"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.FLU109D" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">         604</td>
+<td class="r data">        2911</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">         527</td>
+<td class="r data">        2588</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX9"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.ADDCOL" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">         604</td>
+<td class="r data">        2911</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+<td class="r data">         527</td>
+<td class="r data">        2588</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX10"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.FLU10" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX11"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.FLU109" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">         100</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">         100</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">         100</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">         100</td>
+<td class="r data">         604</td>
+<td class="r data">        2911</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">         100</td>
+<td class="r data">         527</td>
+<td class="r data">        2588</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX12"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.ADDCOL2" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+<th class="r header" scope="col">src</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">         100</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+<td class="r data"> 1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">         100</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+<td class="r data"> 1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">         100</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+<td class="r data"> 1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">         100</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">         604</td>
+<td class="r data">        2911</td>
+<td class="r data">11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">         100</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+<td class="r data">         527</td>
+<td class="r data">        2588</td>
+<td class="r data">11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">10</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX13"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div class="c proctitle">The FREQ Procedure</div>
+<p>
+</p><div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Freq: One-Way Frequencies" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">src</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">3</td>
+<td class="r data">42.86</td>
+<td class="r data">3</td>
+<td class="r data">42.86</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="r data">2</td>
+<td class="r data">28.57</td>
+<td class="r data">5</td>
+<td class="r data">71.43</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="r data">2</td>
+<td class="r data">28.57</td>
+<td class="r data">7</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX14"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.FLU109" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+<th class="r header" scope="col">qtr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">         604</td>
+<td class="r data">        2911</td>
+<td class="r data">4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">         527</td>
+<td class="r data">        2588</td>
+<td class="r data">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX15"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.QTR" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">qtr</th>
+<th class="l header" scope="col">quarter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="l data">First_Qtr</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2</td>
+<td class="l data">Second_Qtr</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">3</td>
+<td class="l data">Third_Qtr</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">4</td>
+<td class="l data">Fourth_Qtr</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX16"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.ADDCOL3" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">qtr</th>
+<th class="l header" scope="col">quarter</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">3</td>
+<td class="l data">Third_Qtr</td>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">3</td>
+<td class="l data">Third_Qtr</td>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">3</td>
+<td class="l data">Third_Qtr</td>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">4</td>
+<td class="l data">Fourth_Qtr</td>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">         604</td>
+<td class="r data">        2911</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">4</td>
+<td class="l data">Fourth_Qtr</td>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">         527</td>
+<td class="r data">        2588</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX17"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.FLU109" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+<th class="r header" scope="col">qtr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+<td class="r data">3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">         604</td>
+<td class="r data">        2911</td>
+<td class="r data">4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">         527</td>
+<td class="r data">        2588</td>
+<td class="r data">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX18"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.DQTR" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">qtr</th>
+<th class="l header" scope="col">quarter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="l data">First_Qtr</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2</td>
+<td class="l data">Second_Qtr</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">3</td>
+<td class="l data">Third_Qtr</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">3</td>
+<td class="l data">3rd_Qtr</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">4</td>
+<td class="l data">Fourth_Qtr</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX19"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.ADDCOL4" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">qtr</th>
+<th class="l header" scope="col">quarter</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">Kansas</th>
+<th class="r header" scope="col">Oklahoma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">3</td>
+<td class="l data">Third_Qtr</td>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">         322</td>
+<td class="r data">        1712</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">3</td>
+<td class="l data">3rd_Qtr</td>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">         558</td>
+<td class="r data">        2058</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">3</td>
+<td class="l data">3rd_Qtr</td>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">         647</td>
+<td class="r data">        2165</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">4</td>
+<td class="l data">Fourth_Qtr</td>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">         604</td>
+<td class="r data">        2911</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">4</td>
+<td class="l data">Fourth_Qtr</td>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">         527</td>
+<td class="r data">        2588</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX20"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.APPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">yyyymm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+<td class="r data">201310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX21"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.SUM" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">yyyymm</th>
+<th class="r header" scope="col">_TYPE_</th>
+<th class="r header" scope="col">_FREQ_</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">201309</td>
+<td class="r data">0</td>
+<td class="r data">5</td>
+<td class="r data">        6211</td>
+<td class="r data">        6962</td>
+<td class="r data">        5601</td>
+<td class="r data">        9168</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">201310</td>
+<td class="r data">0</td>
+<td class="r data">4</td>
+<td class="r data">        5664</td>
+<td class="r data">        6361</td>
+<td class="r data">        5990</td>
+<td class="r data">        8514</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX22"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.SUM" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">yyyymm</th>
+<th class="r header" scope="col">nrows</th>
+<th class="r header" scope="col">sca</th>
+<th class="r header" scope="col">maxfl</th>
+<th class="r header" scope="col">mintx</th>
+<th class="r header" scope="col">stx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">201309</td>
+<td class="r data">5</td>
+<td class="r data">        6962</td>
+<td class="r data">        1250</td>
+<td class="r data">        1589</td>
+<td class="r data">        9168</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">201310</td>
+<td class="r data">4</td>
+<td class="r data">        6361</td>
+<td class="r data">        1569</td>
+<td class="r data">        1955</td>
+<td class="r data">        8514</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX23"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.SUM" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">_TYPE_</th>
+<th class="r header" scope="col">_FREQ_</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">0</td>
+<td class="r data">9</td>
+<td class="r data">       11875</td>
+<td class="r data">       13323</td>
+<td class="r data">       11591</td>
+<td class="r data">       17682</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX24"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.APPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">yyyymm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+<td class="r data">201310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX25"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.TAPPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">COL1</th>
+<th class="r header" scope="col">COL2</th>
+<th class="r header" scope="col">COL3</th>
+<th class="r header" scope="col">COL4</th>
+<th class="r header" scope="col">COL5</th>
+<th class="r header" scope="col">COL6</th>
+<th class="r header" scope="col">COL7</th>
+<th class="r header" scope="col">COL8</th>
+<th class="r header" scope="col">COL9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">Date</td>
+<td class="r data"> 19602</td>
+<td class="r data"> 19609</td>
+<td class="r data"> 19616</td>
+<td class="r data"> 19623</td>
+<td class="r data"> 19630</td>
+<td class="r data"> 19637</td>
+<td class="r data"> 19644</td>
+<td class="r data"> 19651</td>
+<td class="r data"> 19658</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">usa</td>
+<td class="r data">  1085</td>
+<td class="r data">  1154</td>
+<td class="r data">  1259</td>
+<td class="r data">  1350</td>
+<td class="r data">  1363</td>
+<td class="r data">  1405</td>
+<td class="r data">  1354</td>
+<td class="r data">  1445</td>
+<td class="r data">  1460</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">California</td>
+<td class="r data">  1241</td>
+<td class="r data">  1310</td>
+<td class="r data">  1407</td>
+<td class="r data">  1490</td>
+<td class="r data">  1514</td>
+<td class="r data">  1549</td>
+<td class="r data">  1506</td>
+<td class="r data">  1624</td>
+<td class="r data">  1682</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">Florida</td>
+<td class="r data">   997</td>
+<td class="r data">  1137</td>
+<td class="r data">  1060</td>
+<td class="r data">  1157</td>
+<td class="r data">  1250</td>
+<td class="r data">  1474</td>
+<td class="r data">  1490</td>
+<td class="r data">  1457</td>
+<td class="r data">  1569</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">Texas</td>
+<td class="r data">  1589</td>
+<td class="r data">  1657</td>
+<td class="r data">  1857</td>
+<td class="r data">  2041</td>
+<td class="r data">  2024</td>
+<td class="r data">  2052</td>
+<td class="r data">  1955</td>
+<td class="r data">  2206</td>
+<td class="r data">  2301</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">yyyymm</td>
+<td class="r data">201309</td>
+<td class="r data">201309</td>
+<td class="r data">201309</td>
+<td class="r data">201309</td>
+<td class="r data">201309</td>
+<td class="r data">201310</td>
+<td class="r data">201310</td>
+<td class="r data">201310</td>
+<td class="r data">201310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX26"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.TAPPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">_2013N09N01</th>
+<th class="r header" scope="col">_2013N09N08</th>
+<th class="r header" scope="col">_2013N09N15</th>
+<th class="r header" scope="col">_2013N09N22</th>
+<th class="r header" scope="col">_2013N09N29</th>
+<th class="r header" scope="col">_2013N10N06</th>
+<th class="r header" scope="col">_2013N10N13</th>
+<th class="r header" scope="col">_2013N10N20</th>
+<th class="r header" scope="col">_2013N10N27</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">usa</td>
+<td class="r data">  1085</td>
+<td class="r data">  1154</td>
+<td class="r data">  1259</td>
+<td class="r data">  1350</td>
+<td class="r data">  1363</td>
+<td class="r data">  1405</td>
+<td class="r data">  1354</td>
+<td class="r data">  1445</td>
+<td class="r data">  1460</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">California</td>
+<td class="r data">  1241</td>
+<td class="r data">  1310</td>
+<td class="r data">  1407</td>
+<td class="r data">  1490</td>
+<td class="r data">  1514</td>
+<td class="r data">  1549</td>
+<td class="r data">  1506</td>
+<td class="r data">  1624</td>
+<td class="r data">  1682</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">Florida</td>
+<td class="r data">   997</td>
+<td class="r data">  1137</td>
+<td class="r data">  1060</td>
+<td class="r data">  1157</td>
+<td class="r data">  1250</td>
+<td class="r data">  1474</td>
+<td class="r data">  1490</td>
+<td class="r data">  1457</td>
+<td class="r data">  1569</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">Texas</td>
+<td class="r data">  1589</td>
+<td class="r data">  1657</td>
+<td class="r data">  1857</td>
+<td class="r data">  2041</td>
+<td class="r data">  2024</td>
+<td class="r data">  2052</td>
+<td class="r data">  1955</td>
+<td class="r data">  2206</td>
+<td class="r data">  2301</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">yyyymm</td>
+<td class="r data">201309</td>
+<td class="r data">201309</td>
+<td class="r data">201309</td>
+<td class="r data">201309</td>
+<td class="r data">201309</td>
+<td class="r data">201310</td>
+<td class="r data">201310</td>
+<td class="r data">201310</td>
+<td class="r data">201310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX27"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.TAPPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">state</th>
+<th class="r header" scope="col">_2013N09N01</th>
+<th class="r header" scope="col">_2013N09N08</th>
+<th class="r header" scope="col">_2013N09N15</th>
+<th class="r header" scope="col">_2013N09N22</th>
+<th class="r header" scope="col">_2013N09N29</th>
+<th class="r header" scope="col">_2013N10N06</th>
+<th class="r header" scope="col">_2013N10N13</th>
+<th class="r header" scope="col">_2013N10N20</th>
+<th class="r header" scope="col">_2013N10N27</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">usa</td>
+<td class="r data">        1085</td>
+<td class="r data">        1154</td>
+<td class="r data">        1259</td>
+<td class="r data">        1350</td>
+<td class="r data">        1363</td>
+<td class="r data">        1405</td>
+<td class="r data">        1354</td>
+<td class="r data">        1445</td>
+<td class="r data">        1460</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">California</td>
+<td class="r data">        1241</td>
+<td class="r data">        1310</td>
+<td class="r data">        1407</td>
+<td class="r data">        1490</td>
+<td class="r data">        1514</td>
+<td class="r data">        1549</td>
+<td class="r data">        1506</td>
+<td class="r data">        1624</td>
+<td class="r data">        1682</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">Florida</td>
+<td class="r data">         997</td>
+<td class="r data">        1137</td>
+<td class="r data">        1060</td>
+<td class="r data">        1157</td>
+<td class="r data">        1250</td>
+<td class="r data">        1474</td>
+<td class="r data">        1490</td>
+<td class="r data">        1457</td>
+<td class="r data">        1569</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">Texas</td>
+<td class="r data">        1589</td>
+<td class="r data">        1657</td>
+<td class="r data">        1857</td>
+<td class="r data">        2041</td>
+<td class="r data">        2024</td>
+<td class="r data">        2052</td>
+<td class="r data">        1955</td>
+<td class="r data">        2206</td>
+<td class="r data">        2301</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX28"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.APPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">yyyymm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+<td class="r data">201310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX29"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.XDUP" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">yyyymm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">201310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX30"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.TAPPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">state</th>
+<th class="r header" scope="col">_201309</th>
+<th class="r header" scope="col">_201310</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">usa</td>
+<td class="r data">        1085</td>
+<td class="r data">        1405</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">California</td>
+<td class="r data">        1241</td>
+<td class="r data">        1549</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">Florida</td>
+<td class="r data">         997</td>
+<td class="r data">        1474</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">Texas</td>
+<td class="r data">        1589</td>
+<td class="r data">        2052</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX31"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.APPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">yyyymm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+<td class="r data">201310</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+<td class="r data">201310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX32"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.SUM" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">yyyymm</th>
+<th class="r header" scope="col">_TYPE_</th>
+<th class="r header" scope="col">_FREQ_</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">201309</td>
+<td class="r data">0</td>
+<td class="r data">5</td>
+<td class="r data">        6211</td>
+<td class="r data">        6962</td>
+<td class="r data">        5601</td>
+<td class="r data">        9168</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">201310</td>
+<td class="r data">0</td>
+<td class="r data">4</td>
+<td class="r data">        5664</td>
+<td class="r data">        6361</td>
+<td class="r data">        5990</td>
+<td class="r data">        8514</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX33"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.TAPPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">state</th>
+<th class="r header" scope="col">flu201309</th>
+<th class="r header" scope="col">flu201310</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">usa</td>
+<td class="r data">        6211</td>
+<td class="r data">        5664</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">California</td>
+<td class="r data">        6962</td>
+<td class="r data">        6361</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">Florida</td>
+<td class="r data">        5601</td>
+<td class="r data">        5990</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">Texas</td>
+<td class="r data">        9168</td>
+<td class="r data">        8514</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX34"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.BACK" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">flu201309</td>
+<td class="r data">        6211</td>
+<td class="r data">        6962</td>
+<td class="r data">        5601</td>
+<td class="r data">        9168</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">flu201310</td>
+<td class="r data">        5664</td>
+<td class="r data">        6361</td>
+<td class="r data">        5990</td>
+<td class="r data">        8514</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX35"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.BACK" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">yyyymm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">flu201309</td>
+<td class="r data">        6211</td>
+<td class="r data">        6962</td>
+<td class="r data">        5601</td>
+<td class="r data">        9168</td>
+<td class="r data">201309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">flu201310</td>
+<td class="r data">        5664</td>
+<td class="r data">        6361</td>
+<td class="r data">        5990</td>
+<td class="r data">        8514</td>
+<td class="r data">201310</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX36"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.WKAPPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Date</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+<th class="r header" scope="col">yyyymm</th>
+<th class="l header" scope="col">week</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013-09-01</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+<td class="r data">201309</td>
+<td class="l data">wk1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2013-09-08</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+<td class="r data">201309</td>
+<td class="l data">wk2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">2013-09-15</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+<td class="r data">201309</td>
+<td class="l data">wk3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">2013-09-22</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+<td class="r data">201309</td>
+<td class="l data">wk4</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">2013-09-29</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+<td class="r data">201309</td>
+<td class="l data">wk5</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">2013-10-06</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+<td class="r data">201310</td>
+<td class="l data">wk1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">2013-10-13</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+<td class="r data">201310</td>
+<td class="l data">wk2</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">2013-10-20</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+<td class="r data">201310</td>
+<td class="l data">wk3</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">2013-10-27</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+<td class="r data">201310</td>
+<td class="l data">wk4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX37"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set DATA.TAPPEND" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">yyyymm</th>
+<th class="l header" scope="col">state</th>
+<th class="r header" scope="col">wk1</th>
+<th class="r header" scope="col">wk2</th>
+<th class="r header" scope="col">wk3</th>
+<th class="r header" scope="col">wk4</th>
+<th class="r header" scope="col">wk5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">201309</td>
+<td class="l data">usa</td>
+<td class="r data">        1085</td>
+<td class="r data">        1154</td>
+<td class="r data">        1259</td>
+<td class="r data">        1350</td>
+<td class="r data">        1363</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">201309</td>
+<td class="l data">California</td>
+<td class="r data">        1241</td>
+<td class="r data">        1310</td>
+<td class="r data">        1407</td>
+<td class="r data">        1490</td>
+<td class="r data">        1514</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">201309</td>
+<td class="l data">Florida</td>
+<td class="r data">         997</td>
+<td class="r data">        1137</td>
+<td class="r data">        1060</td>
+<td class="r data">        1157</td>
+<td class="r data">        1250</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">201309</td>
+<td class="l data">Texas</td>
+<td class="r data">        1589</td>
+<td class="r data">        1657</td>
+<td class="r data">        1857</td>
+<td class="r data">        2041</td>
+<td class="r data">        2024</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">201310</td>
+<td class="l data">usa</td>
+<td class="r data">        1405</td>
+<td class="r data">        1354</td>
+<td class="r data">        1445</td>
+<td class="r data">        1460</td>
+<td class="r data">           .</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">201310</td>
+<td class="l data">California</td>
+<td class="r data">        1549</td>
+<td class="r data">        1506</td>
+<td class="r data">        1624</td>
+<td class="r data">        1682</td>
+<td class="r data">           .</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">201310</td>
+<td class="l data">Florida</td>
+<td class="r data">        1474</td>
+<td class="r data">        1490</td>
+<td class="r data">        1457</td>
+<td class="r data">        1569</td>
+<td class="r data">           .</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">201310</td>
+<td class="l data">Texas</td>
+<td class="r data">        2052</td>
+<td class="r data">        1955</td>
+<td class="r data">        2206</td>
+<td class="r data">        2301</td>
+<td class="r data">           .</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX38"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.BACK" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">yyyymm</th>
+<th class="l header" scope="col">week</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row"> 1</th>
+<td class="r data">201309</td>
+<td class="l data">wk1</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row"> 2</th>
+<td class="r data">201309</td>
+<td class="l data">wk2</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row"> 3</th>
+<td class="r data">201309</td>
+<td class="l data">wk3</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row"> 4</th>
+<td class="r data">201309</td>
+<td class="l data">wk4</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row"> 5</th>
+<td class="r data">201309</td>
+<td class="l data">wk5</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row"> 6</th>
+<td class="r data">201310</td>
+<td class="l data">wk1</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row"> 7</th>
+<td class="r data">201310</td>
+<td class="l data">wk2</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row"> 8</th>
+<td class="r data">201310</td>
+<td class="l data">wk3</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row"> 9</th>
+<td class="r data">201310</td>
+<td class="l data">wk4</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="r data">201310</td>
+<td class="l data">wk5</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+<td class="r data">           .</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX39"></a>
+<table class="systitleandfootercontainer" rules="none" frame="void" summary="Page Layout" width="100%" border="0" cellpadding="1" cellspacing="1">
+<tbody><tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</tbody></table><br>
+<div>
+<div align="center">
+<table class="table" rules="groups" frame="box" summary="Procedure Print: Data Set WORK.BACK" border="1" bordercolor="#000000" cellpadding="7" cellspacing="1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">yyyymm</th>
+<th class="l header" scope="col">week</th>
+<th class="r header" scope="col">usa</th>
+<th class="r header" scope="col">California</th>
+<th class="r header" scope="col">Florida</th>
+<th class="r header" scope="col">Texas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">201309</td>
+<td class="l data">wk1</td>
+<td class="r data">        1085</td>
+<td class="r data">        1241</td>
+<td class="r data">         997</td>
+<td class="r data">        1589</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">201309</td>
+<td class="l data">wk2</td>
+<td class="r data">        1154</td>
+<td class="r data">        1310</td>
+<td class="r data">        1137</td>
+<td class="r data">        1657</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">201309</td>
+<td class="l data">wk3</td>
+<td class="r data">        1259</td>
+<td class="r data">        1407</td>
+<td class="r data">        1060</td>
+<td class="r data">        1857</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">201309</td>
+<td class="l data">wk4</td>
+<td class="r data">        1350</td>
+<td class="r data">        1490</td>
+<td class="r data">        1157</td>
+<td class="r data">        2041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">201309</td>
+<td class="l data">wk5</td>
+<td class="r data">        1363</td>
+<td class="r data">        1514</td>
+<td class="r data">        1250</td>
+<td class="r data">        2024</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">201310</td>
+<td class="l data">wk1</td>
+<td class="r data">        1405</td>
+<td class="r data">        1549</td>
+<td class="r data">        1474</td>
+<td class="r data">        2052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">201310</td>
+<td class="l data">wk2</td>
+<td class="r data">        1354</td>
+<td class="r data">        1506</td>
+<td class="r data">        1490</td>
+<td class="r data">        1955</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">201310</td>
+<td class="l data">wk3</td>
+<td class="r data">        1445</td>
+<td class="r data">        1624</td>
+<td class="r data">        1457</td>
+<td class="r data">        2206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">201310</td>
+<td class="l data">wk4</td>
+<td class="r data">        1460</td>
+<td class="r data">        1682</td>
+<td class="r data">        1569</td>
+<td class="r data">        2301</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+
+
+</body></html>

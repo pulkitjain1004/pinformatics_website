@@ -1,0 +1,30 @@
+{% set type = 'cite' %}
+{% extends base_template %}
+
+{% block breadcrumb %}
+  {{ super() }}
+  <li><a href="{{prefix_path}}/{{prob_base}}/cite">Cite</a></li>
+{% endblock %}
+
+{% block mainContent %}
+
+<p>
+Authors of CSPLib problems, and
+the authors and maintainers of CSPLib itself, would very much appreciate citation in your publications if you use their (our) work.
+</p>
+<p>
+To cite this CSPLib problem, please use the following bibtex entry.
+</p>
+
+<pre>
+{% include "problem_cite.bib" %}
+</pre>
+
+To cite CSPLib as a whole, please use the following bibtex entry:
+
+<pre>
+{% include "cite.bib" %}
+</pre>
+
+
+{% endblock %}

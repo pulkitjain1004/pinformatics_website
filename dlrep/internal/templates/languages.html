@@ -1,0 +1,32 @@
+{% set title = "List of Languages" %}
+{% extends "wrapper.html" %}
+
+{% block breadcrumb %}
+  {{ super() }}
+  <li><a href="{{prefix_path}}/Languages">Languages</a></li>
+{% endblock %}
+
+
+{% block mainContent %}
+
+<table class='tablesorter'>
+<thead>
+	<tr>  <th>Id</th> <th>Title</th>  </tr>
+</thead>
+<tbody>
+{% for prob in problems %}
+<tr>
+	<td>
+		<a href="{{ prob.metadata['id'] | join('') }}">
+			{{ prob.metadata['id'] | join('') }}
+		</a>
+	</td>
+	<td>
+		{{ prob.metadata['title'] | join('') }}
+	</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link href="mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width:751px)"/>
+    <link href="nav.css" rel="stylesheet" type="text/css" media="screen and (min-width:750px)"/>
+    <link href="print.css" rel="stylesheet" type="text/css" media="print"/>            
+    <style type="text/css">
+    </style>
+  </head>
+
+  <body>   
+    <header>
+        <h1><center>Assignment #2:  Variables & Conditionals</center></h1>
+        <h2> <center> Recommended Work Time: One week </center> </h2>
+    </header>
+  <div id="wrapper">  
+    <nav id="side">
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="A1.html"> Assignment 1 </a></li>
+            <li><a href="A2.html"> Assignment 2 </a>
+              <ul>
+                <li><a href="L2.html"> Lab 2 </a></li>
+                <li><a href="L2S.html"> Lab 2 Supp. </a></li>
+                <li><a href="A2.html"> Assignment 2 </a></li>
+              </ul>
+            </li>
+            <li><a href="A3.html"> Assignment 3 </a>
+              <ul>
+                <li><a href="L3.html"> Lab 3 </a></li>
+                <li><a href="A3.html"> Assignment 3 </a></li>
+              </ul>
+            </li>
+            <li><a href="A4.html"> Assignment 4</a>
+              <ul>
+                <li><a href="data/lab4.zip" dwonload> Lab4 </a></li>
+                <li><a href="A4.html"> Assignment 4 </a></li>
+                <li><a href="A4A.html"> Assignment 4 Alt. </a></li>
+                <li><a href="A4S.html"> Assignment 4 Supp. </a></li>
+              </ul>
+            </li>
+            <li><a href="A5.html"> Assignment 5</a></li>    
+            <li><a href="Final.html"> Final Project</a></li>
+        </ul>
+      </nav>
+
+      <div id="top">
+        <h2>Table of Contents</h2>
+        <ol>
+          <li><a href="#ov"> Overview </a></li>
+          <li><a href="#gd"> Grading </a></li>
+          <li><a href="#rd"> Recommended Readings </a></li>
+          <li><a href="#a2"> Assignment 2 </a></li>
+        </ol>
+      </div>
+   
+      <article>
+        <a name= "ov"></a>
+
+        <h2><u>Overview</u></h2>
+        <p>
+        <b>Submission.  </b> 
+        Submit on blackboard by 11:59pm the day before the class they are due.    
+        <ul>
+          <li>Commented code (lnameN.sas, where N indicates the assignment number and lname is your last name)</li>
+          <li>Output from your code (lnameN.log & (lnameN.lst or lnameN.html)) </li>
+        </ul>
+        </p>
+        <p>
+        <b>Late Assignments.  </b>
+        Each student will be allowed one late assignment, due 7 days from the due date.  NO other late assignments or make up will be accepted.
+        </p>
+        <p>
+        <b>Collaboration:  </b>
+         Collaboration on assignments, in class labs and homeworks, IS encouraged.  However, what you hand in must be in your own writing/typing.  Good scholarship requires that all collaborations must be acknowledged.  Thus, if you collaborate on the solution of the problem set, we expect that you list your collaborators at the top of the page.  Collaboration on in-class evaluations (quizzes, mid-terms, and the final exams) is, of course, a violation.  This includes a discussion of questions on a quiz, midterm, or final with students from sections that has not yet taken the evaluation.
+        </p>
+        <p>
+        <b>Plagiarism:  </b>
+         If you consult any outside sources when doing your work, you are expect to further document these sources.  Give credit where credit is due.  Plagiarism will not be tolerated.  
+        </p>
+        <p>
+        All handed in homework should state at the top any assistance with debugging and programming, as well as citations of any program segments copied from a website.
+        </p>
+        <p>
+        <b>Seeking Help:  </b>
+        Language classes are cumulative; don't fall behind.  Ask for assistance from your fellow students or from the instructor, especially if you find yourself struggling.  But remember in the end, programming classes are like skill building math classes.  Either you know how to do them or not.  No amount of watching others or the instructor program or debug it will suffice for you to build these skills.  Only your hard work to work through them will build your skills.  It is a lot of work to build these skills, but data skills are highly valuable in the job market in the modern digital world, so it will be well worth your effort.  Furthermore, once you learn to think in this manner, it's not something you forget.
+        </p>
+        <p>
+        <b>Elegance:  </b>
+        There is always more than one way to say something, but some ways will be more "elegant" than others.  You will learn to recognize elegant expressions as you become more familiar with a language and use the elegant idioms as you become more skilled.
+        </p>
+
+  	  <a name= "gd"></a>
+        <br><br>
+        <h2><u>Guideline for assignment grading (Total of 8)</u></h2>
+          <ul>
+            <li>Assignment (Total 4)
+              <ul>
+                <li>1: Submitted code that does not run.</li>
+                <li>2: Mostly running but incorrect.</li>
+                <li>3: Correct and meets requirements (i.e uses programming constructs required)</li>
+                <li>4: Correct & Elegant. Comments.</li>
+              </ul>
+            </li>
+            <li>Answers to questions on the assignment (Total 1) </li>
+            <li>Midpoint Check email (Total 1) </li>
+            <li>Lab (Total 2) - DON'T forget to submit this with this assignment </li>
+          </ul>
+      
+  	  <a name= "rd"></a>
+        <br><br>
+        <h2><u>Required & recommended readings for this assignment</h2></u>
+        <ol>
+          <li>SAS: RECOMMENDED - appropriate chapters in <a href="http://proquest.safaribooksonline.com.lib-ezproxy.tamu.edu:2048/9781612903439?uicode=tamucollst" target="_blank">The little SAS book</a></li>
+        </ol>
+      
+  	  <a name= "a2"></a>
+        <br><br>
+        <h2><u>Assignment 2: Variables & Conditionals</h2></u>
+        <p>
+          In this assignment, you will learn the basics of working with one dataset.  By the end of this assignment, you should be able to
+          <ol>
+            <li>To write conditional logic codes</li>
+            <li>Subset columns (variables) & rows (observations) from a given table</li>
+            <li>Recode, rename variables and calculate new variables</li>
+            <li>Label variables and values</li>
+          </ol>
+        </p>
+        <p>
+          <b>Setting Up</b>
+          <ol>
+            <li>Create a working directory, often referred to as pwd (present working directory), where you will work on this assignment. For example, "assign2". You will be writing code in assign2/</li>
+            <li>Create a sub directory data/. When you are writing programs, it is often a good idea to put your code in a different directory from your datasets, because if you are writing a lot of code, or working with a lot of datasets, you will stay more organized.</li>
+          </ol>
+        </p>
+        <p>
+          <b>Pick a problem (See P3.1):</b> 
+          Pick a content area you are interested to explore, with datasets you know you can access.  Talk to your advisors if you have an RAship about potential datasets in your content area.  You will be working with this dataset for many of the assignments so that you can use the class to explore your interest.  OR you may continue to use the google flue dataset from Assignment 1. 
+        </p>
+        <p>
+          <b>Getting Data:</b>
+          Pick a dataset. It can evolve over the semester.  Requirements for the dataset
+          <ul>
+            <li>At least 20 variables, both numerical and categorical variables</li>
+            <li>At least 1000 observations </li>
+          </ul>
+        <p>
+          <u>Midpoint check: Email Dr. Kum a short note by next week (2/2) on what dataset you will be using to do assignment 2.</u>
+        </p>
+        <p>
+        <b>Describing the Data (See P3.2)</b>
+          <ul>
+            <li>Describe the dataset, including the number of obs and variables that are in your subset of data</li>
+            <li>Check your data.  Examine each variable for its range (min to max) or number of categories. Discuss any anomalies you see in this data (such as an abnormally high or low values) </li>
+          </ul>
+        </p>
+        <p>
+          <b><u>P1. Cleaning and Manipulating the Data</u></b><br>
+          Your program should do the following.  Please indicate BEFORE the code in comments where each of these items occurs in your code.
+          <ul>
+            <li>P1.1  subset vars (You need at least one of each continuous, categorical, binary, id var. If you are missing a type, create a new variable of that type.)</li>
+            <li>P1.2  subset obs</li>
+            <li>P1.3  rename at least 3 variables</li>
+            <li>P1.4  label at least 3 variables</li>
+            <li>P1.5  label values for at least 3 variables</li>
+            <li>P1.6 Only for STATA. label your dataset</li>
+            <li>P1.7  Recode at least 3 variables (use your imagination, if not essential to your analysis)</li>
+            <li>P1.8 Construct at least 3 new variables (use your imagination, if not essential to your analysis)</li>
+            <li>P1.9 Save out your new data permanently</li>
+          </ul>
+        </p>
+        <p>
+          <b><u>P2.  Learning Your Data (Descriptive Analysis)</b></u><br>
+          Your program should also do the following.  Please indicate BEFORE the code in comments where each of these items occurs in your code.
+          <ul>
+            <li>P2.1 List each type of variable (continuous, categorical, binary, id). (see P3.3)</li>
+            <li>P2.2  Create summary statistics for all your continuous & binary variables</li>
+            <li>P2.3  Create tabulations for each categorical variables</li>
+            <li>P2.4  Answer one interesting question using at least 3 variables (see P3.4)</li>
+          </ul>
+        <p>
+          <b><u>P3.  Readme file </b></u><br> 
+          Create a text file called readme.txt in your working directory (assign2/) Answer the following questions in the readme file send as attachment with code and output.
+          <ol>
+            <li>Briefly describe the problem you are interested to pursue
+            <li>Briefly describe what data you will be using. Include number of obs, vars, and total file size.
+            <li>P2.1 List each type of variable (continuous, categorical, binary, id). 
+            <li>P2.4 Answer one interesting question using at least 3 variables. Explain your answer.
+          </ol>
+        </p>
+        <br><br>
+      </article>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{% set type = 'data' %}
+{% extends base_template %}
+
+{% block breadcrumb %}
+  {{ super() }}
+  <li><a href="{{prefix_path}}/{{prob_base}}/data">Data</a></li>
+{% endblock %}
+
+{% block mainContent %}
+
+{% if raw_htmls %}
+
+{% for raw_html in raw_htmls %}
+	{{raw_html.replace("~~PROB_BASE~~", prefix_path + "/" + prob_base)  }}
+{% endfor %}
+{% endif %}
+
+{% include 'link_file.html' %}
+
+{% endblock %}

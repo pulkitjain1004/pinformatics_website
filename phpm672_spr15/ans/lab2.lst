@@ -1,0 +1,408 @@
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   1
+
+                                                         The FREQ Procedure
+
+                                                                        Cumulative    Cumulative
+                                    CIGEVER    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                          1       30335       52.42         30335        52.42  
+                                          2       27538       47.58         57873       100.00  
+
+
+                                                                        Cumulative    Cumulative
+                                    ALCEVER    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                          1       41238       71.26         41238        71.26  
+                                          2       16620       28.72         57858        99.97  
+                                         94          11        0.02         57869        99.99  
+                                         97           4        0.01         57873       100.00  
+
+
+                                                                        Cumulative    Cumulative
+                                    COCEVER    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                          1        6467       11.17          6467        11.17  
+                                          2       51384       88.79         57851        99.96  
+                                         94           8        0.01         57859        99.98  
+                                         97          14        0.02         57873       100.00  
+
+
+                                                                       Cumulative    Cumulative
+                                    MJEVER    Frequency     Percent     Frequency      Percent
+                                    -----------------------------------------------------------
+                                         1       22897       39.59         22897        39.59  
+                                         2       34935       60.41         57832       100.00  
+
+                                                       Frequency Missing = 41
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   2
+
+                                                       The CONTENTS Procedure
+
+             Data Set Name        DATA.MYNSDUH                                             Observations          57873
+             Member Type          DATA                                                     Variables             29   
+             Engine               V9                                                       Indexes               0    
+             Created              Sat, Feb 01, 2014 12:07:38 AM                            Observation Length    232  
+             Last Modified        Sat, Feb 01, 2014 12:07:38 AM                            Deleted Observations  0    
+             Protection                                                                    Compressed            NO   
+             Data Set Type                                                                 Sorted                NO   
+             Label                                                                                                    
+             Data Representation  SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64                               
+             Encoding             latin1  Western (ISO)                                                               
+
+
+                                                 Engine/Host Dependent Information
+
+                        Data Set Page Size          24576                                                  
+                        Number of Data Set Pages    552                                                    
+                        First Data Page             1                                                      
+                        Max Obs per Page            105                                                    
+                        Obs in First Data Page      82                                                     
+                        Number of Data Set Repairs  0                                                      
+                        Filename                    /opt/HPM/usr/kum/phpm672/lab2/sas/data/mynsduh.sas7bdat
+                        Release Created             9.0301M2                                               
+                        Host Created                Linux                                                  
+                        Inode Number                7340202                                                
+                        Access Permission           rw-r--r--                                              
+                        Owner Name                  kum                                                    
+                        File Size (bytes)           13574144                                               
+
+
+                                             Alphabetic List of Variables and Attributes
+ 
+                                   #    Variable      Type    Len    Format     Label
+
+                                   3    ALCEVER       Num       8                                 
+                                   8    CAIDCHIP      Num       8                                 
+                                  14    CATAGE        Num       8                                 
+                                   9    CHAMPUS       Num       8                                 
+                                   2    CIGEVER       Num       8                                 
+                                   5    COCEVER       Num       8                                 
+                                  17    COUTYP2       Num       8                                 
+                                  12    HEALTH        Num       8    HEALTH.                      
+                                  11    INCOME        Num       8                                 
+                                  13    IRSEX         Num       8                                 
+                                   7    MEDICARE      Num       8                                 
+                                   4    MJEVER        Num       8                                 
+                                  15    NEWRACE2      Num       8                                 
+                                  10    PRVHLTIN      Num       8                                 
+                                   6    TXEVER        Num       8                                 
+                                  19    balcever      Num       8                                 
+                                  23    bcaidchip     Num       8                                 
+                                  24    bchampus      Num       8                                 
+                                  18    bcigever      Num       8                                 
+                                  20    bcocever      Num       8                                 
+                                  22    bmedicare     Num       8                                 
+                                  21    bmjever       Num       8                                 
+                                  25    bprvhltin     Num       8                                 
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   3
+
+                                                       The CONTENTS Procedure
+
+                                             Alphabetic List of Variables and Attributes
+ 
+                                   #    Variable      Type    Len    Format     Label
+
+                                  28    ccaseid       Num       8                                 
+                                  29    ccaseid2      Char      6                                 
+                                   1    ncaseid       Num       8                                 
+                                  26    subst         Num       8               Substance Use     
+                                  27    type_insur    Num       8    TINSUR.    Type of Insturance
+                                  16    wrkhrs        Num       8                                 
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   4
+
+                                                                                                                t
+                                                                                              b  b     b        y
+                                   M  C     P                           N         b  b  b     m  c  b  p        p         c
+                n  C  A     C      E  A  C  R                           E      C  c  a  c  b  e  a  c  r        e      c  c
+                c  I  L  M  O   T  D  I  H  V  I        H            C  W   w  O  i  l  o  m  d  i  h  v        _      c  a
+                a  G  C  J  C   X  I  D  A  H  N        E         I  A  R   r  U  g  c  c  j  i  d  a  h  s     i      a  s
+                s  E  E  E  E   E  C  C  M  L  C        A         R  T  A   k  T  e  e  e  e  c  c  m  l  u     n      s  e
+          O     e  V  V  V  V   V  A  H  P  T  O        L         S  A  C   h  Y  v  v  v  v  a  h  p  t  b     s      e  i
+          b     i  E  E  E  E   E  R  I  U  I  M        T         E  G  E   r  P  e  e  e  e  r  i  u  i  s     u      i  d
+          s     d  R  R  R  R   R  E  P  S  N  E        H         X  E  2   s  2  r  r  r  r  e  p  s  n  t     r      d  2
+
+            1   1  2  2  2  2   2  2  2  2  1  3  (03) Good       1  1  1   .  2  0  0  0  0  0  0  0  1  0  Private   1   1
+            2   2  2  1  1  1   1  2  2  2  1  2  (01) Excellent  2  4  2  40  1  0  1  1  1  0  0  0  1  1  Private   2   2
+            3   3  1  1  1  2   2  2  2  2  1  1  (02) Very good  1  1  1   .  1  1  1  0  1  0  0  0  1  1  Private   3   3
+            4   4  1  1  1  2   2  2  2  1  2  2  (03) Good       1  2  2   .  2  1  1  0  1  0  0  1  0  1  Public    4   4
+            5   5  1  1  1  1   2  2  1  2  2  4  (04) Fair       1  4  1   .  1  1  1  1  1  0  1  0  0  1  Public    5   5
+            6   6  2  2  2  2  91  2  1  2  2  1  (02) Very good  2  1  1   .  3  0  0  0  0  0  1  0  0  0  Public    6   6
+            7   7  1  1  2  2   2  2  1  2  2  2  (02) Very good  2  2  1   .  2  1  1  0  0  0  1  0  0  1  Public    7   7
+            8   8  1  2  1  2   2  2  1  2  2  3  (02) Very good  2  1  7   .  2  1  0  0  1  0  1  0  0  1  Public    8   8
+            9   9  2  2  2  2  91  2  2  2  1  2  (03) Good       2  1  1   .  2  0  0  0  0  0  0  0  1  0  Private   9   9
+           10  10  1  1  1  2   2  2  1  2  2  2  (03) Good       2  2  1  50  1  1  1  0  1  0  1  0  0  1  Public   10  10
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   5
+
+                                                         The FREQ Procedure
+
+                                                                        Cumulative    Cumulative
+                                   bcigever    Frequency     Percent     Frequency      Percent
+                                   -------------------------------------------------------------
+                                          0       27538       47.58         27538        47.58  
+                                          1       30335       52.42         57873       100.00  
+
+
+                                                                        Cumulative    Cumulative
+                                   balcever    Frequency     Percent     Frequency      Percent
+                                   -------------------------------------------------------------
+                                          0       16620       28.73         16620        28.73  
+                                          1       41238       71.27         57858       100.00  
+
+                                                       Frequency Missing = 15
+
+
+                                                                        Cumulative    Cumulative
+                                   bcocever    Frequency     Percent     Frequency      Percent
+                                   -------------------------------------------------------------
+                                          0       51384       88.82         51384        88.82  
+                                          1        6467       11.18         57851       100.00  
+
+                                                       Frequency Missing = 22
+
+
+                                                                        Cumulative    Cumulative
+                                    bmjever    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                          0       34935       60.41         34935        60.41  
+                                          1       22897       39.59         57832       100.00  
+
+                                                       Frequency Missing = 41
+
+
+                                                                         Cumulative    Cumulative
+                                   bmedicare    Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                           0       54767       94.95         54767        94.95  
+                                           1        2910        5.05         57677       100.00  
+
+                                                       Frequency Missing = 196
+
+
+                                                                         Cumulative    Cumulative
+                                   bcaidchip    Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                           0       46633       81.20         46633        81.20  
+                                           1       10800       18.80         57433       100.00  
+
+                                                       Frequency Missing = 440
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   6
+
+                                                         The FREQ Procedure
+
+                                                                        Cumulative    Cumulative
+                                   bchampus    Frequency     Percent     Frequency      Percent
+                                   -------------------------------------------------------------
+                                          0       55783       96.69         55783        96.69  
+                                          1        1909        3.31         57692       100.00  
+
+                                                      Frequency Missing = 181
+
+
+                                                                         Cumulative    Cumulative
+                                   bprvhltin    Frequency     Percent     Frequency      Percent
+                                   --------------------------------------------------------------
+                                           0       22689       39.45         22689        39.45  
+                                           1       34818       60.55         57507       100.00  
+
+                                                       Frequency Missing = 366
+
+
+                                                            Substance Use
+ 
+                                                                       Cumulative    Cumulative
+                                     subst    Frequency     Percent     Frequency      Percent
+                                     ----------------------------------------------------------
+                                         0       14679       25.36         14679        25.36  
+                                         1       43194       74.64         57873       100.00  
+
+
+                                                         Type of Insturance
+ 
+                                      type_                             Cumulative    Cumulative
+                                      insur    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    None          11305       19.53         11305        19.53  
+                                    Public        11750       20.30         23055        39.84  
+                                    Private       31913       55.14         54968        94.98  
+                                    Both           2905        5.02         57873       100.00  
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   7
+
+                                     Obs    subst    bcigever    balcever    bcocever    bmjever
+
+                                       1      0          0           0           0          0   
+                                       6      0          0           0           0          0   
+                                       9      0          0           0           0          0   
+                                      11      0          0           0           0          0   
+                                      12      0          0           0           0          0   
+                                      16      0          0           0           0          0   
+                                      18      0          0           0           0          0   
+                                      19      0          0           0           0          0   
+                                      21      0          0           0           0          0   
+                                      24      0          0           0           0          0   
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   8
+
+                                     Obs    subst    bcigever    balcever    bcocever    bmjever
+
+                                       2      1          0           1           1          1   
+                                       3      1          1           1           0          1   
+                                       4      1          1           1           0          1   
+                                       5      1          1           1           1          1   
+                                       7      1          1           1           0          0   
+                                       8      1          1           0           0          1   
+                                      10      1          1           1           0          1   
+                                      13      1          1           1           0          1   
+                                      14      1          1           1           0          0   
+                                      15      1          1           1           0          1   
+                                                           The SAS System                       00:07 Saturday, February 1, 2014   9
+
+                                          type_
+                                   Obs    insur    bmedicare    bcaidchip    bchampus    bprvhltin
+
+                                    13    None         0            0            0           0    
+                                    19    None         0            0            0           0    
+                                    20    None         0            0            0           0    
+                                    34    None         0            0            0           0    
+                                    43    None         0            0            0           0    
+                                    44    None         0            0            0           0    
+                                    45    None         0            0            0           0    
+                                    51    None         0            0            0           0    
+                                    52    None         0            0            0           0    
+                                    69    None         0            0            0           0    
+                                                           The SAS System                       00:07 Saturday, February 1, 2014  10
+
+                                          type_
+                                   Obs    insur     bmedicare    bcaidchip    bchampus    bprvhltin
+
+                                     4    Public        0            0            1           0    
+                                     5    Public        0            1            0           0    
+                                     6    Public        0            1            0           0    
+                                     7    Public        0            1            0           0    
+                                     8    Public        0            1            0           0    
+                                    10    Public        0            1            0           0    
+                                    16    Public        0            1            0           0    
+                                    30    Public        0            1            0           0    
+                                    33    Public        1            1            0           0    
+                                    40    Public        1            1            0           0    
+                                                           The SAS System                       00:07 Saturday, February 1, 2014  11
+
+                                          type_
+                                  Obs     insur     bmedicare    bcaidchip    bchampus    bprvhltin
+
+                                    1    Private        0            0            0           1    
+                                    2    Private        0            0            0           1    
+                                    3    Private        0            0            0           1    
+                                    9    Private        0            0            0           1    
+                                   11    Private        0            0            0           1    
+                                   12    Private        0            0            0           1    
+                                   14    Private        0            0            0           1    
+                                   15    Private        0            0            0           1    
+                                   17    Private        0            0            0           1    
+                                   18    Private        0            0            0           1    
+                                                           The SAS System                       00:07 Saturday, February 1, 2014  12
+
+                                          type_
+                                   Obs    insur    bmedicare    bcaidchip    bchampus    bprvhltin
+
+                                    29    Both         0            1            0           1    
+                                    49    Both         0            1            0           1    
+                                    80    Both         0            1            0           1    
+                                    83    Both         1            0            1           1    
+                                    99    Both         0            0            1           1    
+                                   106    Both         0            0            1           1    
+                                   112    Both         1            0            0           1    
+                                   114    Both         1            0            0           1    
+                                   128    Both         1            0            0           1    
+                                   135    Both         .            1            0           1    
+                                                           The SAS System                       00:07 Saturday, February 1, 2014  13
+
+                                                        The MEANS Procedure
+
+             Variable      Label                     N            Mean         Std Dev         Minimum         Maximum
+             ---------------------------------------------------------------------------------------------------------
+             ncaseid                             57873        28937.00        16706.64       1.0000000        57873.00
+             CIGEVER                             57873       1.4758350       0.4994200       1.0000000       2.0000000
+             ALCEVER                             57873       1.3114924       1.5719745       1.0000000      97.0000000
+             MJEVER                              57832       1.6040773       0.4890522       1.0000000       2.0000000
+             COCEVER                             57873       1.9239542       1.8599087       1.0000000      97.0000000
+             TXEVER                              57873      25.1962746      39.1868485       1.0000000      98.0000000
+             MEDICARE                            57873       2.2633007       5.3872530       1.0000000      98.0000000
+             CAIDCHIP                            57873       2.5129853       8.0203623       1.0000000      98.0000000
+             CHAMPUS                             57873       2.2567519       5.1783006       1.0000000      98.0000000
+             PRVHLTIN                            57873       1.9826171       7.3880696       1.0000000      98.0000000
+             INCOME                              57873       2.4677656       1.1172928       1.0000000       4.0000000
+             HEALTH                              57873       2.1317195       1.4315365       1.0000000      97.0000000
+             IRSEX                               57873       1.5196724       0.4996172       1.0000000       2.0000000
+             CATAGE                              57873       2.2656852       1.1505191       1.0000000       4.0000000
+             NEWRACE2                            57873       2.4312719       2.3022378       1.0000000       7.0000000
+             wrkhrs                              26064      34.7063766      14.5240862       1.0000000      61.0000000
+             COUTYP2                             57873       1.7751629       0.7712793       1.0000000       3.0000000
+             bcigever                            57873       0.5241650       0.4994200               0       1.0000000
+             balcever                            57858       0.7127450       0.4524855               0       1.0000000
+             bcocever                            57851       0.1117872       0.3151072               0       1.0000000
+             bmjever                             57832       0.3959227       0.4890522               0       1.0000000
+             bmedicare                           57677       0.0504534       0.2188805               0       1.0000000
+             bcaidchip                           57433       0.1880452       0.3907517               0       1.0000000
+             bchampus                            57692       0.0330895       0.1788719               0       1.0000000
+             bprvhltin                           57507       0.6054567       0.4887566               0       1.0000000
+             subst         Substance Use         57873       0.7463584       0.4350986               0       1.0000000
+             type_insur    Type of Insturance    57873       1.4564823       0.8597641               0       3.0000000
+             ccaseid                             57873        28937.00        16706.64       1.0000000        57873.00
+             ---------------------------------------------------------------------------------------------------------
+                                                           The SAS System                       00:07 Saturday, February 1, 2014  14
+
+                                                         The FREQ Procedure
+
+                                                      Table of subst by HEALTH
+
+                          subst(Substance Use)     HEALTH
+
+                          Frequency|(01) Exc|(02) Ver|(03) Goo|(04) Fai|(05) Poo|(94) DON|(97) REF|  Total
+                                   |ellent  |y good  |d       |r       |r       |'T KNOW |USED    |
+                          ---------+--------+--------+--------+--------+--------+--------+--------+
+                                 0 |   5072 |   5881 |   3049 |    604 |     70 |      3 |      0 |  14679
+                          ---------+--------+--------+--------+--------+--------+--------+--------+
+                                 1 |  11266 |  17408 |  10832 |   3129 |    554 |      3 |      2 |  43194
+                          ---------+--------+--------+--------+--------+--------+--------+--------+
+                          Total       16338    23289    13881     3733      624        6        2    57873
+                                                           The SAS System                       00:07 Saturday, February 1, 2014  15
+
+                                                         The FREQ Procedure
+
+                                                     Table of INCOME by TXEVER
+
+                     INCOME     TXEVER
+
+                     Frequency|       1|       2|      81|      85|      91|      94|      97|      98|  Total
+                     ---------+--------+--------+--------+--------+--------+--------+--------+--------+
+                            1 |   1002 |   9044 |      1 |      0 |    376 |     21 |     21 |      6 |  10471
+                     ---------+--------+--------+--------+--------+--------+--------+--------+--------+
+                            2 |   1173 |  12884 |      0 |      1 |    459 |     17 |     23 |     11 |  14568
+                     ---------+--------+--------+--------+--------+--------+--------+--------+--------+
+                            3 |    430 |   6482 |      0 |      0 |    156 |      7 |      8 |      1 |   7084
+                     ---------+--------+--------+--------+--------+--------+--------+--------+--------+
+                            4 |    558 |  10312 |      1 |      0 |    183 |      7 |      9 |      1 |  11071
+                     ---------+--------+--------+--------+--------+--------+--------+--------+--------+
+                     Total        3163    38722        2        1     1174       52       61       19    43194
+                                                           The SAS System                       00:07 Saturday, February 1, 2014  16
+
+                                                         The FREQ Procedure
+
+                                                    Table of HEALTH by NEWRACE2
+
+                      HEALTH           NEWRACE2
+
+                      Frequency       |       1|       2|       3|       4|       5|       6|       7|  Total
+                      ----------------+--------+--------+--------+--------+--------+--------+--------+
+                      (01) Excellent  |    999 |    136 |     16 |      1 |     49 |     26 |    139 |   1366
+                      ----------------+--------+--------+--------+--------+--------+--------+--------+
+                      (02) Very good  |   1536 |    217 |     26 |      9 |     54 |     37 |    188 |   2067
+                      ----------------+--------+--------+--------+--------+--------+--------+--------+
+                      (03) Good       |    828 |    187 |     17 |     11 |     32 |     36 |    170 |   1281
+                      ----------------+--------+--------+--------+--------+--------+--------+--------+
+                      (04) Fair       |    154 |     50 |      5 |      2 |      7 |      3 |     66 |    287
+                      ----------------+--------+--------+--------+--------+--------+--------+--------+
+                      (05) Poor       |     17 |      4 |      3 |      0 |      0 |      0 |      5 |     29
+                      ----------------+--------+--------+--------+--------+--------+--------+--------+
+                      (97) REFUSED    |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      1
+                      ----------------+--------+--------+--------+--------+--------+--------+--------+
+                      Total               3534      594       67       23      142      102      569     5031

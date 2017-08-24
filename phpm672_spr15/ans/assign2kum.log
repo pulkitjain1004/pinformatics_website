@@ -1,0 +1,245 @@
+1                                                          The SAS System                          00:28 Saturday, February 15, 2014
+
+NOTE: Copyright (c) 2002-2010 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.3 (TS1M2) 
+      Licensed to TEXAS A&M UNIVERSITY - SFA T&R, Site 70148637.
+NOTE: This session is executing on the Linux 2.6.32-358.18.1.el6.x86_64 (LIN X64) platform.
+
+
+
+NOTE: Enhanced analytical products:
+
+SAS/STAT 12.1, SAS/ETS 12.1, SAS/OR 12.2, SAS/IML 12.1, SAS/QC 12.1
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.12 seconds
+      cpu time            0.02 seconds
+      
+1          /*-------------------------
+2           |   Assignment 2: No loops
+3           |   Hye-Chung Kum (2/12/2014)
+4           |   Hospital leve Tx quarterly discharge data
+5           |   http://www.dshs.state.tx.us/thcic/hospitals/Inpatientpudf.shtm
+6           |   REQUIRED assignment: 3.1, 3.2, 3.3;
+7           |   Optional Advanced Excercise: 3.4-3.8;
+8           |-------------------------*/
+9          
+10         libname data 'data/';
+NOTE: Libref DATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /opt/HPM/usr/kum/phpm672/assign3/sas/data
+11         
+12         * P1.5 label values for at least 3 variables;
+13         proc format;
+14             value bool
+15                 0='No' 1='Yes';
+NOTE: Format BOOL has been output.
+16             value miss
+17                 .='Missing'
+18                 low-<0='-'
+19                 0='0'
+20                 0<-high='+';
+NOTE: Format MISS has been output.
+2                                                          The SAS System                          00:28 Saturday, February 15, 2014
+
+21         
+22         * take a quick look at the input data set;
+
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+23         proc print data=data.ipstatw(obs=10);
+24         
+25         * P1.1 Subset vars - create a new data subset named myipstatw;
+26         * Dropped Hospital name to protect identity of hospital;
+27         * P1.3 rename at least 3 variables ;
+28         * P1.9 Save out your new data permanently;
+
+NOTE: There were 10 observations read from the data set DATA.IPSTATW.
+NOTE: The PROCEDURE PRINT printed page 1.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.05 seconds
+      
+
+29         data data.myipstatw;
+30         set data.ipstatw(drop=hospname rename=(THCIC_ID=hid hospcity=hcity county=cntyname));
+31         
+32         * P1.2 subset obs;
+33         * Only look at hospitals in the major cities;
+34         where cntyname in ('Bexar', 'Dallas', 'Travis', 'Harris');
+35         
+36         * P1.4 label at least 3 variables ;
+37         * Note: label statement can not use arrays;
+38         label
+39            hid = 'Texas Health Care Information Collection ID'
+40            hcity = 'Hospital City'
+41            cntyname = 'Hospital County'
+42            dc20101 = 'Inpatient Discharge'
+43            dc20102 = 'Inpatient Discharge'
+44            dc20103 = 'Inpatient Discharge'
+45            dc20104 = 'Inpatient Discharge'
+46            dc20111 = 'Inpatient Discharge'
+47            dc20112 = 'Inpatient Discharge'
+48            dc20113 = 'Inpatient Discharge'
+49            dc20114 = 'Inpatient Discharge'
+50            dc20121 = 'Inpatient Discharge'
+51            dc20122 = 'Inpatient Discharge'
+52            dc20123 = 'Inpatient Discharge'
+53            dc20124 = 'Inpatient Discharge'
+54           ;
+55         
+56         * ASSIGNMENT 3.3: Find the first time period (YYYYQ) each hospital had data using arrays & condtional loops;
+57         * Do this LAST!!! Do 3.1 & 3.2 below first, then do this one;
+58         * Why MUST this code be here (i.e. located here)?;
+59         if dc20101~=. then first=20101;
+60         else if dc20102~=. then first=20102;
+61         else if dc20103~=. then first=20103;
+62         else if dc20104~=. then first=20104;
+63         else if dc20111~=. then first=20111;
+64         else if dc20112~=. then first=20112;
+3                                                          The SAS System                          00:28 Saturday, February 15, 2014
+
+65         else if dc20113~=. then first=20113;
+66         else if dc20114~=. then first=20114;
+67         else if dc20121~=. then first=20121;
+68         else if dc20122~=. then first=20122;
+69         else if dc20123~=. then first=20123;
+70         else if dc20124~=. then first=20124;
+71         
+72         * OPTIONAL ADVANCED 3.4: Find the last time period (YYYYQ) each hospital had data;
+73         
+74         * P1.7 Recode at least 3 variables (use your imagination, if not essential to your analysis);
+75         * ASSIGNMENT 3.1: recode the discharge variables using arrays and counting loop;
+76         if dc20101=. then dc20101=0;
+77         if dc20102=. then dc20102=0;
+78         if dc20103=. then dc20103=0;
+79         if dc20104=. then dc20104=0;
+80         if dc20111=. then dc20111=0;
+81         if dc20112=. then dc20112=0;
+82         if dc20113=. then dc20113=0;
+83         if dc20114=. then dc20114=0;
+84         if dc20121=. then dc20121=0;
+85         if dc20122=. then dc20122=0;
+86         if dc20123=. then dc20123=0;
+87         if dc20124=. then dc20124=0;
+88         
+89         * P1.8 Construct at least 3 new variables (use your imagination, if not essential to your analysis);
+90         * Annual discharge;
+91         * ASSIGNMENT 3.2: Create annual discharge variables using arrays and counting loop;
+92         * OPTIONAL ADVANCED 3.5 Try using a two dimensional array with a nested do loop;
+93         * OPTIONAL ADVANCED 3.6: If two dimensional arrays are confusing, setup multiple arrays and use a nested do loop;
+94         tot2010 = dc20101+dc20102+dc20103+dc20104;
+95         tot2011 = dc20111+dc20112+dc20113+dc20114;
+96         tot2012 = dc20121+dc20122+dc20123+dc20124;
+97         
+98         * OPTIONAL ADVANCED 3.7: Find the annual average discharge;
+99         * (HINT: first count how many quarters of data there is per hospital, then sum, then divide, then multply by 4);
+100        
+101        * OPTIONAL ADVANCED 3.8: Overall interesting question to try to answer;
+102        * Q: Which hospital had the largest(or smallest) percentage increase in year 2012;
+103        * We do not have any indication of size of hospital in the data, so percentage increase;
+104        * is the only way we can adjust for size;
+105        
+106        * P2.1 List each type of variable (continuous, categorical, binary, id). (see P3.3) ;
+107        * id: hid;
+108        * continuous: dcYYYYQ (20101-20124);
+109        * categorical: hcity cntyname;
+110        * binary: NA;
+
+NOTE: There were 234 observations read from the data set DATA.IPSTATW.
+      WHERE cntyname in ('Bexar', 'Dallas', 'Harris', 'Travis');
+NOTE: The data set DATA.MYIPSTATW has 234 observations and 19 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+111        proc contents data=data.myipstatw;
+112        
+113        * P2.2 Create summary statistics for all your continuous & binary variables ;
+4                                                          The SAS System                          00:28 Saturday, February 15, 2014
+
+
+NOTE: The PROCEDURE CONTENTS printed page 2.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+114        proc print data=data.myipstatw(obs=10);
+
+NOTE: There were 10 observations read from the data set DATA.MYIPSTATW.
+NOTE: The PROCEDURE PRINT printed page 3.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+115        proc means;
+116        
+117        * P2.3 Create tabulations for each categorical variables ;
+
+NOTE: There were 234 observations read from the data set DATA.MYIPSTATW.
+NOTE: The PROCEDURE MEANS printed page 4.
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.02 seconds
+      
+
+118        proc freq data=data.myipstatw;
+119            tables hcity*cntyname/nocol norow nopercent;
+120        
+
+NOTE: There were 234 observations read from the data set DATA.MYIPSTATW.
+NOTE: The PROCEDURE FREQ printed pages 5-6.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+121        proc freq data=data.myipstatw;
+122            * P1.5 label values for at least 3 variables;
+123            * Using temporary formatting to check for missing;
+124            format dc20101-dc20104 dc20111-dc20114 dc20121-dc20124 miss.;
+125            tables dc20101-dc20104 dc20111-dc20114 dc20121-dc20124;
+126        
+127        run;
+
+NOTE: There were 234 observations read from the data set DATA.MYIPSTATW.
+NOTE: The PROCEDURE FREQ printed pages 7-8.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+128        
+129        
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+5                                                          The SAS System                          00:28 Saturday, February 15, 2014
+
+      real time           0.27 seconds
+      cpu time            0.12 seconds
+      

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>Assignment 4 Suppliment</title>
+    <link href="mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width:751px)"/>
+    <link href="nav.css" rel="stylesheet" type="text/css" media="screen and (min-width:750px)"/>
+    <link href="print.css" rel="stylesheet" type="text/css" media="print"/>          
+
+	<style type="text/css">
+
+    </style>	
+</head>
+
+<body>
+	<header>
+		<h1> <center> Assign #4 [Suppliment]: Reshaping & Combining Tables </h1>
+		<h2> <center> Recommended Work Time: Two Weeks </center> </h2>
+	</header>
+	<div id="wrapper">	
+		<nav id="side">
+	    	<ul>
+		        <li><a href="index.html"> Home</a></li>
+		        <li><a href="A1.html"> Assignment 1 </a></li>
+		        <li><a href="A2.html"> Assignment 2 </a>
+		        	<ul>
+		        		<li><a href="L2.html"> Lab 2 </a></li>
+		        		<li><a href="L2S.html"> Lab 2 Supp. </a></li>
+		        		<li><a href="A2.html"> Assignment 2 </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A3.html"> Assignment 3 </a>
+		        	<ul>
+		        		<li><a href="L3.html"> Lab 3 </a></li>
+		        		<li><a href="A3.html"> Assignment 3 </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A4.html"> Assignment 4</a>
+		        	<ul>
+		        		<li><a href="data/lab4.zip" dwonload> Lab4 </a></li>
+		        		<li><a href="A4.html"> Assignment 4 </a></li>
+		        		<li><a href="A4A.html"> Assignment 4 Alt. </a></li>
+		        		<li><a href="A4S.html"> Assignment 4 Supp. </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A5.html"> Assignment 5</a></li>       
+		        <li><a href="Final.html"> Final Project</a></li>
+		    </ul>
+	    </nav>
+		<article>
+			<b>IMPORTANT NOTE: </b>
+			<ul>
+				<li>This document supplements the full assignment 4 on the website, and is NOT a stand along document.</li>
+				<li>This is optional submission for only those that have an accumulative grade less than 90% in class. The assignment is designed so that you can do this, and than do one more thing to get the full 12 points and complete the full assignment.</li>
+				<li>The only difference is that you will be working with the TINY datasets so that you can see the full dataset as you build your process.  Also, I have left out the problem data rows.  You should be using proc print data=fn(obs=100) in between data steps and proc steps to see what your code does to the tables in each step.</li>
+				<li>All submissions are IDENTICAL to the original assignment. I made sure that the questions are still valid in this tiny problem.  Of course, the answers will be different.</li>
+				<li>You must submit sas code that answers your questions (i.e. if you manually do this without using sas code, you will not get credit)</li>
+				<li>A full submission of this tiny dataset is 11 points.  1 additional point can be obtained, if you take the code you wrote, and make it run on the big dataset.  See below of hints on how to do this.</li>
+			</ul>
+		</article>
+		<article>
+			<p>
+				<b>&lt SAME as in the assignment 4 handout &gt</b><br>
+				<b>Setting Up:</b> Get data from BB into the appropriate folder: The links are provided only as a reference for documentation of the data. All data are provided on BB in the Assignments folder as a zipped file.  Look at the data using proc contents/proc print (use the label option) to understand what variables you have. Do NOT open these tables using point & click.  If you need more information, look at information on the webpages.
+				<ol>
+					<li>Texas Discharge data (www.dshs.state.tx.us/thcic/hospitals/Inpatientpudf.shtm).</li>
+					<li>Texas Physician Supply data (http://www.dshs.state.tx.us/chs/hprc/PHYS-lnk.shtm)</li>
+					<li>Texas Death data (http://soupfin.tdh.state.tx.us/deathdoc.htm)</li>
+					<li>Texas Health Regions Look-up Table (http://www.dshs.state.tx.us/chs/brfss/pages/counties.shtm)</li>
+				</ol>
+				<b>&lt NEW TEXT &gt</b><br>
+				The only thing you have to do differently from the full assignment is to run sas code I provide with this supplement (assign4sup.sas) ONCE before you start working.  It will overwrite the large datasets with a tiny dataset ready for you to do the assignment.  Following are suggested sequence of action
+				<ol>
+					<li>AFTER getting the above files into your data folder</li>
+					<li>>Download assign4sup.sas, change the libname to point to the correct folder, then run
+					<li>That is it.  You DO NOT have to rerun this again, unless you corrupt these files (overwrite them). </li>
+					<li>Now do the assignment same as in full assignment, except look at your full data through out.</li>
+				</ol>
+				<ul>
+					<li>Here are suggested steps for doing this. If you are confused, ignore.<ol>
+						<li>Create a different subfolder (e.g. orig/) from data/ in your assign4/ workspace</li>
+						<li>Place the original large datasets in the new folder</li>
+						<li>Point your libname to the new folder</li>
+						<li>Now rerun your code. If you did everything correctly, the code should run with no problem.</li></ol></li>
+				</ul>
+				So the work for the last 1 point: although the code runs, you will see that you have more rows than you should have (254*3).  This is due to some data errors in the original data that you have to identify and fix.  A strategy for this will be discussed on 3/3.  See if you can fix this, and answer the questions using the full data, for full credit rather than the tiny data.
+			</p>
+		</article>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+1. Describe in one sentence, what each of the tables are.
+
+a. ipstat2010 - This table describes discharges from Texas hospitals in the year of 2010.
+b. ipstat2011 - This table describes discharges from Texas hospitals in the year of 2011.
+c. ipstat2012 - This table describes discharges from Texas hospitals in the year of 2012.
+d. phy2010 - This table describes Texas physician supply in the year of 2010.
+e. phy2011 - This table describes Texas physician supply in the year of 2011.
+f. phy2012 - This table describes Texas physician supply in the year of 2012.
+g. txdeaths - This table describes Texas death data over multiple years 2006-2010.
+h. txhealthregions - This table describes information and statistics for Counties.
+
+2. What is the unit (row) of each table?
+
+a. ipstat2010 - Hospital
+b. ipstat2011 - Hospital
+c. ipstat2012 - Hospital
+d. phy2010 - County
+e. phy2011 - County
+f. phy2012 - County
+g. txdeaths - County
+h. txhealthregions - County
+
+3. For each table that does not have the required unit of analysis as "county year", explain how you would
+convert the given table into the requred "county year" table. If not applicable write NA.
+
+a. ipstat2010, b. ipstat2011, c. ipstat2012
+	- Append (Set/stack) with other years: unit becomes hosp year 
+	- then use the proc summary statement: unit becomes county year
+
+d. phy2010, e. phy2011, f. phy2012 
+	- Append (Set/stack) with other years only: unit becomes county year
+
+g. txdeaths - proc transpose by county: unit becomes county year
+
+h. txhealthregions - N/A since variables do not change annually.
+
+4. When linking up the tables to have all the variables in one table.
+
+a. Which tables link up as 1-to-1 matching?
+combined & summerized "ipstat" tables, combined "phy" tables, and death data link up as 1-to-1 matching. 
+
+   What are the matching variables?
+county year
+ 
+b. Which tables link up as 1-to-N matching? 
+The txhealthregions table link up 1-to-N with the table of all other data (output from step 4.a above).
+
+What are the matching variables?
+county

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>Lab3</title>
+
+    <link href="mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width:751px)"/>
+    <link href="nav.css" rel="stylesheet" type="text/css" media="screen and (min-width:750px)"/>
+    <link href="print.css" rel="stylesheet" type="text/css" media="print"/>            
+	<style type="text/css">
+    	<link rel="stylesheet" href="nav.css">
+    </style>	
+</head>
+
+<body>
+	<header>
+		<h1> <center> Lab #3:  Arrays & Loops </center> </h1>
+		<h2> <center> Recommended Work Time: One week </center> </h2>
+	</header>
+	<div id="wrapper">	
+		<nav id="side">
+	    	<ul>
+		        <li><a href="index.html"> Home</a></li>
+		        <li><a href="A1.html"> Assignment 1 </a></li>
+		        <li><a href="A2.html"> Assignment 2 </a>
+		        	<ul>
+		        		<li><a href="L2.html"> Lab 2 </a></li>
+		        		<li><a href="L2S.html"> Lab 2 Supp. </a></li>
+		        		<li><a href="A2.html"> Assignment 2 </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A3.html"> Assignment 3 </a>
+		        	<ul>
+		        		<li><a href="L3.html"> Lab 3 </a></li>
+		        		<li><a href="A3.html"> Assignment 3 </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A4.html"> Assignment 4</a>
+		        	<ul>
+		        		<li><a href="data/lab4.zip" dwonload> Lab4 </a></li>
+		        		<li><a href="A4.html"> Assignment 4 </a></li>
+		        		<li><a href="A4A.html"> Assignment 4 Alt. </a></li>
+		        		<li><a href="A4S.html"> Assignment 4 Supp. </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A5.html"> Assignment 5</a></li>       
+		        <li><a href="Final.html"> Final Project</a></li>
+		    </ul>
+	    </nav>
+	    <div id= "top">
+			<h3>Table of Contents</h3>
+			<ol>
+				<li><a href="#OVV">Overview</a></li>
+				<li><a href="#OBJ">Objective</a></li>
+				<li><a href="#SET">Setting Up</a></li>
+				<li><a href="#LAB">Lab3</a></li>
+			</ol>
+		</div>
+		<article>
+			<p>
+				<a name="OVV"></a>
+				<b><u>Overview</u></b><br>
+				Most assignments will have a companion lab to help you learn the task and should cover similar content.  You will be given time in class to work on the lab and ask me questions as you work through them.  You should seek help from all sources (me, peers, internet) in doing this lab.  You will get minimally commented code that completes the lab.  Your first goal is to read & understand the source code that was provided.  If your are confused, READ the chapters from the book.  Then, you should try to replicate the code yourself, if possible without looking at the given code.  You do not need to document sources of help as this is a learning experience, rather than a graded homework.  However, it is your responsibility to complete the lab outside of class, if you were not able to complete them during the allotted time in class.  There will not always be sufficient time in class to complete, but it is important that you complete them in order to learn the required contents.<br><br>
+					<b>Labs are part of the companion assignment.  Labs will not be graded, but if you do not submit them 2 points will be taken off the companion assignment grade.</b><br> <br>
+					<b>Submission.</b> Labs are due on the same day as the companion assignments.  HOWEVER, for the labs to be useful in helping you do the companion assignments, you should complete the labs in the first week, so that you have sufficient time to work on the assignment the second week.  For, labs that are submitted within one week, I will do my best to give you feedback within a few days so that it will help you do the assignment.  You have the option to submit one of the following.  <br><br>
+					<b><u>For those of you who are still unsure about reading SAS code submit these two files</u></b>
+					<ul>
+						<li>Submit FULLY commented code (i.e. line by line translation into English) for lab3kum_for.sas</li>
+						<li>Submit commented code for lab3kum_while.sas, ONLY for the sections that are different from lab3kum_for.sas  You DO NOT need to repeat comments for identical code.</li>
+						<li>Submit the log & results from running the code provided.  You should be reading the log & results to understand what the program does and add comments.</li>
+					</ul>
+					<b><u>For those of you who are comfortable reading SAS code, do the optional exercise (P2)</u></b>
+					<ul><li>Submit code, log, results (html) from the optional exercise below</li></ul>
+				</p>
+				<p>
+				<a name="OBJ"></a>
+					<b><u>Objective</u></b><br>
+					In this assignment, you will learn to write elegant code.  By the end of this assignment, you should be able to
+					<ul>
+						<li>use for loops (iterative loops)</li>
+						<li>use while loops (conditional loops)</li>
+						<li>use  one dimensional  arrays </li>
+					</ul>
+				</p>
+				<p>
+				<a name="SET"></a>
+					<b>Setting Up</b>
+					<ol>
+						<li>Work in the same working directory, as lab2 (lab2/).  You will be writing code in lab2/</li>
+						<li>If you did not have lab2 working, it is ok for you to get a copy of all the required files from a peer to do lab3.</li>
+						<li>Copy the program you wrote for lab2 into a new file in the directory lab2/ with appropriate names (see below)</li>
+						<li>You will edit this program.</li>
+					</ol>
+					<b>Getting Data:</b>  We will be using the same data as we used in lab 2.
+				</p>
+				<p>
+				<a name="LAB"></a>
+					<b><u>P1. Coding with Arrays and Loops</u></b><br>
+					In lab2 you wrote code to do the following.
+					<ul><li>Code all binary variables to be 1 for YES, 0 for NO, and missing for all other values.  For analysis, this is the best way to code all binary variables.</li></ul>
+
+					The more different syntax you try to use, the more you will learn.  There are many different ways to do one task.  You have to try different ways to understand the difference between methods, find out which works best for you as well as understand what might work best in a given situation.  Edit the sections of your code that did the above in lab2 as follows.  If you are totally lost look at the source code (this typically refers to your .sas file. The code a programmer wrote to have the computer execute) provided as well as slides from class.  If you can, try to write these programs without looking at the slides.  Your goal is to write elegant code, with less repeated text so that if you find an error, something changes in the algorithm, or you want to extend your program, you have less places to fix/change.
+					<ul>
+						<li>[Using for loops] Use arrays and for loops (in SAS these are just iterative do loops) to rewrite your code to accomplish the same tasks.  Remember to keep the same code for generating the descriptives at the end.  These programs should be saved out with postfix “_for” with corresponding logs (i.e. lab3_for.sas).</li>
+						<li>[Using While loops]  Use arrays and while loops to rewrite your code to accomplish the same tasks.  Remember to keep the same code for generating the descriptives at the end.  These programs should be saved out with postfix “_while” with corresponding logs (i.e. lab3_while.sas). </li>
+						<li>[Testing] Now you should have 3 programs (lab2.sas, lab3_for.sas, lab3_while.sas) that do identical things using different code.  That means the output should also be identical.  Parts of the log will not be identical, because this reflects the code being run.  But the results of the descriptive analysis on the variables constructed using arrays and loops should be identical as the results from lab2.  Compare the output by either using Word/review/compare or diff (small program that will compare text files.)  Confirm that the RESULTS are identical. </li>
+						<li>[Debug] If anything is not identical, debug your code and fix.  Retest the new code, and repeat until you pass the test (i.e. results are identical).</li>
+						<li>[Extend your program] Now extend your two programs (both _for & _while) to add more binary variables from the original nsduh dataset (snfever, chewever, pipever, crkever).  Remember to keep the same code for generating the descriptives at the end.  You should simply “update” your program (i.e. save out to the same program).  These programs should be saved out with a postfix (i.e. lab3_for2.sas) with corresponding logs.  Compare the results from this output to those from _for & _while.  You should check that the output for the original variables are identical to what you had before.  It is not unusual for programmers to introduce bugs to old code that used to work in the process of extending it.  So it is important to test the code to confirm the things that used to work is still working after you have extended your program.  This should be your final version, which you might need to come back to in future labs.</li>
+						<li>[Optional]  Now create a new variable for substance abuse to use all the substance abuse variables (including the four new ones you added above) called subst_ext.  You must use the loop, rather than write out a long conditional statement.</li>
+					</ul>
+					<b><u>P2. [Optional small exercise to practice more coding]</u></b><br>
+					This does not need to be submitted.  If you want more practice writing code try problems 2-4 at <a href = "http://www.unc.edu/~kum/ma/pub/sas/Lesson3/Assign3A.html" target ="_blank">http://www.unc.edu/~kum/ma/pub/sas/Lesson3/Assign3A.html.</a>  The grades dataset is uploaded on blackboard.<br><br>
+
+					There are also many other practice problems you can try on the Internet.
+
+				</p>
+		</article>
+	</div>
+</body>
+</html>

@@ -1,0 +1,985 @@
+1                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2010 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.3 (TS1M2) 
+      Licensed to TEXAS A&M UNIVERSITY - SFA T&R, Site 70148637.
+NOTE: This session is executing on the Linux 2.6.32-358.18.1.el6.x86_64 (LIN X64) platform.
+
+
+
+NOTE: Enhanced analytical products:
+
+SAS/STAT 12.1, SAS/ETS 12.1, SAS/OR 12.2, SAS/IML 12.1, SAS/QC 12.1
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.13 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: AUTOEXEC processing beginning; file is /home/TAMHSC/kum/autoexec.sas.
+
+WARNING: Physical file does not exist, /opt/HPM/usr/kum/phpm672/assign4/sas/config.sas.
+ERROR: Cannot open %INCLUDE file config.sas.
+WARNING: Physical file does not exist, /opt/HPM/usr/kum/phpm672/assign4/config.sas.
+ERROR: Cannot open %INCLUDE file ../config.sas.
+NOTE: Libref DATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /opt/HPM/usr/kum/phpm672/assign4/sas/data
+
+NOTE: AUTOEXEC processing completed.
+
+1          libname data '/home/TAMHSC/kum/phpm672/assign4/data';
+NOTE: Libref DATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /home/TAMHSC/kum/phpm672/assign4/data
+2          
+2                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+3          ods html body='demo.html';
+NOTE: Writing HTML Body file: demo.html
+4          
+5          *---------- Append: add more rows for same columns;
+6          proc print data=data.flu10(obs=100);
+
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: The PROCEDURE PRINT printed page 1.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.04 seconds
+      
+
+7          proc print data=data.flu9(obs=100);
+8          
+
+NOTE: There were 5 observations read from the data set DATA.FLU9.
+NOTE: The PROCEDURE PRINT printed page 2.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+9          data data.append;
+10         set data.flu10 data.flu9;
+11         
+
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: There were 5 observations read from the data set DATA.FLU9.
+NOTE: The data set DATA.APPEND has 9 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+12         proc print data=data.append(obs=100);
+13         
+14         * Using proccopy & proc append;
+15         * more efficient, but less flexible;
+
+NOTE: There were 9 observations read from the data set DATA.APPEND.
+NOTE: The PROCEDURE PRINT printed page 3.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.02 seconds
+      
+
+16         proc copy in=data out=work memtype=data;
+17             select flu10;
+18         
+
+NOTE: Copying DATA.FLU10 to WORK.FLU10 (memtype=DATA).
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: The data set WORK.FLU10 has 4 observations and 5 variables.
+NOTE: PROCEDURE COPY used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+3                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+
+19         proc append base=flu10 data=data.flu9;
+20         
+
+NOTE: Appending DATA.FLU9 to WORK.FLU10.
+NOTE: There were 5 observations read from the data set DATA.FLU9.
+NOTE: 5 observations added.
+NOTE: The data set WORK.FLU10 has 9 observations and 5 variables.
+NOTE: PROCEDURE APPEND used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+21         proc print data=flu10 (obs=100);
+22         
+23         *---------- Append: add more rows for diff columns;
+
+NOTE: There were 9 observations read from the data set WORK.FLU10.
+NOTE: The PROCEDURE PRINT printed page 4.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+24         proc print data=data.flu10(obs=100);
+
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: The PROCEDURE PRINT printed page 5.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+25         proc print data=data.flu9d(obs=100);
+26         
+
+NOTE: There were 5 observations read from the data set DATA.FLU9D.
+NOTE: The PROCEDURE PRINT printed page 6.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+27         data data.append2;
+28         set data.flu10(in=aa) data.flu9d(in=bb);
+29         if aa then month='Oct';
+30         else if bb then month='Sep';
+31         
+
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: There were 5 observations read from the data set DATA.FLU9D.
+NOTE: The data set DATA.APPEND2 has 9 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.02 seconds
+      
+
+32         proc print data=data.append2(obs=100);
+4                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+33         
+34         *---------- add more columns, matching up (1-to-1) rows by key(=date) no shared col;
+
+NOTE: There were 9 observations read from the data set DATA.APPEND2.
+NOTE: The PROCEDURE PRINT printed page 7.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+35         proc sort data=data.flu10;
+36         by date;
+37         
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+38         proc sort data=data.flu109d;
+39         by date;
+40         
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+41         proc print data=data.flu10(obs=100);
+
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: The PROCEDURE PRINT printed page 8.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+42         proc print data=data.flu109d(obs=100);
+43         
+
+NOTE: There were 5 observations read from the data set DATA.FLU109D.
+NOTE: The PROCEDURE PRINT printed page 9.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+44         data data.addcol;
+45         merge data.flu10(in=aa) data.flu109d(in=bb);
+46         by date;
+47         
+
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: There were 5 observations read from the data set DATA.FLU109D.
+NOTE: The data set DATA.ADDCOL has 7 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+5                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+48         proc print data=data.addcol(obs=100);
+49         
+50         *---------- add more columns, matching up (1-to-1) rows by key(=date) w/ shared col;
+
+NOTE: There were 7 observations read from the data set DATA.ADDCOL.
+NOTE: The PROCEDURE PRINT printed page 10.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+51         data flu109;
+52         set data.flu109;
+53         usa=100;
+54         
+
+NOTE: There were 5 observations read from the data set DATA.FLU109.
+NOTE: The data set WORK.FLU109 has 5 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+55         proc sort data=data.flu10;
+56         by date;
+57         
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+58         proc sort data=flu109;
+59         by date;
+60         
+
+NOTE: There were 5 observations read from the data set WORK.FLU109.
+NOTE: The data set WORK.FLU109 has 5 observations and 4 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+61         proc print data=data.flu10(obs=100);
+
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: The PROCEDURE PRINT printed page 11.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+62         proc print data=flu109(obs=100);
+6                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+63         
+
+NOTE: There were 5 observations read from the data set WORK.FLU109.
+NOTE: The PROCEDURE PRINT printed page 12.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+64         data data.addcol2;
+65         merge data.flu10(in=aa) flu109(in=bb);
+66         by date;
+67         
+68         src=aa*10+bb;
+69         
+
+NOTE: There were 4 observations read from the data set DATA.FLU10.
+NOTE: There were 5 observations read from the data set WORK.FLU109.
+NOTE: The data set DATA.ADDCOL2 has 7 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+70         proc print data=data.addcol2(obs=100);
+71         
+
+NOTE: There were 7 observations read from the data set DATA.ADDCOL2.
+NOTE: The PROCEDURE PRINT printed page 13.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.02 seconds
+      
+
+72         proc freq;
+73             tables src;
+74         
+75         *---------- add more columns, matching up (1-to-N) rows by key(=qtr) no shared col;
+
+NOTE: There were 7 observations read from the data set DATA.ADDCOL2.
+NOTE: The PROCEDURE FREQ printed page 14.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+76         data flu109;
+77             set data.flu109;
+78             qtr=qtr(date);
+79         
+
+NOTE: There were 5 observations read from the data set DATA.FLU109.
+NOTE: The data set WORK.FLU109 has 5 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+7                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+80         proc sort data=flu109;
+81         by qtr;
+82         
+
+NOTE: There were 5 observations read from the data set WORK.FLU109.
+NOTE: The data set WORK.FLU109 has 5 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+83         proc sort data=data.qtr;
+84         by qtr;
+85         
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+86         proc print data=flu109(obs=100);
+
+NOTE: There were 5 observations read from the data set WORK.FLU109.
+NOTE: The PROCEDURE PRINT printed page 15.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+87         proc print data=data.qtr(obs=100);
+88         
+
+NOTE: There were 4 observations read from the data set DATA.QTR.
+NOTE: The PROCEDURE PRINT printed page 16.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+89         data data.addcol3;
+90         merge data.qtr(in=aa) flu109(in=bb);
+91         by qtr;
+92         
+93         if bb;
+94         
+
+NOTE: There were 4 observations read from the data set DATA.QTR.
+NOTE: There were 5 observations read from the data set WORK.FLU109.
+NOTE: The data set DATA.ADDCOL3 has 5 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+95         proc print data=data.addcol3(obs=100);
+96         
+97         *---------- add more columns, matching up (N-to-N) rows by key(=qtr) no shared col;
+8                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+98         *---------- Do not do using merge. Use proc sql;
+99         * NOTE: MERGE statement has more than one data set with repeats of BY values.;
+100        
+
+NOTE: There were 5 observations read from the data set DATA.ADDCOL3.
+NOTE: The PROCEDURE PRINT printed page 17.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+101        proc sort data=flu109;
+102        by qtr;
+103        
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+104        proc sort data=data.dqtr;
+105        by qtr;
+106        
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+107        proc print data=flu109(obs=100);
+
+NOTE: There were 5 observations read from the data set WORK.FLU109.
+NOTE: The PROCEDURE PRINT printed page 18.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+108        proc print data=data.dqtr(obs=100);
+109        
+
+NOTE: There were 5 observations read from the data set DATA.DQTR.
+NOTE: The PROCEDURE PRINT printed page 19.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+110        data data.addcol4;
+111        merge data.dqtr(in=aa) flu109(in=bb);
+112        by qtr;
+113        
+114        if bb;
+115        
+
+NOTE: MERGE statement has more than one data set with repeats of BY values.
+9                                                          The SAS System                            01:11 Monday, February 24, 2014
+
+NOTE: There were 5 observations read from the data set DATA.DQTR.
+NOTE: There were 5 observations read from the data set WORK.FLU109.
+NOTE: The data set DATA.ADDCOL4 has 5 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+116        proc print data=data.addcol4(obs=100);
+117        
+118        *---------- combine rows by key(=yyyymm);
+
+NOTE: There were 5 observations read from the data set DATA.ADDCOL4.
+NOTE: The PROCEDURE PRINT printed page 20.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+119        data append;
+120            set data.append;
+121        
+122            yyyymm=year(date)*100+month(date);
+123        
+
+NOTE: There were 9 observations read from the data set DATA.APPEND.
+NOTE: The data set WORK.APPEND has 9 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+124        proc sort data=append;
+125        by yyyymm;
+126        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The data set WORK.APPEND has 9 observations and 6 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+127        proc print data=append(obs=100);
+128        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The PROCEDURE PRINT printed page 21.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+129        proc summary data=append;
+130            by yyyymm;
+131            var usa california florida texas;
+132            output out=data.sum sum=;
+133        
+10                                                         The SAS System                            01:11 Monday, February 24, 2014
+
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The data set DATA.SUM has 2 observations and 7 variables.
+NOTE: PROCEDURE SUMMARY used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+134        proc print data=data.sum(obs=100);
+135        
+
+NOTE: There were 2 observations read from the data set DATA.SUM.
+NOTE: The PROCEDURE PRINT printed page 22.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+136        proc summary data=append;
+137            by yyyymm;
+138            var usa california florida texas;
+139            output out=sum(drop=_type_ rename=(_freq_=nrows))
+140                sum(california)=sca
+141                max(florida)=maxfl
+142                min(texas)=mintx
+143                sum(texas)=stx;
+144        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The data set WORK.SUM has 2 observations and 6 variables.
+NOTE: PROCEDURE SUMMARY used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+145        proc print data=sum(obs=100);
+146        
+
+NOTE: There were 2 observations read from the data set WORK.SUM.
+NOTE: The PROCEDURE PRINT printed page 23.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+147        proc summary data=append;
+148            var usa california florida texas;
+149            output out=data.sum sum=;
+150        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The data set DATA.SUM has 1 observations and 6 variables.
+NOTE: PROCEDURE SUMMARY used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+151        proc print data=data.sum(obs=100);
+11                                                         The SAS System                            01:11 Monday, February 24, 2014
+
+152        
+153        *---------- proc transpose: flip row & col;
+
+NOTE: There were 1 observations read from the data set DATA.SUM.
+NOTE: The PROCEDURE PRINT printed page 24.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+154        proc print data=append(obs=100);
+155        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The PROCEDURE PRINT printed page 25.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+156        proc transpose data=append out=data.tappend;
+157        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The data set DATA.TAPPEND has 6 observations and 10 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+158        proc print data=data.tappend(obs=100);
+159        
+
+NOTE: There were 6 observations read from the data set DATA.TAPPEND.
+NOTE: The PROCEDURE PRINT printed page 26.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+160        proc transpose data=append out=data.tappend;
+161            id date;
+162        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The data set DATA.TAPPEND has 5 observations and 10 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+163        proc print data=data.tappend(obs=100);
+164        
+
+NOTE: There were 5 observations read from the data set DATA.TAPPEND.
+NOTE: The PROCEDURE PRINT printed page 27.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+12                                                         The SAS System                            01:11 Monday, February 24, 2014
+
+      cpu time            0.01 seconds
+      
+
+165        proc transpose data=append out=data.tappend(rename=(_name_=state));
+166            id date;
+167            var usa california florida texas;
+168        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The data set DATA.TAPPEND has 4 observations and 10 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+169        proc print data=data.tappend(obs=100);
+170        
+171        *---------- proc transpose: by group(key=yyyymm). consolidate first then transpose;
+172        *---------- there must be only 1 row per key;
+173        * ERROR: The ID value "_201309" occurs twice in the input data set;
+174        * The following section must be commented out to run;
+175        /*
+176        proc sort data=append;
+177        by yyyymm;
+178        
+179        proc transpose data=append out=data.tappend(rename=(_name_=state));
+180            id yyyymm;
+181            var usa california florida texas;
+182        
+183        proc print data=data.tappend(obs=100);
+184        */
+185        
+186        * Dangerous unless you know what you are doing;
+187        * Using sort nodupkey to make it one record per key;
+
+NOTE: There were 4 observations read from the data set DATA.TAPPEND.
+NOTE: The PROCEDURE PRINT printed page 28.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+188        proc print data=append(obs=100);
+189        
+190        * Estimates in first week of each month;
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The PROCEDURE PRINT printed page 29.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.02 seconds
+      
+
+191        proc sort data=append out=xdup nodupkey;
+192        by yyyymm;
+193        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+13                                                         The SAS System                            01:11 Monday, February 24, 2014
+
+NOTE: 7 observations with duplicate key values were deleted.
+NOTE: The data set WORK.XDUP has 2 observations and 6 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+194        proc print data=xdup(obs=100);
+195        
+
+NOTE: There were 2 observations read from the data set WORK.XDUP.
+NOTE: The PROCEDURE PRINT printed page 30.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+196        proc transpose data=xdup out=data.tappend(rename=(_name_=state));
+197            id yyyymm;
+198            var usa california florida texas;
+199        
+
+NOTE: There were 2 observations read from the data set WORK.XDUP.
+NOTE: The data set DATA.TAPPEND has 4 observations and 3 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+200        proc print data=data.tappend(obs=100);
+201        
+202        * Using summary to combine records to make it one record per key;
+203        * best option, when in doubt;
+
+NOTE: There were 4 observations read from the data set DATA.TAPPEND.
+NOTE: The PROCEDURE PRINT printed page 31.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+204        proc print data=append(obs=100);
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The PROCEDURE PRINT printed page 32.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+205        proc sort data=append;
+206        by yyyymm;
+207        
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+14                                                         The SAS System                            01:11 Monday, February 24, 2014
+
+      
+
+208        proc summary data=append;
+209            by yyyymm;
+210            var usa california florida texas;
+211            output out=sum sum=;
+212        
+
+NOTE: There were 9 observations read from the data set WORK.APPEND.
+NOTE: The data set WORK.SUM has 2 observations and 7 variables.
+NOTE: PROCEDURE SUMMARY used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+213        proc print data=sum(obs=100);
+214        
+
+NOTE: There were 2 observations read from the data set WORK.SUM.
+NOTE: The PROCEDURE PRINT printed page 33.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+215        proc transpose data=sum out=data.tappend(rename=(_name_=state)) prefix=flu;
+216            id yyyymm;
+217            var usa california florida texas;
+218        
+
+NOTE: There were 2 observations read from the data set WORK.SUM.
+NOTE: The data set DATA.TAPPEND has 4 observations and 3 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+219        proc print data=data.tappend(obs=100);
+220        
+221        * transpose back;
+
+NOTE: There were 4 observations read from the data set DATA.TAPPEND.
+NOTE: The PROCEDURE PRINT printed page 34.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+222        proc transpose data=data.tappend out=back;
+223            id state;
+224            var flu201309-flu201310;
+225        
+
+NOTE: There were 4 observations read from the data set DATA.TAPPEND.
+NOTE: The data set WORK.BACK has 2 observations and 5 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+15                                                         The SAS System                            01:11 Monday, February 24, 2014
+
+      
+
+226        proc print data=back(obs=100);
+227        
+
+NOTE: There were 2 observations read from the data set WORK.BACK.
+NOTE: The PROCEDURE PRINT printed page 35.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.02 seconds
+      
+
+228        data back;
+229            set back;
+230        
+231        yyyymm=.;
+232        yyyymm=substr(_name_, 4);
+233        
+
+NOTE: Character values have been converted to numeric values at the places given by: (Line):(Column).
+      232:8   
+NOTE: There were 2 observations read from the data set WORK.BACK.
+NOTE: The data set WORK.BACK has 2 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+234        proc print data=back(obs=100);
+235        
+236        *---------- proc transpose: flip row & col by group(key=yyyymm);
+
+NOTE: There were 2 observations read from the data set WORK.BACK.
+NOTE: The PROCEDURE PRINT printed page 36.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+237        proc print data=data.wkappend(obs=100);
+238        
+
+NOTE: There were 9 observations read from the data set DATA.WKAPPEND.
+NOTE: The PROCEDURE PRINT printed page 37.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+239        proc transpose data=data.wkappend out=data.tappend(rename=(_name_=state));
+240            by yyyymm;
+241            id week;
+242            var usa california florida texas;
+243        
+
+NOTE: There were 9 observations read from the data set DATA.WKAPPEND.
+NOTE: The data set DATA.TAPPEND has 8 observations and 7 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+16                                                         The SAS System                            01:11 Monday, February 24, 2014
+
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+244        proc print data=data.tappend(obs=100);
+245        
+246        * transpose back by key;
+
+NOTE: There were 8 observations read from the data set DATA.TAPPEND.
+NOTE: The PROCEDURE PRINT printed page 38.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+247        proc transpose data=data.tappend out=back(rename=(_name_=week));
+248            by yyyymm;
+249            id state;
+250            var wk1-wk5;
+251        
+
+NOTE: There were 8 observations read from the data set DATA.TAPPEND.
+NOTE: The data set WORK.BACK has 10 observations and 6 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+252        proc print data=back(obs=100);
+253        
+
+NOTE: There were 10 observations read from the data set WORK.BACK.
+NOTE: The PROCEDURE PRINT printed page 39.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+254        data back;
+255        set back;
+256        *ERROR: Syntax error while parsing WHERE clause.;
+257        *where sum (of usa california florida texas)>.;
+258        if sum (of usa california florida texas)>.;
+259        
+
+NOTE: Missing values were generated as a result of performing an operation on missing values.
+      Each place is given by: (Number of times) at (Line):(Column).
+      1 at 258:4   
+NOTE: There were 10 observations read from the data set WORK.BACK.
+NOTE: The data set WORK.BACK has 9 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+260        proc print data=back(obs=100);
+261        
+262        run;
+17                                                         The SAS System                            01:11 Monday, February 24, 2014
+
+
+NOTE: There were 9 observations read from the data set WORK.BACK.
+NOTE: The PROCEDURE PRINT printed page 40.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+263        ods html close;
+264        
+265        
+266        
+267        
+268        
+269        
+
+ERROR: Errors printed on page 1.
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           0.81 seconds
+      cpu time            0.67 seconds
+      

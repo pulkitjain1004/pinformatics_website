@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link href="mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width:751px)"/>
+    <link href="nav.css" rel="stylesheet" type="text/css" media="screen and (min-width:750px)"/>
+    <link href="print.css" rel="stylesheet" type="text/css" media="print"/>                  
+    <style type="text/css">
+
+    </style>
+  </head>
+
+  <body>   
+    <header>
+        <h1><center>Assignment #3:  Arrays & Loops</center></h1>
+        <h2> <center> Recommended Work Time: One week </center> </h2>
+    </header>
+  <div id="wrapper">  
+    <nav id="side">
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="A1.html"> Assignment 1 </a></li>
+            <li><a href="A2.html"> Assignment 2 </a>
+              <ul>
+                <li><a href="L2.html"> Lab 2 </a></li>
+                <li><a href="L2S.html"> Lab 2 Supp. </a></li>
+                <li><a href="A2.html"> Assignment 2 </a></li>
+              </ul>
+            </li>
+            <li><a href="A3.html"> Assignment 3 </a>
+              <ul>
+                <li><a href="L3.html"> Lab 3 </a></li>
+                <li><a href="A3.html"> Assignment 3 </a></li>
+              </ul>
+            </li>
+            <li><a href="A4.html"> Assignment 4</a>
+              <ul>
+                <li><a href="data/lab4.zip" dwonload> Lab4 </a></li>
+                <li><a href="A4.html"> Assignment 4 </a></li>
+                <li><a href="A4A.html"> Assignment 4 Alt. </a></li>
+                <li><a href="A4S.html"> Assignment 4 Supp. </a></li>
+              </ul>
+            </li>
+            <li><a href="A5.html"> Assignment 5</a></li>       
+            <li><a href="Final.html"> Final Project</a></li>
+        </ul>
+    </nav>
+
+    <div id="top">
+        <h2>Table of Contents</h2>
+        <ol>
+			<li><a href="#ov"> Overview </a></li>
+			<li><a href="#gd"> Grading </a></li>
+			<li><a href="#rd"> Recommended Readings </a></li>
+			<li><a href="#a2"> Assignment 2 </a></li>
+        </ol>
+      </div>
+   
+      <article>
+        <a name= "ov"></a>
+
+        <h2><u>Overview</u></h2>
+        <p>
+        <b>Submission.  </b> 
+        Submit on blackboard by 11:59pm the day before the class they are due.    
+        <ul>
+			<li>Commented code (lnameN.sas, where N indicates the assignment number and lname is your last name)</li>
+			<li>Output from your code (lnameN.log & (lnameN.lst or lnameN.html)) </li>
+        </ul>
+        </p>
+        <p>
+	        <b>Late Assignments.  </b>
+	        Each student will be allowed one late assignment, due 7 days from the due date.  NO other late assignments or make up will be accepted.
+        </p>
+	        <b>Plagiarism:  </b>
+	         If you consult any outside sources when doing your work, you are expect to further document these sources.  Give credit where credit is due.  Plagiarism will not be tolerated.  
+        </p>
+        <p>
+	        All handed in homework should state at the top any assistance with debugging and programming, as well as citations of any program segments copied from a website.
+        </p>
+        <p>
+	        <b>Seeking Help:  </b>
+	        Language classes are cumulative; don't fall behind.  Ask for assistance from your fellow students or from the instructor, especially if you find yourself struggling.  But remember in the end, programming classes are like skill building math classes.  Either you know how to do them or not.  No amount of watching others or the instructor program or debug it will suffice for you to build these skills.  Only your hard work to work through them will build your skills.  It is a lot of work to build these skills, but data skills are highly valuable in the job market in the modern digital world, so it will be well worth your effort.  Furthermore, once you learn to think in this manner, it's not something you forget.
+        </p>
+        <p>
+	        <b>Elegance:  </b>
+	        There is always more than one way to say something, but some ways will be more "elegant" than others.  You will learn to recognize elegant expressions as you become more familiar with a language and use the elegant idioms as you become more skilled.<br><br>
+
+	        <b><u>Elegance will count in this assignment!  It does not mean complicated programs.  Remember KISS.  The beauty of great programs is its SIMPILICITY.  What you are trying to learn is how to break down complex tasks into simple modular tasks.</u></b>
+        </p>
+
+       <a name= "rd"></a>
+        <br><br>
+        <h2><u>Required & recommended readings for this assignment</h2></u>
+        <ol>
+        	<li><a href="http://www.ats.ucla.edu/stat/sas/modules/acrossvars.htm" target="_blank">http://www.ats.ucla.edu/stat/sas/modules/acrossvars.htm</a></li>
+			<li><a href="http://proquest.safaribooksonline.com.lib-ezproxy.tamu.edu:2048/9781612903439?uicode=tamucollst" target="_blank">The little SAS book</a>: 3.11 Simplifying programs with arrays & 3.12 Using Shortcuts to Lists of Variable Names</li>
+        </ol>
+
+  	  <a name= "gd"></a>
+        <br><br>
+        <h2><u>Guideline for assignment grading (Total of 8)</u></h2>
+          <ul>
+            <li>Assignment (Total 4)
+              <ul>
+                <li>1: Submitted code that does not run.</li>
+                <li>2: Mostly running but incorrect.</li>
+                <li>3: Correct and meets requirements (i.e uses programming constructs required)</li>
+                <li>4: Correct & Elegant. Comments.</li>
+              </ul>
+            </li>
+            <li>Answers to questions on the assignment (Total 1) </li>
+            <li>Midpoint Check email (Total 1) </li>
+            <li>Lab (Total 2) - DON'T forget to submit this with this assignment </li>
+          </ul>
+      
+  	  <a name= "a2"></a>
+        <br><br>
+        <h2><u>Assignment 3: Arrays & Loops</h2></u>
+        <p>
+			In this assignment, you will learn to write elegant code.  By the end of this assignment, you should be able to
+			<ul>
+				<li>use for loops (iterative loops)</li>
+				<li>use while loops (conditional loops)</li>
+				<li>SAS: use  one dimensional  arrays </li>
+			</ul>
+        </p>
+        <p>
+			<b>Setting Up</b>
+			<ol>
+				<li>Determine the folder you will be working in.  Create one if you need a new one, or use an existing one if that makes more sense./</li>
+			</ol>
+        </p>
+        <p>
+          <b>Pick a problem (See P3.1):</b> 
+          Pick two tasks (we will refer to these ask Task 1 & Task 2 below) that you need to do that would be good to use arrays and loops for (i.e. tasks that require repeated programming that is very similar).   If at all possible, try to identify something you did in assignment 2, that can be improved by using arrays and loops.  If you are having trouble identifying these, email me BEFORE the midpoint check due date for a meeting. 
+        </p>
+        <p>
+			<b>Getting Data:</b>
+			You should try to use the same dataset you used in assignment 2.  If you used the flu dataset in assignment 2, try to identify a research data of interest to you.  <br><br>
+			<b><u>Midpoint check: Email Dr. Kum (please use numbers that are corresponding)</b></u>
+			<ol>
+            	<li>A short description of your progress on lab3 (if you submitted lab3, just write “submitted”)</li>
+            	<li>The dataset you will be using to do assignment 3, and the name of the SAS dataset.  Note this MUST be a SAS dataset, as reading in files can be difficult.  i.e. You need to have done the work required to read in the dataset you are interested in and have saved it out as a SAS dataset.  This is to ensure that you can focus on practicing coding with loops and arrays for the assignment, rather than struggling with I/O. (if you are using the same as assignment2, just write “assignment 2 dataset”)</li>
+            	<li>Describe the two tasks you will program using arrays and loops. If either of the tasks are improving your program from assignment 2, identify them as “Improvement to assignment 2”.  This is your planning phase of the code.  This does not need to be long, shorter the better, but you need to have thought about your task at hand and how you will be using arrays and loops for the task.</li>
+            	<li>Your computing environment: include the computer, persistent disk you will be using, and the full path of the ROOT folder for this class on the disk (C:\Users\kum\Desktop\phpm672).  Some of you have already sent me this information, you don’t have to send it to me again.</li>
+			</ol>
+        <p>
+        <b>For those using new data only.  Describe the Data </b>
+          <ul>
+            <li>Describe the dataset, including the number of obs and variables that are in your subset of dataa</li>
+            <li>Check your data.  Examine each variable for its range (min to max) or number of categories. Discuss any anomalies you see in this data (such as an abnormally high or low values) </li>
+          </ul>
+        </p>
+        <p>
+          <b><u>P1. Coding with Arrays and Loops</u></b><br>
+          Your program should do the following.  Please indicate BEFORE the code in comments where each of these items occurs in your code.
+          <ul>
+            <li>P1.1  [No Loops limited task to 5 elements] Code Tasks 1 & 2 without using arrays or loops.  If there are many elements to work with, you only need to code the first 5 elements. In this case, only process the first five elements in arrays and loops as well for P1.3 & P1.4  If this was done in assignment 2, you should be able to just copy & paste relevant sections of your code.  Save this out as lname2_v1.sas.  v1 here refers to version 1.  The logs should have corresponding names.</li>
+            <li>P1.2  [Descriptive] Calculate appropriate descriptives for numerical and categorical variables in your dataset.</li>
+            <li>P1.3 [Using iterative loops] Now code Tasks 1 & 2 using arrays and/or loops.  You may use either the for loop (iterative) or the while loop (conditional), but one of them must use the for loop.  Remember to keep the same code for generating the descriptives at the end.  These programs should be saved out with postfix “_v2” with corresponding logs.</li>
+            <li>P1.4 [Using While loops] Pick one task that you coded using the for loop, and code again. This time using the while loop. Remember to keep the same code for generating the descriptives at the end.  These programs should be saved out with postfix “_v3” with corresponding logs. <br><br>NOTE: the more different syntax you try to use, the more you will learn.  There are many different ways to do one task.  You have to try different ways to fully understand the differences and find out which works best for you as well as understand what might work best in a given situation.  Try to use three different things.  The difference can be minor.  One must be a while loop, one must be a for loop. There are many ways to specify arrays.  You are writing at least three loops.  </li>
+            <li>P1.5 [Testing] Now you should have 3 programs that do identical things.  That means the output should also be identical.  Parts of the log will not be identical, because this reflects the code being run.  But the results of the descriptive analysis on the variables constructed using arrays and loops should be identical.  Compare the output by either using Word/review/compare or diff (small program that will compare text files.)  Confirm that the RESULTS are identical. Read P2 Readme file below to keep track of testing & debugging.</li>
+            <li>P1.6 [Debug] If anything is not identical, debug your code and fix.  Retest the new code, and repeat until you pass the test (i.e. results are identical).</li>
+            <li>P1.7  [Extend to real task] If you only processed the first 5 elements as discussed in P1.1, now extend the arrays & loops to process ALL of your elements.  If you have 5 or less elements, then use your imagination and extend your program to add one more element (i.e. make a fake additional variable that could apply.  It is ok if the values are incorrect or is just a copy of an existing variable.  The purpose is for you to learn to code.)  Remember to keep the same code for generating the descriptives at the end.  These programs should be saved out with no postfix “lname2” with corresponding logs.  This should be your final version, which you might need to come back to in future assignments</li>
+          </ul>
+        </p>
+        <p>
+          <b><u>P2.  Readme file  </b></u><br>
+         Create a text file called readme.txt in your working directory.  If you are using the same directory as assignment 2, you might name the files readme3.txt  to distinguish it from the readme file you created for assignment 2.  Answer the following questions in the readme file and send as attachment with code and output.  Start to think about how you might minimally format the text file for better usability (i.e. use things like * for bullets, ---- for lines, << >> for titles etc).
+          <ol>
+            <li>Copy & paste the email sent for mid point check</li>
+            <li>If you have any updates after completing the coding for Task 1 & 2 described in the first email, update the description under heading <Updated Task Description></li>
+            <li>How many times did you have to test until everything was identical?</li>
+            <li>Write up at least one bug you fixed during testing by filling in the following
+            	<ul>
+            		<li>&lt&ltBuggy code&gt&gt: copy lines of buggy code</li>
+					       <li>&lt&ltWorking Code&gt&gt: copy lines of correct corresponding code</li>
+				      </ul>
+            </li>
+          </ol>
+        <p>
+          <b><u>P3.  Readme file </b></u><br> 
+          Create a text file called readme.txt in your working directory (assign2/) Answer the following questions in the readme file send as attachment with code and output.
+          <ol>
+            <li>Briefly describe the problem you are interested to pursue
+            <li>Briefly describe what data you will be using. Include number of obs, vars, and total file size.
+            <li>P2.1 List each type of variable (continuous, categorical, binary, id). 
+            <li>P2.4 Answer one interesting question using at least 3 variables. Explain your answer.
+          </ol>
+        </p>
+        <br><br>
+      </article>
+
+    </div>
+  </body>
+</html>

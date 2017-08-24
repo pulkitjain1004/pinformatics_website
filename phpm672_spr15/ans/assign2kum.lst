@@ -1,0 +1,322 @@
+                                                           The SAS System                      00:28 Saturday, February 15, 2014   1
+
+     Obs  THCIC_ID    hospname                                              hospcity                county
+
+       1                                                                                                                     
+       2  000100      Austin State Hospital                                 Austin                  Travis                   
+       3  000101      Big Spring State Hospital                             Big Spring              Howard                   
+       4  000102      UT Medical Branch Hospital                            Galveston               Galveston                
+       5  000104      Rio Grande State Center                               Harlingen               Cameron                  
+       6  000105      UT MD Anderson Cancer Center                          Houston                 Harris                   
+       7  000106      Kerrville State Hospital                              Kerrville               Kerr                     
+       8  000107      Rusk State Hospital                                   Rusk                    Cherokee                 
+       9  000108      Texas Center for Infectious Disease                   San Antonio             Bexar                    
+      10  000110      San Antonio State Hospital                            San Antonio             Bexar                    
+
+     Obs  dc20121   dc20122   dc20123   dc20124   dc20101   dc20102   dc20103   dc20104   dc20111   dc20112   dc20113   dc20114
+
+       1       .         .         .         .         .         .         .         .         .         .         .         . 
+       2     870       935       969       858       901       906       615       935       298      1541       961       881 
+       3     177       183       225       224       242       243       166       207        64       399       200       195 
+       4    6353      6294      6860      6285      6362      6437      6762      6491      6408      6292      6866      6512 
+       5     277       274       278       306       225       280       237       275        96       427       298       276 
+       6    6723      6784      6830      6801      5796      6145      6106      6233      6194      6394      6489      6443 
+       7      32        21        17        10        10        13        11        12         3        55        21        10 
+       8     214       190       143       143       251       219       199       242        80       345       247       198 
+       9      18        22        19        22         .        18        13        19        23        15        18        22 
+      10     448       491       459       526       487       497       289       445       157       778       449       482 
+                                                           The SAS System                      00:28 Saturday, February 15, 2014   2
+
+                                                       The CONTENTS Procedure
+
+              Data Set Name        DATA.MYIPSTATW                                           Observations          234
+              Member Type          DATA                                                     Variables             19 
+              Engine               V9                                                       Indexes               0  
+              Created              Sat, Feb 15, 2014 12:28:00 AM                            Observation Length    168
+              Last Modified        Sat, Feb 15, 2014 12:28:00 AM                            Deleted Observations  0  
+              Protection                                                                    Compressed            NO 
+              Data Set Type                                                                 Sorted                NO 
+              Label                                                                                                  
+              Data Representation  SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64                             
+              Encoding             latin1  Western (ISO)                                                             
+
+
+                                                 Engine/Host Dependent Information
+
+                      Data Set Page Size          16384                                                       
+                      Number of Data Set Pages    3                                                           
+                      First Data Page             1                                                           
+                      Max Obs per Page            97                                                          
+                      Obs in First Data Page      70                                                          
+                      Number of Data Set Repairs  0                                                           
+                      Filename                    /opt/HPM/usr/kum/phpm672/assign3/sas/data/myipstatw.sas7bdat
+                      Release Created             9.0301M2                                                    
+                      Host Created                Linux                                                       
+                      Inode Number                7340471                                                     
+                      Access Permission           rw-r--r--                                                   
+                      Owner Name                  kum                                                         
+                      File Size (bytes)           57344                                                       
+
+
+                                             Alphabetic List of Variables and Attributes
+ 
+                  #    Variable    Type    Len    Format    Informat    Label
+
+                  3    cntyname    Char     13    $25.      $25.        Hospital County                            
+                  8    dc20101     Num       8    BEST6.                Inpatient Discharge                        
+                  9    dc20102     Num       8    BEST6.                Inpatient Discharge                        
+                 10    dc20103     Num       8    BEST6.                Inpatient Discharge                        
+                 11    dc20104     Num       8    BEST6.                Inpatient Discharge                        
+                 12    dc20111     Num       8    BEST6.                Inpatient Discharge                        
+                 13    dc20112     Num       8    BEST6.                Inpatient Discharge                        
+                 14    dc20113     Num       8    BEST6.                Inpatient Discharge                        
+                 15    dc20114     Num       8    BEST6.                Inpatient Discharge                        
+                  4    dc20121     Num       8    BEST6.                Inpatient Discharge                        
+                  5    dc20122     Num       8    BEST6.                Inpatient Discharge                        
+                  6    dc20123     Num       8    BEST6.                Inpatient Discharge                        
+                  7    dc20124     Num       8    BEST6.                Inpatient Discharge                        
+                 16    first       Num       8                                                                     
+                  2    hcity       Char     20    $20.      $20.        Hospital City                              
+                  1    hid         Char      7    $7.       $7.         Texas Health Care Information Collection ID
+                 17    tot2010     Num       8                                                                     
+                 18    tot2011     Num       8                                                                     
+                 19    tot2012     Num       8                                                                     
+                                                           The SAS System                      00:28 Saturday, February 15, 2014   3
+
+     Obs    hid        hcity                   cntyname                     dc20121    dc20122    dc20123    dc20124    dc20101
+
+       1    000100     Austin                  Travis                          870        935        969        858        901 
+       2    000105     Houston                 Harris                         6723       6784       6830       6801       5796 
+       3    000108     San Antonio             Bexar                            18         22         19         22          0 
+       4    000110     San Antonio             Bexar                           448        491        459        526        487 
+       5    000115     Houston                 Harris                         1810       1819       1845       2100       1681 
+       6    000119     Austin                  Travis                           85          0          0          0        754 
+       7    007000     Houston                 Harris                         5543       5517       5742       5621       5059 
+       8    008001     Dallas                  Dallas                          326        277        243        282         40 
+       9    027000     Garland                 Dallas                         2862       2575       3863       2669       2972 
+      10    028000     Dallas                  Dallas                          154        171        156         92        143 
+
+     Obs    dc20102    dc20103    dc20104    dc20111    dc20112    dc20113    dc20114    first    tot2010    tot2011    tot2012
+
+       1       906        615        935        298       1541        961        881     20101      3357       3681       3632 
+       2      6145       6106       6233       6194       6394       6489       6443     20101     24280      25520      27138 
+       3        18         13         19         23         15         18         22     20102        50         78         81 
+       4       497        289        445        157        778        449        482     20101      1718       1866       1924 
+       5      1878       1976       1964       1901       1988       1923       1745     20101      7499       7557       7574 
+       6       633        783        728        663        774        601        232     20101      2898       2270         85 
+       7      5246       5526       5463       4877       5101       5443       5756     20101     21294      21177      22423 
+       8        31         73         89        169        284        300        319     20101       233       1072       1128 
+       9      2885       2944       2905       2991       2796       2867       2767     20101     11706      11421      11969 
+      10       107         93        100         88         98         87        113     20101       443        386        573 
+                                                           The SAS System                      00:28 Saturday, February 15, 2014   4
+
+                                                        The MEANS Procedure
+
+               Variable    Label                    N            Mean         Std Dev         Minimum         Maximum
+               ------------------------------------------------------------------------------------------------------
+               dc20121     Inpatient Discharge    234         1360.19         2199.95               0        11936.00
+               dc20122     Inpatient Discharge    234         1326.83         2134.51               0        11255.00
+               dc20123     Inpatient Discharge    234         1423.61         2287.82               0        12359.00
+               dc20124     Inpatient Discharge    234         1386.89         2228.53               0        12841.00
+               dc20101     Inpatient Discharge    234         1338.12         2260.94               0        12947.00
+               dc20102     Inpatient Discharge    234         1324.82         2219.74               0        13098.00
+               dc20103     Inpatient Discharge    234         1338.04         2259.45               0        13910.00
+               dc20104     Inpatient Discharge    234         1346.38         2258.93               0        13424.00
+               dc20111     Inpatient Discharge    234         1334.07         2178.77               0        11532.00
+               dc20112     Inpatient Discharge    234         1319.39         2141.67               0        11051.00
+               dc20113     Inpatient Discharge    234         1362.58         2241.98               0        12769.00
+               dc20114     Inpatient Discharge    234         1345.58         2192.26               0        12209.00
+               first                              234        20104.04       6.1712238        20101.00        20124.00
+               tot2010                            234         5347.36         8977.24               0        53379.00
+               tot2011                            234         5361.62         8743.51               0        47561.00
+               tot2012                            234         5497.53         8763.42               0        48391.00
+               ------------------------------------------------------------------------------------------------------
+                                                           The SAS System                      00:28 Saturday, February 15, 2014   5
+
+                                                         The FREQ Procedure
+
+                                                     Table of hcity by cntyname
+
+                                   hcity(Hospital City)     cntyname(Hospital County)
+
+                                   Frequency        |Bexar   |Dallas  |Harris  |Travis  |  Total
+                                                    |        |        |        |        |
+                                                    |        |        |        |        |
+                                                    |        |        |        |        |
+                                   -----------------+--------+--------+--------+--------+
+                                   Addison          |      0 |      1 |      0 |      0 |      1
+                                   -----------------+--------+--------+--------+--------+
+                                   Austin           |      0 |      0 |      0 |     25 |     25
+                                   -----------------+--------+--------+--------+--------+
+                                   Baytown          |      0 |      0 |      3 |      0 |      3
+                                   -----------------+--------+--------+--------+--------+
+                                   Bellaire         |      0 |      0 |      3 |      0 |      3
+                                   -----------------+--------+--------+--------+--------+
+                                   Channelview      |      0 |      0 |      2 |      0 |      2
+                                   -----------------+--------+--------+--------+--------+
+                                   Cypress          |      0 |      0 |      2 |      0 |      2
+                                   -----------------+--------+--------+--------+--------+
+                                   Dallas           |      0 |     36 |      0 |      0 |     36
+                                   -----------------+--------+--------+--------+--------+
+                                   DeSoto           |      0 |      3 |      0 |      0 |      3
+                                   -----------------+--------+--------+--------+--------+
+                                   Garland          |      0 |      2 |      0 |      0 |      2
+                                   -----------------+--------+--------+--------+--------+
+                                   Houston          |      0 |      0 |     73 |      0 |     73
+                                   -----------------+--------+--------+--------+--------+
+                                   Humble           |      0 |      0 |      6 |      0 |      6
+                                   -----------------+--------+--------+--------+--------+
+                                   Irving           |      0 |      3 |      0 |      0 |      3
+                                   -----------------+--------+--------+--------+--------+
+                                   Total                  43       52      114       25      234
+                                   (Continued)
+                                                           The SAS System                      00:28 Saturday, February 15, 2014   6
+
+                                                         The FREQ Procedure
+
+                                                     Table of hcity by cntyname
+
+                                   hcity(Hospital City)     cntyname(Hospital County)
+
+                                   Frequency        |Bexar   |Dallas  |Harris  |Travis  |  Total
+                                                    |        |        |        |        |
+                                                    |        |        |        |        |
+                                                    |        |        |        |        |
+                                   -----------------+--------+--------+--------+--------+
+                                   Katy             |      0 |      0 |      3 |      0 |      3
+                                   -----------------+--------+--------+--------+--------+
+                                   Kingwood         |      0 |      0 |      3 |      0 |      3
+                                   -----------------+--------+--------+--------+--------+
+                                   Mesquite         |      0 |      3 |      0 |      0 |      3
+                                   -----------------+--------+--------+--------+--------+
+                                   Nassau Bay       |      0 |      0 |      1 |      0 |      1
+                                   -----------------+--------+--------+--------+--------+
+                                   Pasadena         |      0 |      0 |      6 |      0 |      6
+                                   -----------------+--------+--------+--------+--------+
+                                   Richardson       |      0 |      2 |      0 |      0 |      2
+                                   -----------------+--------+--------+--------+--------+
+                                   San Antonio      |     43 |      0 |      0 |      0 |     43
+                                   -----------------+--------+--------+--------+--------+
+                                   Spring           |      0 |      0 |      1 |      0 |      1
+                                   -----------------+--------+--------+--------+--------+
+                                   Sunnyvale        |      0 |      2 |      0 |      0 |      2
+                                   -----------------+--------+--------+--------+--------+
+                                   Tomball          |      0 |      0 |      4 |      0 |      4
+                                   -----------------+--------+--------+--------+--------+
+                                   Webster          |      0 |      0 |      7 |      0 |      7
+                                   -----------------+--------+--------+--------+--------+
+                                   Total                  43       52      114       25      234
+                                                           The SAS System                      00:28 Saturday, February 15, 2014   7
+
+                                                         The FREQ Procedure
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20101    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                59       25.21            59        25.21  
+                                    +               175       74.79           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20102    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                56       23.93            56        23.93  
+                                    +               178       76.07           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20103    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                56       23.93            56        23.93  
+                                    +               178       76.07           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20104    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                52       22.22            52        22.22  
+                                    +               182       77.78           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20111    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                50       21.37            50        21.37  
+                                    +               184       78.63           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20112    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                50       21.37            50        21.37  
+                                    +               184       78.63           234       100.00  
+
+
+                                                           The SAS System                      00:28 Saturday, February 15, 2014   8
+
+                                                         The FREQ Procedure
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20113    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                49       20.94            49        20.94  
+                                    +               185       79.06           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20114    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                48       20.51            48        20.51  
+                                    +               186       79.49           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20121    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                45       19.23            45        19.23  
+                                    +               189       80.77           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20122    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                43       18.38            43        18.38  
+                                    +               191       81.62           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20123    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                39       16.67            39        16.67  
+                                    +               195       83.33           234       100.00  
+
+
+                                                         Inpatient Discharge
+ 
+                                                                        Cumulative    Cumulative
+                                    dc20124    Frequency     Percent     Frequency      Percent
+                                    ------------------------------------------------------------
+                                    0                39       16.67            39        16.67  
+                                    +               195       83.33           234       100.00  

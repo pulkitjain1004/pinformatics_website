@@ -1,0 +1,327 @@
+1                                                          The SAS System                           00:07 Saturday, February 1, 2014
+
+NOTE: Copyright (c) 2002-2010 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.3 (TS1M2) 
+      Licensed to TEXAS A&M UNIVERSITY - SFA T&R, Site 70148637.
+NOTE: This session is executing on the Linux 2.6.32-358.18.1.el6.x86_64 (LIN X64) platform.
+
+
+
+NOTE: Enhanced analytical products:
+
+SAS/STAT 12.1, SAS/ETS 12.1, SAS/OR 12.2, SAS/IML 12.1, SAS/QC 12.1
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.11 seconds
+      cpu time            0.04 seconds
+      
+1          libname data 'data';
+NOTE: Libref DATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /opt/HPM/usr/kum/phpm672/lab2/sas/data
+2          
+3          proc format;
+4              value health
+5                  1='(01) Excellent' 2='(02) Very good' 3='(03) Good'
+6                  4='(04) Fair' 5='(05) Poor' 94='(94) DON''T KNOW'
+7                  97='(97) REFUSED' ;
+NOTE: Format HEALTH has been output.
+8          
+
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.01 seconds
+      
+
+9          proc format;
+10             value tinsur
+11                 0="None"
+12                 1="Public"
+13                 2="Private"
+14                 3="Both";
+NOTE: Format TINSUR has been output.
+2                                                          The SAS System                           00:07 Saturday, February 1, 2014
+
+15         
+16         * subset vars;
+
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+17         data data.mynsduh;
+18             set data.nsduh(keep=caseid cigever alcever cocever mjever txever medicare caidchip
+19                 champus prvhltin income health irsex catage newrace2 coutyp2 wrkhrsw2
+20                 rename=( wrkhrsw2=wrkhrs));
+21         
+22         * P3.2 checking & coding missing;
+23         if (mjever>2) then mjever = .;
+24         if wrkhrs>=994 then wrkhrs=.;
+25         
+26         * P3.3 create boolean variables;
+27         if cigever=1 then bcigever=1;
+28         else if cigever=2 then bcigever=0;
+29         
+30         if alcever=1 then balcever=1;
+31         else if alcever=2 then balcever=0;
+32         
+33         if cocever=1 then bcocever=1;
+34         else if cocever=2 then bcocever=0;
+35         
+36         if mjever=1 then bmjever=1;
+37         else if mjever=2 then bmjever=0;
+38         
+39         if medicare=1 then bmedicare=1;
+40         else if medicare=2 then bmedicare=0;
+41         
+42         if caidchip=1 then bcaidchip=1;
+43         else if caidchip=2 then bcaidchip=0;
+44         
+45         if champus=1 then bchampus=1;
+46         else if champus=2 then bchampus=0;
+47         
+48         if prvhltin=1 then bprvhltin=1;
+49         else if prvhltin=2 then bprvhltin=0;
+50         
+51         * P3.1 create new vars;
+52         if bcigever=1 or balcever=1 or bcocever=1 or bmjever=1 then
+53             subst=1;
+54         else subst=0;
+55         
+56         if bmedicare=1 or bcaidchip=1 or bchampus=1 then type_insur=1;
+57         if type_insur=1 and bprvhltin=1 then type_insur=3;
+58         else if bprvhltin=1 then type_insur=2;
+59         if type_insur=. then type_insur=0;
+60         
+61         * Label var & value;
+62         label
+63            subst   = 'Substance Use'
+64            type_insur='Type of Insturance'
+65             ;
+66         format health health. type_insur tinsur.;
+3                                                          The SAS System                           00:07 Saturday, February 1, 2014
+
+67         
+68         * P3.4 two different ways to convert numeric to string;
+69         ccaseid=caseid;
+70         ccaseid2=put(caseid, $6.);
+WARNING: Variable CASEID has already been defined as numeric.
+71         rename caseid=ncaseid;
+72         
+
+NOTE: There were 57873 observations read from the data set DATA.NSDUH.
+NOTE: The data set DATA.MYNSDUH has 57873 observations and 29 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.59 seconds
+      cpu time            0.59 seconds
+      
+
+73         proc freq;
+74             tables cigever alcever cocever mjever;
+75         
+76         * Dropped vars here in a new datastep, so I could do frequencies above;
+
+NOTE: There were 57873 observations read from the data set DATA.MYNSDUH.
+NOTE: The PROCEDURE FREQ printed page 1.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.05 seconds
+      
+
+77         data data.mynsduh2(drop=cigever alcever cocever mjever medicare caidchip champus prvhltin);
+78             set data.mynsduh;
+79         
+80         * basic testing;
+
+NOTE: There were 57873 observations read from the data set DATA.MYNSDUH.
+NOTE: The data set DATA.MYNSDUH2 has 57873 observations and 21 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.04 seconds
+      
+
+81         proc contents data=data.mynsduh;
+
+NOTE: The PROCEDURE CONTENTS printed pages 2-3.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+82         proc print data=data.mynsduh(obs=10);
+
+NOTE: There were 10 observations read from the data set DATA.MYNSDUH.
+NOTE: The PROCEDURE PRINT printed page 4.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+83         proc freq;
+84             tables bcigever balcever bcocever bmjever bmedicare bcaidchip bchampus bprvhltin subst type_insur;
+4                                                          The SAS System                           00:07 Saturday, February 1, 2014
+
+85         
+86         * subset obs;
+
+NOTE: There were 57873 observations read from the data set DATA.MYNSDUH2.
+NOTE: The PROCEDURE FREQ printed pages 5-6.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.05 seconds
+      
+
+87         proc print data=data.mynsduh(obs=10);
+88             var subst bcigever balcever bcocever bmjever;
+89             where subst=0;
+90         
+
+NOTE: There were 10 observations read from the data set DATA.MYNSDUH.
+      WHERE subst=0;
+NOTE: The PROCEDURE PRINT printed page 7.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+91         proc print data=data.mynsduh(obs=10);
+92             var subst bcigever balcever bcocever bmjever;
+93             where subst=1;
+94         
+
+NOTE: There were 10 observations read from the data set DATA.MYNSDUH.
+      WHERE subst=1;
+NOTE: The PROCEDURE PRINT printed page 8.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+95         proc print data=data.mynsduh(obs=10);
+96             var type_insur bmedicare bcaidchip bchampus bprvhltin;
+97             where type_insur=0;
+98         
+
+NOTE: There were 10 observations read from the data set DATA.MYNSDUH.
+      WHERE type_insur=0;
+NOTE: The PROCEDURE PRINT printed page 9.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+99         proc print data=data.mynsduh(obs=10);
+100            var type_insur bmedicare bcaidchip bchampus bprvhltin;
+101            where type_insur=1;
+102        
+
+NOTE: There were 10 observations read from the data set DATA.MYNSDUH.
+      WHERE type_insur=1;
+NOTE: The PROCEDURE PRINT printed page 10.
+NOTE: PROCEDURE PRINT used (Total process time):
+5                                                          The SAS System                           00:07 Saturday, February 1, 2014
+
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+103        proc print data=data.mynsduh(obs=10);
+104            var type_insur bmedicare bcaidchip bchampus bprvhltin;
+105            where type_insur=2;
+106        
+
+NOTE: There were 10 observations read from the data set DATA.MYNSDUH.
+      WHERE type_insur=2;
+NOTE: The PROCEDURE PRINT printed page 11.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+107        proc print data=data.mynsduh(obs=10);
+108            var type_insur bmedicare bcaidchip bchampus bprvhltin;
+109            where type_insur=3;
+110        
+111        * P4. answer some interesting questions;
+
+NOTE: There were 10 observations read from the data set DATA.MYNSDUH.
+      WHERE type_insur=3;
+NOTE: The PROCEDURE PRINT printed page 12.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+112        proc means data=data.mynsduh;
+
+NOTE: There were 57873 observations read from the data set DATA.MYNSDUH.
+NOTE: The PROCEDURE MEANS printed page 13.
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.10 seconds
+      
+
+113        proc freq data=data.mynsduh;
+114            tables subst*health/nocol norow nopercent;
+115        
+
+NOTE: There were 57873 observations read from the data set DATA.MYNSDUH.
+NOTE: The PROCEDURE FREQ printed page 14.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+
+116        proc freq data=data.mynsduh;
+117            tables income*txever/nocol norow nopercent;
+118            where subst=1;
+119        
+
+NOTE: There were 43194 observations read from the data set DATA.MYNSDUH.
+      WHERE subst=1;
+6                                                          The SAS System                           00:07 Saturday, February 1, 2014
+
+NOTE: The PROCEDURE FREQ printed page 15.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.02 seconds
+      
+
+120        proc freq data=data.mynsduh;
+121            tables health*newrace2/nocol norow nopercent;
+122            where irsex=2 & catage>2 & subst=1 & wrkhrs>24;
+123        
+124        
+125        
+NOTE: There were 5031 observations read from the data set DATA.MYNSDUH.
+      WHERE (irsex=2) and (catage>2) and (subst=1) and (wrkhrs>24);
+NOTE: The PROCEDURE FREQ printed page 16.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           1.03 seconds
+      cpu time            0.95 seconds
+      

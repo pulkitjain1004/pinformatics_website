@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>PHPM631</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="css/tamu.css">
+    <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/ga.js" async="" type="text/javascript"></script>
+    <!--script>
+
+     var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script-->
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="http://pinformatics.org/phpm631/" class="navbar-brand">PHPM631</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+         <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Syllabus<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+
+            <li><a href="syllabus631.pdf">Syllabus</a></li>
+            <li><a href="grade_sheet.xlsx">Grade Sheet</a></li>
+            <!--li><a href="announce.html">Announcements</a></li-->
+	    </ul>
+
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Assignments<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="assign/assign1.pdf">A1. Computer Specification</a>
+                <li><a href="assign/assign2.pdf">A2. Talking to a Computer</a>
+                <li><a href="assign/assign_lab3.pdf">A3. Hello World!</a>
+                <li><a href="assign/assign4.pdf">A4. EMR</a>
+                <li><a href="assign/assign_lab5.pdf">A5. SQL Queries</a>
+                <li><a href="assign/assign6.pdf">A6. Data to Decision</a>
+                <li><a href="assign/assign7.pdf">A7. Software Requirements</a>
+                <li><a href="assign/assign8.pdf">A8. Final Review</a>
+		<!--li><a href="../phpm631_spr15/assign/reading.docx">READING LOG SUMMARY 2015</a></li>
+                <li><a href="../phpm631_spr15/assign/quest.docx">PEER STUDY QUESTIONS 2015</a>
+                <li><a href="https://drive.google.com/folderview?id=0B30uBYdOhD5ZVk1reGxWUUg1VG8&usp=sharing&tid=0B30uBYdOhD5ZUmI1VW9nbUxVZEk">PEER STUDY QUESTIONS 2016</a-->
+                <li class="divider"></li>
+		<li> Download and save ... </li>
+                <li><a href="assign_info/kum.sdb">A5. kum.sdb</a>
+                <li><a href="assign_info/kumdb.xlsx">A5. Excel version:kumdb.xlsx</a>
+                <li><a href="assign_info/kumdb.sql">A5. kumdb.sql</a>
+                <li><a href="assign_info/sqlite3_help.txt">A5. SQLite3 help</a>
+                <li><a href="assign_info/assign6.zip">A6. AHA/THA/DSHS Survey Data & Documentation</a>
+		</li>
+
+                <!--li><a href="http://bootswatch.com/united/bootstrap.css">bootstrap.css</a></li>
+                <li class="divider"></li>
+                <li><a href="http://bootswatch.com/united/variables.less">variables.less</a></li>
+                <li><a href="http://bootswatch.com/united/bootswatch.less">bootswatch.less</a></li>
+                <li class="divider"></li>
+                <li><a href="http://bootswatch.com/united/_variables.scss">_variables.scss</a></li>
+                <li><a href="http://bootswatch.com/united/_bootswatch.scss">_bootswatch.scss</a></li-->
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Labs<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="assign/lab1.pdf">L1. Computer Specification</a>
+               <li><a href="assign/lab2.pdf">L2. Talking to a Computer</a>
+                <li><a href="assign/assign_lab3.pdf">L3. Hello World!</a>
+                <li><a href="assign/lab4.pdf">L4. Semantic Web</a>
+                <li><a href="assign/assign_lab5.pdf">L5. SQL Queries</a>
+                <li><a href="assign/lab6.pdf">L6. Data to Decision</a>
+                <li class="divider"></li>
+		<li> Download and save ... </li>
+                <li><a href="assign_info/aha_basic.xlsx">L6. AHA Basic Data</a>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Presentation<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+		<li><a href="assign/presentation.pdf">Instructions</a></li>
+		<li><a href="group.png">Schedule</a></li>
+                <!--li><a href="https://drive.google.com/folderview?id=0B30uBYdOhD5ZVXlpcFNiVzJvVzA&usp=sharing&tid=0B30uBYdOhD5ZUmI1VW9nbUxVZEk">Presentations</a></li-->
+	      </ul></li>	
+
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Answer<span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+		<li><a href="ans/ans_assign2.txt">A2</a></li>
+		<li><a href="ans/ans_assign5.sql">A5</a></li>
+	      </ul></li>	
+
+          <ul class="nav navbar-nav navbar-right">
+            <!--li><a href="http://research.tamhsc.edu/pinformatics/" target="_blank">Population Informatics Research Group</a></li-->
+	    <li><a href="http://pinformatics.org/"> <img src="img/pinfo7_color.png" width=100></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+	    <h3>PHPM631 Health Information Management Systems (Spring 2017)</h3>	
+            <p class="lead"></p>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Annoucements</h3>
+                </div>
+                <div class="panel-body">
+<font color='red'></font>
+<a href="http://www.cio.com/article/3150878/data-protection/medical-data-accessible-and-irresistible-for-cyber-criminals.html#tk.drr_mlt"> 
+[4/17] Medical data: Accessible and irresistible for cyber criminals </a>
+<br>[3/21] The first 2 rows in Computer Lab 119 now have Tableau on them for Lab 6.
+<!--b6>[3/15] If you are coming to office hours on Thur, the building might be locked. Call 436-9439 to come in.
+<br>[3/5] Office Hours: Thursday 11-1 (3/16. Spring break)
+Mondays 3-5pm (3/13 & 3/20). 
+<br>[3/13 10:30 pm] Answers to assignment 5 has been posted.
+<br>[3/13] slides for the second sql lecture (3/6) have been updated. But NO CHANGES from what was here except that I dropped the word DRAFT.
+<br>[2/27] Learn to write SQL queries. You may also try the free trials at <a href="https://academy.vertabelo.com">https://academy.vertabelo.com</a>
+<br>[3/5] First privacy lecture has been posted on E-Campus under other information.
+-->
+
+<!--li>[1/24] For Assignment 1: When you are picking three "ITEMS", two should be laptops and the third should be a tablet.</li-->
+<!--li><b>Question bank and reading log summary from 2015 has been posted under assignments.</b> The 12 questions should be the highest priority.  The quality of your final will be correlated to the quality of the questions you submit.  However, the summary study guide is also useful for studying and for look up material during the exam.  So do work on a reasonable summary.  Again, summary important points are what we are after, not long detailed summary.  
+<li>Two CHANGES/DIFFERENCES from last year
+<ul>
+<li> Based on our class decision, Please DO NOT put any answers in the question bank. We had answers last year.
+<li>Please note last year, we only had a summary of the reading log.  I am asking this year to include summary of lecture, assignments, and labs where appropriate this year.  </ul></li>
+ </li>
+<li>Please remember to finish all peer review for all the presentations by 11:59pm on wed. We will have the presentations posted by tomorrow.</li-->
+		    <!--li>Presentation schedule has been posted, please check on the menu to confirm when you will present.</li>  
+		    <li>Syllabus has been UPDATED.  It should be dated 1/24.  Please check the syllabus.</li>
+		    <li>Links for Assignment 1 have been fixed.  They should work.</li>
+		    <li>If you have not gotten an email from me, you are not presenting as Group 1 or 2.  For everyone else, I will post the full schedule by class time next week.  If you did get an email from me about presenting as Group 1 o 2, please prepare.</li-->
+		    <li>Some links do not work at this time.  Links will be updated as we go.</li>
+
+		    <!--li>We will update the optional lab time after first day of class.</li-->
+
+<li>How to post your reading log on blackboard
+<ol><li>Click on the appropriate forum (P1 for this week)</li>
+    <li>"Create Thread" and type in your feedback </li>
+    <li>Don't forget to save by clicking on "Submit"</li>
+</ol>
+</li>
+
+</ul>
+                </div>
+              </div>
+
+            <h2 id="tables">Schedule (Tentative)</h2>
+            <div class="bs-component">
+              <table class="table table-striped table-hover ">
+                <thead>
+                  <tr>
+		    <th>Week</th>
+		    <th>Date</th>
+		    <th>Lecture</th>
+		    <th>Presentations</th>
+		    <th>Labs</th>			
+		    <th>Assignments</th>
+		    <th>DUE</th>
+		    <th>Readings (For class)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="success">
+		    <td></td>
+		    <td>01/16</td>
+		    <td>HOLIDAY</td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		  </tr>
+                  <tr class="success">
+	    <td>1</td>
+		    <td>01/23</td>
+		    <td>
+			<!--a href="ppt/lec1_intro.pdf"-->Introduction</a>
+		    <br><!--a href="ppt/lec1_cs.pdf">Fundamentals of Computing I</a-->			
+			Privacy, Security, and HIPAA (Find on E-Campus/Other Info)			
+		    </td>
+		    <td>Guest (Privacy Officer) </td>
+		    <td>L1</td>
+		    <td>A1 </td>
+		    <td>None</td>
+		    <td>None</td>
+                  </tr>
+                  <tr class="success">
+		    <td>2</td>
+		    <td>01/30</td>
+		    <td><a href="ppt/lec2_cs.pdf">Fundamentals of Computing</a></td>
+		    <td></td>
+		    <td><!--a href="ppt/lab2_assembly.pdf">Assembly Code;</a-->L2</td>
+		    <td>A2</td>
+		    <td>A1 & <br>P. Email</td>
+		    <td>R1</td>
+                  </tr>
+                  <tr class="success">
+		    <td>3</td>
+		    <td>02/06</td>
+		    <td><a href="ppt/lec3_prog.pdf"-->Computer Programming</a></td>
+		    <td>Grp 1</td>
+		    <td><!--a href="ppt/lab3_prog.pdf">Programming;</a-->L3 Week 1</td>
+		    <td>A3 Week 1</td>
+		    <td>A2</td>
+		    <td>R2</td>
+                  </tr>
+                  <tr class="success">
+		    <td>4</td>
+		    <td>02/13</td>
+		    <td><a href="ppt/lec4_networks.pdf"-->Networks</a></td>
+		    <td>Grp 2</td>
+		    <td>L3 Week 2</td>
+		    <td>A3 Week 2</td>
+		    <td>A3 Week 1</td>
+		    <td>R3</td>
+                  </tr>
+                  <tr class="success">
+		    <td>5</td>
+		    <td>02/20</td>
+		    <td><a href="ppt/lec5_web.pdf">Web</a></td>
+		    <td>Grp 3</td>
+		    <td>L4</td>
+		    <td>A4</td>
+		    <td>A3</td>
+		    <td>R4</td>
+                  </tr>
+                  <tr class="success">
+		    <td>6</td>
+		    <td>02/27</td>
+		    <td><a href="ppt/lec6_sql.pdf">SQL I</a></td>
+		    <td>Grp 4</td>
+		    <td>L5 Week 1</td>
+		    <td>A5 Week 1</td>
+		    <td>A4</td>
+		    <td>R5</td>
+                  </tr>
+                  <tr class="success">
+		    <td>7</td>
+		    <td>03/06</td>
+		    <td><a href="ppt/lec7_sql2.pdf">SQL II </a></td>
+		    <td>Grp 5</td>
+		    <td>L5 Week 2</td>
+		    <td>A5 Week2, <a href='assign/midrev.pdf'>Mid Review</a></td>
+		    <td></td>
+		    <td>R6</td>
+                  </tr>
+                  <tr class="success">
+		    <td></td>
+		    <td>03/13</td>
+				  <td>Spring Break</td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td>A5(3/12)</td>
+		    <td></td>
+                  </tr>
+                  <tr class="success">
+		    <td>8</td>
+		    <td>03/20</td>
+		    <td><a href="ppt/lec8_sql3.pdf"-->Data to Decisions, Review Assignment 5</a></td>
+		    <!--td><a href="ppt/lec8_data.pdf">Data to Decision</a></td-->
+		    <td>Midterm</td>
+		    <td>L6</td>
+		    <td>A6</td>
+		    <td>Mid Review</td>
+		    <td>None</td>
+                  </tr>
+                  <tr class="success">
+		    <td>9</td>
+		    <td>03/27</td>
+		    <td><a href="ppt/lec9_data.pdf">Data to Decision</a> & <a href="ppt/coding.pdf">Coding</a></td>
+		    <td>Guest (Coder)</td>
+		    <td></td>
+		    <td></td>
+		    <td>L6 & A6 Progress Report</td>
+		    <td>R7</td>
+                  </tr>
+                  <tr class="success">
+		    <td>10</td>
+		    <td>04/03</td>
+		    <td><a href="ppt/lec10_se.pdf"-->IT Management</a></td>
+		    <td>Grp 6</td>
+		    <td></td>
+		    <td>A7</td>
+		    <td>A6</td>
+		    <td>R8</td>
+                  </tr>
+                  <tr class="success">
+		    <td>11</td>
+		    <td>04/10</td>
+		    <td><a href="ppt/lec11_standard.pdf">Standards & HIE</a>
+		    <!--td><a href="ppt/lec10_se.pdf">IT Management</a></td>
+		    <!--td><a href="ppt/lec11_privacy.pdf">Privacy</a></td-->
+		    <td><a href="ppt/DFWHC_FoundationOverviewIQSC_FocusKum040917.pdf">Guest (HIE Use Case)</a> </td>
+		    <td></td>
+		    <td></td>
+		    <td>A7 Progress Report</td>
+		    <td>R9</td>
+                  </tr>
+                  <tr class="success">
+		    <td>12</td>
+		    <td>04/17</td>
+		    <td><a href="ppt/lec12_security.pdf">Security</a></td>
+		    <td>Grp 7</td>
+		    <td></td>
+		    <td>A8</td>
+		    <td>A7</td>
+		    <td>R10</td>
+                  </tr>
+
+                  <tr class="warning">
+		    <td>13</td>
+		    <td>04/24</td>
+		    <td><a href="ppt/review.pdf">Wrap Up & Review</a></td>
+		    <td>Grp 8</td>
+		    <td>Guest (HIPAA Compliance Officer, RCHI)</td>
+		    <td>Review</td>
+		    <td>A8</td>
+		    <td></td>
+                  </tr>
+
+                  <tr class="danger">
+		    <td>14</td>
+		    <td>05/1</td>
+		    <td>Final</td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+                  </tr>
+
+		  <!-- active: white, success:green info:blue, warning:yellow, danger:red-->
+                  <!--tr class="info">
+                  <tr class="danger">
+                  <tr class="warning">
+                  <tr class="active">
+                  </tr-->
+                </tbody>
+              </table> 
+            </div><!-- /example -->
+
+	    <!--a href="http://www.ihealthbeat.org/insight/2015/12-experts-weigh-in-on-health-it-progress-disappointment-in-2014-hopes-for-2015">
+12 Experts Weigh In on Health IT Progress, Disappointment in 2015 & Hopes for 2015</a><br>
+<a href="http://www.wsj.com/articles/SB109649725615131815">
+<li>"The Fall Buyer's Guide: Things to Keep In Mind When Choosing a PC." Wall Street Journal, September 30, 2004.</a-->
+
+<h2>Reading Assignment</h2>
+<div class="bs-component">
+  <!--div class="alert alert-dismissable alert-warning"-->
+  <div class="alert alert-dismissable alert-info">
+<h4>Remember to post your reading log on blackboard before each class.<br> 3 interesting points (facts you learned) & 1 opinion.
+</h4>
+<p>[I] Internet: search online, find, and read
+<br> [L] Link: click on the link
+<br>[A] Article: get from the library, usually available on ejournal format
+</p>
+<ul>
+<li>R1: For 01/30
+<ul>
+<li>[I]<a href="http://www.healthcareitnews.com/news/commentary-big-data-serves-patients-and-people-increasingly-broad-ways">Commentary: Big data serves patients and people in increasingly broad ways, January 13, 2017.</li>
+<li>[I]<a href="http://www.healthcareitnews.com/video/himss17-cybersecurity-preview-ransomware-reality-check">HIMSS17 Cybersecurity Preview: Ransomware reality check, January 11, 2017.</a></li>
+<li>[I] <a href="http://www.healthcareusability.com/article/experts-weigh-health-it-progress-disappointment-2014-hopes-2015">12 Experts Weigh In on Health IT Progress, Disappointment in 2014 & Hopes for 2015. iHealthBeat, January 5, 2015.</a></li>
+<li>[I] <a href="http://www.pcmag.com/article/344469/the-home-office-laptop-buying-guide">The Home Office Laptop Buying Guide.</a></li>
+<li>[I] <a href="http://www.cheatsheet.com/technology/9-tips-for-picking-your-machine-computer-shopping-cheat-sheet.html/?a=viewall">9 Key Things to Know Before You Buy a New Computer.</a></li>
+<li>[I] <a href="http://www.corpcomputerservices.com/articles/buying-a-new-pc">What To Consider When Buying a New PC or Server For Your Company.</a></li>
+<li>[L]<a href="http://topics.nytimes.com/top/news/health/series/the_digital_doctor/index.html">NYT "The Digital Doctor"
+(click on the link. There are 8 articles.  Pick 2) 
+</a></li>
+</ul>
+<!--li>[A] Bates DW, and Gawande, AA (2003) Improving safety with information technology. New 
+England Journal of Medicine; 348(25) 2526-34
+</li>
+<li>[A]Koppel R, Metlay JP, Cohen A, et al. (2005) Role of computerized physician order entry systems 
+in facilitating medication errors. JAMA; 293(10):1197-203.
+</li-->
+
+<li>R2: For 02/06
+<ul>
+<li>[A]Menachemi, N., Collum, T. (2011) Benefits and drawbacks of electronic health record systems. Risk Management and Healthcare Policy, 4(1) 47-55.
+</li>
+<li>[A] Thouin MF, Hoffman JJ, Ford EW. (2008) The effect of information technology investment on 
+firm-level performance in the health care industry. Health Care Manage Rev; 33(1):60-8.
+</li>
+<li> [A] Spaulding, T. J., & Raghu, T. S. (2013). Impact of CPOE usage on medication management process costs and quality outcomes. INQUIRY: The Journal of Health Care Organization, Provision, and Financing, 50(3), 229-247.
+</li>
+<li>[L]<a href="http://www.gc.cuny.edu/CUNY_GC/media/365-Images/Uploads%20for%20LMIS/Information%20Tools/HIT-Brochure_1.pdf">Planning Your Career in Health Information</a></li>
+</ul>
+
+<li>R3: For 02/13
+<ul>
+<li>[A] Hall, M., Schulman, K. (2009) Ownership of Medical Information. JAMA. 2009;301(12):1282-1284. March 25, 2009 doi:10.1001/jama.2009.389
+<li>[A] Blumenthal D, (2009) Launching HITECH. N Engl J Med; 4;362(5):382-5.
+<li>[A] Schickedanz A, Huang D, Lopez A, et al. (2013) Access, interest, and attitudes toward electronic communication for health care among patients in the medical safety net. J Gen Intern Med. doi:10.1007/s11606-012-2329-5.
+<li>[A] Wartenberg, D., & Thompson, W. D. (2010). Privacy versus public health: the impact of current confidentiality rules. American journal of public health, 100(3), 407.
+</ul>			
+<li>R4: For 02/20
+<ul>
+<li>[I] <a href="http://computer.howstuffworks.com/internet/basics/internet.htm">How Stuff Works: Internet</a></li>
+<li>[I] <a href="http://www.webopedia.com/TERM/W/World_Wide_Web.html">Webopedia: WWW</a></li>
+<li> [I] <a href="http://www.webopedia.com/DidYouKnow/Internet/Semantic_Web.asp">Webopedia: What is Semantic Web ?</a></li>
+<li> OPTIONAL [I] <a href="https://www.w3.org/2001/sw/SW-FAQ">W3C Semantic Web FAQ</a></li>
+<li>OPTIONAL [A] Berners-Lee, Tim, James Hendler, and Ora Lassila. "The Semantic Web." Scientific American, May 2001, pp. 35-43.</li>
+<li>[A] Redelmeier, D. A., & Detsky, A. S. (2013). Pitfalls with Smartphones in Medicine. Journal of General Internal Medicine, 28(10), 1260–1263. doi:10.1007/s11606-013-2467-4</li>
+<li>[A] Klonoff, D. C. (2013). The current status of mHealth for diabetes: will it be the next big thing? J Diabetes Sci Technol, 7(3), 749-758.</li>
+<li>[A] Yang., T., Silverman, R. (2014) Mobile Health Applications: The Patchwork Of Legal And Liability Issues Suggests Strategies To Improve Oversight. Health Affairs, 33(2):222-227</li>
+<li>[A] Bright TJ, Wong A, Dhurjati R, Bristow E, Bastian L, Coeytaux RR, et al. Effect of Clinical Decision-Support Systems: A Systematic Review. Ann Intern Med. 2012;157:29-43. doi: 10.7326/0003-4819-157-1-201207030-00450</li>
+
+</ul>
+<li>R5: For 02/27
+<ul>
+<li>[I] <a href="http://technologyadvice.com/medical/ehr-emr/smart-advisor/">EHR Buyer's Guide</a></li>
+<li>[I] <a href="http://www.healthit.gov/providers-professionals/ehr-implementation-steps/step-1-assess-your-practice-readiness">Selecting & Implementing EHRs (HealthIT).</a> (Read ONLY Steps 1- 3, & EHR Implementation Lessons from the Field)
+<li>[I] <a href="http://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html">A Quick-Start Tutorial on Relational Database Design</a></li>
+<li>[I] <a href="https://www.youtube.com/watch?v=NvrpuBAMddw">Relational Database Concepts</a></li>
+<li>[I] <a href="https://www.youtube.com/watch?v=Ls_LzOZ7x0c">Database programming tutorial: What are databases?
+</a></li>
+<li>[I] <a href="http://en.wikipedia.org/wiki/Book:SQL">Wikipedia Book: SQL </a>(SCROLL to the bottom.  Read ONLY the sections on <B>Statements for SELECT, INSERT, & UPDATE</B>)
+</li>
+<li>Other Optional videos (If you find other good ones, or ones you don't like please let me know)
+<ul>
+<li>[I] <a href="https://www.youtube.com/watch?v=V5DyvUfsboA">Database programming tutorial: Defining table relationships?
+</a></li>
+<li>[I] <a href="https://www.youtube.com/watch?v=d57i1XWUyy4">SQL Fundamentals: Things you should know before you begin writing SQL queries?
+</a></li>
+<li>[I] <a href="https://www.youtube.com/watch?v=FR4QIeZaPeM">What is Database & SQL?
+</a></li>
+</ul>
+</ul>
+</li>
+
+<li>R6: For 3/6
+<ul>
+<li><a href="http://geekdoctor.blogspot.com/2015/02/making-time-for-innovation.html">[I]Making time for Innovation</a></li>
+<li>[I]One other blog post from Life as a Healthcare CIO
+<li>No Reading Log this week so that you can focus on learning SQL. Watch the optional vedios from last week or others you find.  Try to learn as much as you can in writing SQL queries via W3C and doing assignment 5.  We will have lab time,  and I will be around after class to help anyone who is having trouble.
+Writing SQL queries will be one of the main questions on the midterm as well as being on the final so take the time to learn this now.  It will increase your competitiveness in the job market as well.
+</ul>
+
+</li>
+<li>R7: For 03/27
+<ul>
+<li>[A]Bates, D. W., Saria, S., Ohno-Machado, L., Shah, A., & Escobar, G. (2014). Big data in health care: using analytics to identify and manage high-risk and high-cost patients. Health Affairs, 33(7), 1123-1131.
+
+<li>[A]Friedman, C. P., Wong, A. K., & Blumenthal, D. (2010). Achieving a nationwide learning health system. Science translational medicine, 2(57), 57cm29-57cm29.
+
+<li>[A] John Billings and Maria C. Raven Dispelling. An Urban Legend: Frequent EmergencyDepartment Users Have Substantial Burden Of Disease. Health Affairs, 32, no.12 (2013):2099-2108
+
+<li>[A]Goth G. Running on EMPI. Health information exchanges and the ONC keep trying to find the secret sauce of patient matching. Health data management. February 2014;22(2):52-52, 54, 56 passim.
+
+<!--li>[A]Wang, W., & Krishnan, E. (2014). Big data and clinicians: a review on the state of the science. JMIR medical informatics, 2(1), e1.</li-->
+
+
+</ul>
+
+<li>R8: For 4/3
+<ul>
+<li>[A]Turner, A. M., Reeder, B., & Ramey, J. Scenarios, personas and user stories: User-centered evidence-based design representations of communicable disease investigations. Journal of Biomedical Informatics, 46(4), 575-584. doi: 10.1016/j.jbi.2013.04.006
+<li>[L]<a href="http://ehrscience.com/2013/02/18/from-idea-to-system-a-story-of-architecture-and-design/">Explorations in the Design and Implementation of Clinical Information Systems</a>
+<li>[L]<a href="https://www.scrumalliance.org/community/articles/2014/january/success-story-agility-in-healthcare">Scrum in Healthcare (optional: try searching for terms "clinical" or "Health" to look at other examples related to Health)</a>
+<li>[L]<a href="http://wiki.directproject.org/User+Stories">Pick 3 Stories and read them</a>
+</ul>
+
+<li>R9: For 4/10
+<ul>
+<li>[A] Dawn Heisey-Grove, Jennifer A. King. (2016) Physician and Practice-Level Drivers and Disparities around Meaningful Use Progress. Health Services Research.
+<li>[A] Tokars JI, English R, McMurray P, Rhodes B. (2010) Summary of data reported to CDC's national automated biosurveillance system, 2008. BMC Med Inform Decis Mak. 25;10:30.
+<li><a href="http://www.himssanalytics.org/case-study-list">[I]HIMSS: Stage 7 Case Studies (pick 2 and read)</a>
+</ul>
+<li>R10: For 4/17
+<ul>
+
+<li>[I] <a href="http://www.cbc.ca/news/trending/hollywood-hospital-hacked-1.3450545?cmp=rss">Hollywood hospital pays $17K ransom to hackers after computer network attack</a></li>
+<li>[I]<a href="http://www.cio.com/article/3153207/data-breach/black-market-medical-record-prices-drop-to-under-10-criminals-switch-to-ransomware.html">
+Black market medical record prices drop to under $10, criminals switch to ransomware</a></li>
+<li>[L]<a href="http://www.hhs.gov/ocr/privacy/hipaa/understanding/srsummary.html">HIPAA Security Rule: If too much to read everyting, at least scan to understand the key elements</a>
+<li>[L]<a href="http://arstechnica.com/security/2012/10/zero-day-attacks-are-meaner-and-more-plentiful-than-thought/">Zero Day Attack</a>
+<li>[L]<a href="https://www.us-cert.gov/ncas/alerts/TA16-091A">US & Canada Joint Cyber Alert on Ransomware and Recent Variants</a>
+
+<!--li>
+http://www.cio.com/article/3150878/data-protection/medical-data-accessible-and-irresistible-for-cyber-criminals.html#tk.drr_mlt
+Medical data: Accessible and irresistible for cyber criminals
+
+<!--li>[A] Blumenthal D, Tavenner M., (2010) The "meaningful use" regulation for electronic health records. N Engl J Med. 363(6):501-4.
+Bright, T. J., Wong, A., Dhurjati, R., Bristow, E., Bastian, L., Coeytaux, R. R., ... & Wing, L. (2012). Effect of clinical decision-support systems: a systematic review. Annals of internal medicine, 157(1), 29-43.
+
+------
+
+
+<li><a href="http://apps.who.int/classifications/apps/icd/icd10training/">ICD-10 training (Just do 'Introduction to classification')</a>
+
+<li>[I]<a href="http://www.cdc.gov/nchs/icd.htm">CDC ICD9-CM & ICD10-CM</a>
+<li>[I]<a href="http://www.cms.gov/"> CMS: insert ICD search term</a>
+<li>[I]<a href="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/AcuteInpatientPPS/Acute-Inpatient-Files-for-Download-Items/CMS1247873.html">DRG</a>
+<li>[I]<a href="http://www.hopkinsmedicalproducts.com/PDF/542002CPT.pdf">CPT</a>
+
+<li>[A] Yung, R. L., Chen, K., Abel, G. A., Gesten, F. C., Roohan, P. J., Boscoe, F. P., ... & Schrag, D. (2011). Cancer disparities in the context of Medicaid insurance: a comparison of survival for acute myeloid leukemia and Hodgkin's lymphoma by Medicaid enrollment. The oncologist, 16(8), 1082-
+1091.
+
+<li>National Hospital Discharge Survey
+<li>National Ambulatory Medical Care Survey>
+---------------
+
+<li>[I] <a href="http://www.cio.com/category/healthcare">CIO:Healthcare.  PIck 2 articles</a></li>
+
+<li>[I]"Physicians Divided on Cloud-Based EHRs." iHealthBeat, September 9, 2013.</li>
+
+[A] Hertzman CP, Meagher N, McGrail KM. Privacy by Design at Population Data BC: a case study describing the technical, administrative, and physical controls for privacy-sensitive secondary use of personal information for research in the public interest. J Am Med Inform Assoc. 2013 Jan 1;20(1):25-8. doi: 10.1136/amiajnl-2012-001011. Epub 2012 Aug 30.
+
+Select 2 of the 4 articles marked [A]lternaive and read all links [L] and Internet [I]
+
+<!--li>[I]<a href="http://wiki.siframework.org/Use+Case+1+Local+Data+Access+User+Stories"></a>
+<li>[A]Miller, RH and Miller BS, (2007) The Santa Barbara County Care Data Exchange: What Happened? Health Affairs, 5. w568-580.
+
+<!--li>[I] <a href="http://www.modernhealthcare.com/article/20160218/NEWS/160219904">IBM deal to buy Truven will add 8,500 clients and boost data trove to 300 million patients</a></li>
+<li><a href="https://blog.cms.gov/2016/02/24/lessons-learned-reflections-on-cms-and-the-successful-implementation-of-icd-10/">[I] Lessons Learned: Reflections on CMS and the Successful Implementation of ICD-10</a>
+<li><a href="http://www.roadto10.org/icd-10-basics/">[I] ICD-10 Basics</a>
+<li><a href="http://www.roadto10.org/whats-different/">[I] What is different with ICD-10?</a>
+<li><a href="http://www.ahima.org/topics/icd10/faqs">[I] ICD-10 Quick References (pick 2 and read)</a>
+</ul>
+
+-->
+
+
+</ul>
+</div></div>
+
+          </div>
+        </div>
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+            </ul>
+            <p>&copy; Hye-Chung Kum 
+(<a href="http://pinformatics.org/">Population Informatics Research Group</a>) 2017</p>
+            <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+            <p>Based on <a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootswatch.js"></script>
+
+</body></html>
+

@@ -1,0 +1,57 @@
+{% extends "problem.html" %}
+
+{% block head %}
+  {{ super() }}
+	<link type="text/css" rel="stylesheet" href="{{prefix_path}}/syntax_highlighter/shCoreDefault.css"/>
+{% endblock %}
+
+{% block breadcrumb %}
+  {{ super() }}
+  <li><a href="{{prefix_path}}/{{prob_base}}/{{part}}">{{part | capitalize}}</a></li>
+  <li>{{name}}</li>
+{% endblock %}
+
+{% block mainContent %}
+
+<a href="{{prefix_path}}/{{prob_base}}/{{part}}/{{name}}">Download</a>
+{{problemContent.replace("~~PROB_BASE~~", prefix_path + "/" + prob_base) }}
+
+{% endblock %}
+
+{% block bodyEnd %}
+
+<!-- Syntax highlighter  -->
+<script type="text/javascript" src="{{prefix_path}}/syntax_highlighter/shCore.js"></script>
+<script type="text/javascript" src="{{prefix_path}}/syntax_highlighter/shAutoloader.js" ></script>
+<script type="text/javascript">
+    SyntaxHighlighter.autoloader(
+
+    // Languages that have a language page in csplib
+    // Only the Title from specification.md converted to lower case should be used.
+    ['comet',        '{{prefix_path}}/js/shBrushComet.js'],
+    ['eclipse',      '{{prefix_path}}/js/shBrushECLiPSe.js'],
+    ['essence',      '{{prefix_path}}/js/shBrushEssence.js'],
+    ['essenceprime', '{{prefix_path}}/js/shBrushEssencePrime.js'],
+    ['minizinc',     '{{prefix_path}}/js/shBrushMiniZinc.js'],
+
+
+    // Standard Programming languages
+    ['cpp','hpp','hh','cc','h','c', '{{prefix_path}}/syntax_highlighter/shBrushCpp.js'],
+    ['erl','hrl', '{{prefix_path}}/syntax_highlighter/shBrushErlang.js'] ,
+    ['cs'       , '{{prefix_path}}/syntax_highlighter/shBrushCSharp.js'] ,
+    ['groovy'   , '{{prefix_path}}/syntax_highlighter/shBrushGroovy.js'] ,
+    ['java'     , '{{prefix_path}}/syntax_highlighter/shBrushJava.js']   ,
+    ['js'       , '{{prefix_path}}/syntax_highlighter/shBrushJScript.js'],
+    ['php'      , '{{prefix_path}}/syntax_highlighter/shBrushPhp.js']    ,
+    ['pl'       , '{{prefix_path}}/syntax_highlighter/shBrushPerl.js']   ,
+    ['py'       , '{{prefix_path}}/syntax_highlighter/shBrushPython.js'] ,
+    ['rb'       , '{{prefix_path}}/syntax_highlighter/shBrushRuby.js']   ,
+    ['scala'    , '{{prefix_path}}/syntax_highlighter/shBrushScala.js']  ,
+    ['xml'      , '{{prefix_path}}/syntax_highlighter/shBrushXml.js']
+ 	);
+
+	SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+{% endblock %}

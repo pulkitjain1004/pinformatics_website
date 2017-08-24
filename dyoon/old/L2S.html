@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>Lab2 Supplement</title>
+    <link href="mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width:751px)"/>
+    <link href="nav.css" rel="stylesheet" type="text/css" media="screen and (min-width:750px)"/>
+    <link href="print.css" rel="stylesheet" type="text/css" media="print"/>            
+	<style type="text/css">
+    </style>	
+</head>
+
+<body>
+	<header>
+		<h1> <center> Lab #2:  Variables & Conditionals </center> </h1>
+		<h2> <center> Detailed Plan </center> </h2>
+	</header>
+	<div id="wrapper">	
+		<nav id="side">
+	    	<ul>
+		        <li><a href="index.html"> Home</a></li>
+		        <li><a href="A1.html"> Assignment 1 </a></li>
+		        <li><a href="A2.html"> Assignment 2 </a>
+		        	<ul>
+		        		<li><a href="L2.html"> Lab 2 </a></li>
+		        		<li><a href="L2S.html"> Lab 2 Supp. </a></li>
+		        		<li><a href="A2.html"> Assignment 2 </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A3.html"> Assignment 3 </a>
+		        	<ul>
+		        		<li><a href="L3.html"> Lab 3 </a></li>
+		        		<li><a href="A3.html"> Assignment 3 </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A4.html"> Assignment 4</a>
+		        	<ul>
+		        		<li><a href="data/lab4.zip" dwonload> Lab4 </a></li>
+		        		<li><a href="A4.html"> Assignment 4 </a></li>
+		        		<li><a href="A4A.html"> Assignment 4 Alt. </a></li>
+		        		<li><a href="A4S.html"> Assignment 4 Supp. </a></li>
+		        	</ul>
+		        </li>
+		        <li><a href="A5.html"> Assignment 5</a></li>       
+		        <li><a href="Final.html"> Final Project</a></li>
+		    </ul>
+	    </nav>
+		<article>
+			<p>WARNING: This is a large dataset, DO NOT try to open the dataset as it will slow down your computer.  If you want to see your data, use proc print data=fn (obs=n);</p>
+
+			<p>If you are lost and do not know how to use a particular syntax, look it up in the reference manual.  Read the explanation, and in particular look at example code in the bottom. Go to the link below, click on index (give it time to load) and look for the keyword.  Remember there are most always more than one way to do something, just find one that makes sense to you.  At this phase, your only goal is to have the computer do things correctly.<br>
+				<a href="http://support.sas.com/onlinedoc/913/docMainpage.jsp" target="_blank">http://support.sas.com/onlinedoc/913/docMainpage.jsp</a></p>
+
+			<p>
+				<b><u>Input</u></b><br>
+				<ul>
+					<li>Raw csv file from website
+						<ul>
+							<li><a href="http://www.icpsr.umich.edu/icpsrweb/SAMHDA/studies/32722/version/4" target="_blank">http://www.icpsr.umich.edu/icpsrweb/SAMHDA/studies/32722/version/4</a></li>
+							<li>use “SAS setup” : which should have *.txt (NOT *.stc)</li>
+						</ul></li>
+					<li>Setup SAS program to read csv into a sas dataset
+						<ul>
+							<li>Must edit the program as below to output the sas dataset to your directory.</li>
+							<li>Run the program in sas, and check the log to confirm that you have a sas dataset with 57,873 observations and 3125 variables.</li>
+						</ul>
+					<li>TEST: check the data directory and confirm that you have  new sas dataset named as you did in your program (*.sas7bdat). Note this is also the output from this first step that will be the input to the next step.  This would be an intermediate result<br> <br>
+						--- FROM (in the sas program given)<br>
+						DATA;<br>
+						INFILE "data-filename" LRECL=6836;<br>
+						--- CHANGE TO (make this edits)<br>
+						libname data “DIRNAME”;<br>
+						DATA data.nsduh;<br>
+						INFILE "DIRNAME/nsduh.txt" LRECL=6836;</li>
+
+				</ul>
+			</p>
+			<p>
+				<b><u>Step 1</u></b><br>
+				<ul>
+					<li>Now you will write your first SAS program.</li>
+					<li>It will have one data step, and a few proc steps.</li>
+				</ul>
+				<b>Step 1.1</b>
+				<ul>
+					<li>Open base sas</li>
+					<li>In the editor window, write the first few lines of your sas code as below.  Replace the unbolded words as appropriate for your program, if needed.  You can use the same dataset name for indataset and outdataset, that just means you will overwrite your olddataset with the new one you create. For this assignment, I suggest using a different name so you do not overwrite it.  Note data.indataset should be the input to this step, and output from the previous step.<br><br>
+						libname data “DIRNAME”;<br>
+						data data.mynsduh;<br>
+						set data.nsduh;<br><br>
+
+						proc print data=data.mynsduh(obs=10);<br>
+						run;<br><br></li>
+					<li>Save your program into lab2/</li>
+					Run this program in sas.  Check the log.  It should tell you that now you have a new dataset named with the new name, with the same number of observations and variables. You should have no ERRORs or WARNINGS.
+					<li>TEST1: look at the output (results). Check that things look correct.</li>
+					<li>TEST2: check in the data directory for the new dataset.  See that it is the same size as the olddataset. Note this will change in the next step.</li>
+				</ul>
+				<b>Step 1.2</b>
+				<ul>
+					<li>Now go back to your editor with your three four lines of code.</li>
+					<li>Add lines of code in the data step (between data … ; and run; ) to do one thing. For example, to subset variables (keyword keep).</li>
+					<li>Now rerun ALL the sas code.  Look at the log.  This time you should have a message telling you that you only have 17 variables</li>
+					<li>TEST: look at the output. Does this look right?</li>
+				</ul>
+				<b>Step 1.3 Describing the data</b>
+				<ul>
+					<li>Now go back to your editor with your code.</li>
+					<li>This time, you will add proc steps after your data step to describe your data (proc means, proc freq).  Put these between your proc print and run statements</li>
+					<li>Again check your log</li>
+					<li>TEST: check your output</li>
+				</ul>
+				<b>Step 1.4</b>
+				<ul>
+					<li>Iterate over these steps adding in one task at a time either to the data step (step 1.2), or adding in a new proc step (step 1.3).</li>
+					<li>After each task is completed, remember to save your program, always rerun the code, look at the log, and look at the results.</li>
+					<li>If you need to stop for the day, save your program and come back to the particular task next time.</li>
+				</ul>
+			</p>
+			<p>
+				<b><u>Output: Submission</u></b><br>
+				You DO NOT submit the datasets. I don’t need to see your datasets, because I can see your programs. I know exactly what you did to your datasets.<br><br>
+				The best way to submit, is after you are all DONE. 
+				<ul>				
+					<li>Save your program.</li>
+					<li>Exit out of SAS (this is easier than clearing the log and results window, because by now you will have a LOT there).</li>
+					<li>Start up SAS again.  </li>
+					<li>Open your sas program</li>
+					<li>Now run your full code. (this should give you a clean log and results)</li>
+					<li>Save out the clean log and results (*.html)</li>
+					<li>Submit your program, log, and results</li>.
+				</ul>
+		</article>
+	</div>
+</body>
+</html>

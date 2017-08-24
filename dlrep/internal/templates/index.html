@@ -1,0 +1,45 @@
+{% set title = "CSPLib: A problem library for constraints" %}
+{% extends "wrapper.html" %}
+
+{% block mainContent %}
+
+<h2>Overview</h2>
+
+<p> CSPLib is a library of test problems for constraint solvers. The library consists of: </p>
+
+<ul>
+    <li>Problems organised by <a href="{{prefix_path}}/Problems/categories.html">subject area</a> and <a href="{{prefix_path}}/Problems">problem number</a></li>
+</ul>
+
+<p> CSPLib also maintains a list of <a href="{{prefix_path}}/Languages/index.html">constraint languages</a> and the tools which can be used to solve problems in these languages.</p>
+
+
+<p>
+The main motivation for CSPLib is to focus research in constraints away from purely random problems and onto more structured problems.
+</p>
+
+<p>
+We currently have {{ num_problems }} problems in {{ num_categories }} <a href="{{prefix_path}}/Problems/categories.html">categories</a> proposed by {{num_authors}} <a href="{{prefix_path}}/authors.html">authors</a>.
+</p>
+
+<p>Please submit any updates or corrections to CSPLib to our <a href="http://github.com/csplib/csplib">git repository</a>, either as a <a href="https://github.com/csplib/csplib/issues">new issue</a>, or <a href="https://github.com/csplib/csplib/pulls">pull request</a>.
+</p>
+
+<hr>
+
+<p> The current editors-in-chief of CSPLib are <a href="https://caj.host.cs.st-andrews.ac.uk">Chris Jefferson</a> and <a href="https://ozgur.host.cs.st-andrews.ac.uk/">Özgür Akgün</a>.
+The current website maintainers are <a href="http://bh246.host.cs.st-andrews.ac.uk">Bilal Syed Hussain</a>, <a href="http://caj.host.cs.st-andrews.ac.uk">Chris Jefferson</a> and <a href="https://ozgur.host.cs.st-andrews.ac.uk/">Özgür Akgün</a>.
+</p>
+
+<p>We are grateful to the previous editors of CSPLib: Ian Miguel, Brahim Hnich, Ian Gent and Toby Walsh, and all the contributors to CSPLib over the past 17 years.
+</p>
+
+<p>
+<a href="{{prefix_path}}/updates.html">Updates</a>
+</p>
+
+<!-- <p>
+    The Essence specification of each problem can also be downloaded as a <a href="{{prefix_path}}/essences.zip">zip file</a>
+</p> -->
+
+{% endblock %}

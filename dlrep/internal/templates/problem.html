@@ -1,0 +1,56 @@
+{% extends "wrapper.html" %}
+
+{% block breadcrumb %}
+  {{ super() }}
+  <li><a href="{{prefix_path}}/Problems">Problems</a></li>
+  <li><a href="{{prefix_path}}/{{prob_base}}">{{prob_name}}</a></li>
+{% endblock %}
+
+{% block headerContent %}
+
+<!-- macro to Not made a link if on the page the link links to -->
+{% macro make_nav_item(text, link, page_type) -%}
+{% if type == page_type %}
+ 	<li><a href="" class='current-item'>{{ text }}</a></li>
+{% elif prob.__dict__[link] == [] %}
+ 	<li><a class='no-files' href="{{prefix_path}}/{{prob_base}}/{{ link }}">{{ text }}</a></li>
+{% else %}
+ 	<li><a href="{{prefix_path}}/{{prob_base}}/{{ link }}">{{ text }}</a></li>
+{% endif %}
+{%- endmacro %}
+
+
+<header class="nav-header">
+<div class="nav-container">
+  <nav class="nav">
+  <ul>
+    {{ make_nav_item("Specification", "",                "specification") }}
+    {{ make_nav_item("Data files",    "data",            "data") }}
+    {{ make_nav_item("Results",       "results",         "results") }}
+    {{ make_nav_item("References",    "references",      "references") }}
+    {{ make_nav_item("Models",        "models",          "models") }}
+    {{ make_nav_item("Cite",          "cite",            "cite") }}
+    <li><a href="{{prefix_path}}/{{prob_base}}.json" >Json</a></li>
+
+  {% if type not in ["cite"] %}
+    <li style="float:right"><a href="{{repo_url}}/{{prob_base}}/{{rel_path}}">Edit Page</a></li>
+  {% endif %}
+  </ul>
+  </nav>
+</div>
+</header>
+
+
+{% endblock %}
+
+{% block mainContent %}
+
+{% if prob.metadata['proposer']  %}
+<p class='proposed'>
+Proposed by {{prob.metadata['proposer'] | join(', ') }}
+</p>
+{% endif %}
+
+{{problemContent.replace("~~PROB_BASE~~", prefix_path + "/" + prob_base) }}
+
+{% endblock %}
