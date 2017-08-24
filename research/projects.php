@@ -30,7 +30,7 @@
 					<li><a href="https://pinformatics-ppirl.pbworks.com/w/page/93515249/FrontPage">Research Wiki</a></li>
 					<li><a href="record-linkage-references.php">Record Linkage References</a></li>
 					<li><a href="record-linkage-basics.php">Record Linkage Basics</a></li>
-					<li><a href="http://pinformatics.tamhsc.edu/dyoon/userstudy/iter8/">PPIRL User Study v1.0</a></li>
+					<li><a href="../dyoon/userstudy/iter8/index.html">PPIRL User Study v1.0</a></li>
 					<li><a href="synthetic-data.php">Synthetic Data Generation for Record Linkage</a></li>
 					<li><a href="http://pinformatics.web.unc.edu/record-linkage-workgroup/">UNC Workgroup (First Friday every month 10:00-11:30am)</a></li>
 				</ul>

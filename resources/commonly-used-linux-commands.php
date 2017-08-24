@@ -24,12 +24,13 @@
     <div class="container">
         <div class="row">
 			<div class="col-lg-12">
-				
+				<article id="post-135" class="post-135 post type-post status-publish format-standard hentry category-uncategorized">
+
 				<h1 class="entry-title">Commonly Used Linux Commands</h1>
 								</header><!-- .entry-header -->
 
 				<div class="entry-content">
-			<table cellpadding="1" border="1">
+			<table cellpadding="4" border="1">
 <tbody><tr>
 <td><b>The Command</b></td>
 <td><b>What it Means</b></td>
@@ -219,8 +220,10 @@
 					</div>
 				
 			</div>
+	</article><!-- #post -->
 
             <?php include("../includes/footer-sub-menu.html"); ?>
+			
 
 		</div>
 	</div>
