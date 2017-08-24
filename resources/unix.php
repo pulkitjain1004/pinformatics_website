@@ -23,10 +23,10 @@
 
     <div class="container">
         <div class="row">
-				<h1>STATA</h1>	
+				<h1>UNIX</h1>	
 				<ul>
-					<li><a href="http://research.tamhsc.edu/pinformatics/commonly-used-linux-commands/">Commonly Used Linux Commands</a></li>
-					<li><a href="http://research.tamhsc.edu/pinformatics/editors-in-linux/">Editors on Linux</a></li>
+					<li><a href="commonly-used-linux-commands.php">Commonly Used Linux Commands</a></li>
+					<li><a href="editors-in-linux.php">Editors on Linux</a></li>
 				</ul>
 				<h2> Older information from UNC site</h2>
 					<ul>
@@ -37,19 +37,8 @@
 						<li><a href="http://swhig.web.unc.edu/2012/05/24/for-mac-users/">For Mac Users</a></li>
 					</ul>
 
-			<footer>
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-unstyled">
-							<li class="pull-right"><a href="#top">Back to top</a></li>
-						</ul>
-						<p>&copy; Hye-Chung Kum 
-						(<a href="http://research.tamhsc.edu/pinformatics/">Population Informatics Research Group</a>) 2016</p>
-						<p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
-						<p>Based on <a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
-					</div>
-				</div>
-			</footer>
+            <?php include("../includes/footer-sub-menu.html"); ?>
+
 		</div>
 	</div>
 

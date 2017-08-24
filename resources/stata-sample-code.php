@@ -25,9 +25,26 @@
         <div class="row">
 			<div class="col-lg-12">
 				
-				
-				
-			</div>
+			<h1 class="entry-title">STATA Sample Code</h1>
+								</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<h3>Set up Log </h3>
+<p>clear all<br>
+capture log close<br>
+set more off<br>
+log using filename.log, replace<br>
+…Program…<br>
+log close</p>
+<h3>Create a tiny database </h3>
+<p>clear all<br>
+g var1=1<br>
+forvalues v=1/10 {<br>
+  set obs `v’<br>
+  replace var1=_N if var1==.<br>
+}<br>
+list</p>
+					</div>
 
             <?php include("../includes/footer-sub-menu.html"); ?>
 

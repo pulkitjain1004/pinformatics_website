@@ -51,7 +51,7 @@
 				</ul>
 				<h3>UNC-CH</h3>
 				<ul>
-					<li><a href="https://research.tamhsc.edu/pinformatics/about-us/www.unc.edu/~rindfuss/">Ronald Rindfuss : Carolina Population Center, Department of Sociology</a></li>
+					<li><a href="http://www.cpc.unc.edu/people/fellows/bio?person=rindfuss">Ronald Rindfuss : Carolina Population Center, Department of Sociology</a></li>
 					<li><a href="http://renci.org/staff/ashok-krishnamurthy/">Ashok Krishnamurthy: RENCI (Renaissance Computing Institute), Department of Computer Science</a></li>
 					<li><a href="http://sph.unc.edu/profiles/stacie-dusetzina-phd/">Stacie Dusetzina: School of Medicine, The Gillings School of Global Public Health</a></li>
 					<li><a href="http://www.med.unc.edu/socialmed/people/eric-juengst">Eric Juengst: School of Medicine, Department of Social Medicine</a></li>

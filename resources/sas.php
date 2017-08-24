@@ -25,7 +25,7 @@
         <div class="row">
 				<h1>SAS</h1>	
 				<ul>
-					<li><a href="http://research.tamhsc.edu/pinformatics/sas-code/">SAS Sample Code</a></li>
+					<li><a href="sas-sample-code.php">SAS Sample Code</a></li>
 					<li>ucla ats:&nbsp;<a href="http://www.ats.ucla.edu/stat/sas">http://www.ats.ucla.edu/stat/sas</a></li>
 					<li><a href="http://research.tamhsc.edu/pinformatics/wp-content/uploads/sites/2/2014/07/054-2011.pdf">Learn SAS in 50 minutes (Reading material)</a></li>
 					<li><a href="http://www.youtube.com/channel/UC6JU4JQQw-mqS8NqfzeYWgQ">short videos to learning SAS quickly. You should be following along with the video</a></li>
@@ -37,19 +37,8 @@
 					<li><a href="http://research.tamhsc.edu/pinformatics/wp-content/uploads/sites/2/2014/01/59343_sas_char.pdf">SAS String Functions</a></li>
 				</ul>
 
-			<footer>
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-unstyled">
-							<li class="pull-right"><a href="#top">Back to top</a></li>
-						</ul>
-						<p>&copy; Hye-Chung Kum 
-						(<a href="http://research.tamhsc.edu/pinformatics/">Population Informatics Research Group</a>) 2016</p>
-						<p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
-						<p>Based on <a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
-					</div>
-				</div>
-			</footer>
+            <?php include("../includes/footer-sub-menu.html"); ?>
+
 		</div>
 	</div>
 
