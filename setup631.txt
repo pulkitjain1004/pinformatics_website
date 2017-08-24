@@ -1,0 +1,14 @@
+mkdir phpm631_spr17
+cd phpm631_spr17
+ln -s ../lib/css css
+ln -s ../lib/img img
+ln -s ../lib/js js
+ln -s ../phpm631_spr15/ans ans
+cp ../phpm631/index.html .
+
+cd ans
+mv * later
+
+cd ../..
+rm phpm631
+ln -s phpm631_spr17 phpm631
