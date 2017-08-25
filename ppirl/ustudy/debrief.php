@@ -22,8 +22,7 @@
         <div class="row">
           <div class="col-lg-12">
 				<h3>Privacy Preserving Interactive Record Linkage</h3>	
-				<font color=red> <p class="lead">We need your help with recruitment. 
-				<br> Please ask your friends to sign up for the next session on Monday (8/7 10am) by emailing Debra (debra.tan@tamu.edu) </p></font>
+				
 				<h2 id="tables">User Study on Information Privacy</h2>
 				<p>
 					Thank you for your participation in our study.<br>

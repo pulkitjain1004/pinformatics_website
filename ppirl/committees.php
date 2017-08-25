@@ -29,13 +29,13 @@
 		<p>
 			In addition to our core research team, we have also recruited two stakeholder advisory committees. The User Advisory Committee is composed of thought leaders from disparate research communities who have extensive experience linking data under the trust mode. The methods advisory committee is composed of leaders in information privacy, two of whom are PIs to funded PCORI methods grant in this area. 
 		</p>
-        <h3>Methods Advisory Committee</h3>
+        <h3>Methods Advisory Committee Meetings</h3>
 		<div>
 			<p>
-			  First meeting is scheduled for Aug 2017.
+			  <li><a href="https://sites.google.com/tamu.edu/pinformatics-ppirl/">Aug 14, 2017</a> </li>
 			</p>
 		</div>
-		<h3>User Advisory Committee</h3>
+		<h3>User Advisory Committee Meetings</h3>
 		<div>
 			<p>
 			  First meeting is scheduled for Sep 2017.				  
